@@ -1,0 +1,380 @@
+@Include { "include/lib/licomteg.lout" }
+
+@Doc @Text @Begin
+@TEG
+    @MyFirstName { Edinson }
+    @MyLastName { Padrón Urdaneta }
+    @MyIDNumber { 19.216.488 }
+    @MyEmail { edinson.padron.urdaneta@gmail.com }
+    @MyPhoneNumber { 0414-6574149 }
+    @MyAddress { Venezuela, Zulia, Maracaibo, Urb. La Paz, Calle 96D, Avenida 56, Casa "#"56-06 }
+    @PaperTitle { Herramienta Web para la Clasificación y Recuperación de Información Digital Basada en Etiquetas }
+@Begin
+    @Cover
+        @Tutor { MSc. Gerardo Pirela }
+        @Month { abril }
+        @Year { 2014 }
+
+    @NP
+
+    @Facade
+        @TutorInfo {
+            MSc. Gerardo Pirela @FF
+            CI.: 12.404.565 @FF
+            Teléfono: 0412-1734718 @FF
+            Correo electrónico: gepirela@fec.luz.edu.ve
+        }
+
+    @NP
+
+    @Summary
+        @KeyWords { Aplicación web, Etiquetado, Clasificación, Recuperación, Información digital }
+    @Begin
+        @PP
+        A diario, el ser humano se ve en la necesidad de manipular una gran cantidad de información digital, distribuida
+        entre una variedad de archivos y dispositivos de hardware. Con este trabajo de investigación se pretende
+        elaborar una herramienta web que permita clasificar y recuperar la información digital mediante el uso de
+        etiquetas, para así ofrecer a los potenciales usuarios una alternativa más intuitiva y práctica de manipular sus
+        datos, sin importar la localización física o lógica de los mismos. Se implementará la metodología Scrum de
+        desarrollo ágil, a lo largo de cuatro lanzamientos conformados por nueve @I { sprints }.
+    @End @Summary
+
+    @NP
+
+    @Abstract
+        @KeyWords { Web application, Tagging, Classification, Retrieval, Digital information }
+    @Begin
+        @PP
+        Nowadays, people have the need to handle a large amount of digital information in files which are distributed
+        along a variety of hardware devises. The goal of this research is to develop a web application to classify and
+        recover digital information using tags, and thus offer potential users a more intuitive and pragmatic
+        alternative to manage their data, regardless of its physical or logical location. This research will follow a
+        Scrum methodology for agile development along four releases composed of nine sprints.
+    @End @Abstract
+
+    @NP
+
+    @IndexOfContents
+
+    @NP
+
+    23.8c @High {
+        @IndexOfTables
+        // @VExpand {}
+    }
+
+    @BeginSections
+        @Section
+            @Title { Planteamiento y justificación del problema }
+            @Tag { planteamiento }
+        @Begin
+            @AddToIndex @Title {  Planteamiento y justificación del problema } @Tag { planteamiento }
+
+            @PP
+            La época actual es llamada la ``era de la información'' (Giuliano, 1983) debido a la relevancia de ésta en
+            la sociedad. Furth (1994) escribió: ``La información es actualmente tan vital, y tan intangible, como el
+            aire que respiramos, el cual está lleno de ondas de radio''. Hoy en día es el bien más importante y valioso
+            para toda compañía, país y grupo social, por lo que su refinamiento a partir de la abundante cantidad de
+            datos que son creados cada segundo es un proceso primordial y que ofrece una ventaja significativa.
+            @PP
+            Desde la creación de la Internet, el volumen de información disponible ha crecido exponencialmente. En el
+            2010 se produjo y almacenó un estimado de dos exabytes. Esto incluye todos los medios: libros, revistas,
+            documentos, Internet, fotografías, televisión, radio, música, entre otros; sin embargo, la mayoría era
+            digital (93% para ser más preciso) (Burgin, 2010). Para el año 2012 la cantidad de información digital
+            creada se elevó a 2.5 exabytes al día (IBM, 2012), evidenciando una tendencia que se consolida cada vez más.
+            @PP
+            A la Internet se le suma el creciente uso de dispositivos móviles (teléfonos inteligentes, tabletas,
+            lectores electrónicos, entre otros) que permiten la accesible y cómoda creación y consumo de información
+            gracias a la web, lo cual provoca una cuantiosa producción de datos, además de contribuir con la
+            heterogeneidad y descentralización de los mismos, ocasionando así que su tratamiento sea una tarea
+            penosamente difícil de realizar.
+            @PP
+            En la actualidad, los distintos repositorios presentan al usuario la información digital en ellos
+            almacenados mediante una estructura jerárquica de directorios en forma de árbol invertido. Esta
+            representación, nacida en 1969 con el lanzamiento del sistema operativo Multics en respuesta a la necesidad
+            de un sistema de almacenamiento secundario en un ambiente de multiprogramación (Multics, 1968), rígida por
+            causa de su inherente propiedad taxonómica, limita la manera en la que puede ser organizada la información,
+            mediante una relación padre-hijo, y hace de la búsqueda de la misma un proceso arduo debido al uso de
+            engorrosas rutas de directorios. Además, esta aproximación dista en gran medida del método natural usado por
+            el hombre para almacenar y recuperar información de su memoria a largo plazo, el cual consiste en
+            codificarla semánticamente para su almacenamiento (Baddeley, 1966), asociando los datos que percibe
+            (Atkinson y Shiffrin, 1968). Por lo tanto, el ser humano no es una máquina que trabaje en base a datos
+            aislados, sino interrelacionados, describiéndolos de manera inherentemente subjetiva, breve y dinámica;
+            haciendo necesario un método semejante para clasificar y recuperar la información digital, siendo éste más
+            flexible, intuitivo y natural.
+            @PP
+            Afortunadamente, la web ha dado origen a un nuevo sistema de clasificación. Originalmente diseñado e
+            implantado por el servicio del.icio.us (Mathes, 2004), el sistema ofrece la posibilidad de describir
+            recursos mediante un conjunto de palabras clave llamadas etiquetas (tags, por su término en inglés), las
+            cuales son consideradas por los usuarios como relevantes para caracterizar dichos recursos de acuerdo a sus
+            necesidades sin depender de un vocabulario controlado o de una estructura previamente definida,
+            estableciendo así una relación entre el recurso y un concepto en su mente, con el objeto de organizar el
+            contenido para uso futuro de una manera fácil y flexible (Specia y Motta, 2007). Este esquema de
+            catalogación se ha extendido en uso por una gran variedad de servicios web debido a su popularidad entre los
+            usuarios, que ven en éste una manera más natural, sencilla, rápida y personal de clasificar la información
+            digital que le es de interés, hallándola posteriormente con mínimo esfuerzo, siendo ésta una mejor
+            alternativa al problema de darle tratamiento a una gran cantidad de datos, contrastada con la estructura
+            jerárquica que ofrecen los sistemas de archivos modernos.
+            @PP
+            Hoy en día, existe una serie de herramientas que extienden las capacidades de los sistemas de archivos al
+            permitir el uso de etiquetas; sin embargo, estas herramientas presentan algunas limitaciones, tales como: el
+            tratamiento exclusivo de una fracción de la información digital existente, su operación bajo un número
+            reducido de plataformas, la prestación de un conjunto restringido de funcionalidades, entre otros.
+            @PP
+            Con este trabajo de investigación se busca desarrollar una herramienta web integral que garantice la
+            interoperabilidad entre los distintos sistemas operativos y dispositivos al permitir un acceso
+            convenientemente centralizado a la información digital sin importar la distribución física de ésta,
+            brindando así transparencia de localización mediante el uso de un servidor central que contenga la
+            herramienta y aplicaciones nativas que enlacen los repositorios de los usuarios con dicho servidor. Además,
+            se implantará una manera sencilla, versátil y personal de clasificar y recuperar la información digital
+            contenida en los distintos repositorios al permitir su descripción mediante el uso de etiquetas definidas a
+            conveniencia e implementando criterios de búsqueda basados en expresiones lógicas. Adaptando así la
+            tecnología nacida en la web para el tratamiento conveniente, efectivo y eficiente de los datos gestionados
+            por los sistemas de almacenamiento secundario contenidos en los distintos dispositivos usados todos los
+            días.
+        @End @Section
+
+        @Section
+            @Title { Formulación del problema }
+            @Tag { formulacion }
+        @Begin
+            @AddToIndex @Title { Formulación del problema } @Tag { formulacion }
+
+            @PP
+            ¿Será la clasificación y recuperación de información digital, basada en el uso de etiquetas a través de una
+            herramienta web, más intuitiva y práctica que los actuales sistemas de archivos?
+        @End @Section
+
+        @Section
+            @Title { Objetivos }
+            @Tag { objetivos }
+        @Begin
+            @AddToIndex @Title { Objetivos } @Tag { objetivos }
+
+            @BeginSubSections
+                @SubSection
+                    @Title { Objetivo General }
+                    @Tag { obj.gen }
+                @Begin
+                    @AddToIndex @Title { Objetivo General } @Tag { obj.gen }
+
+                    //2.4f @BulletList
+                        @ListItem {
+                            Desarrollar una herramienta web para la clasificación y recuperación de información digital
+                            basada en etiquetas
+                        }
+                    @EndList
+                @End @SubSection
+
+                @SubSection
+                    @Title { Objetivos Específicos }
+                    @Tag { obj.esp }
+                @Begin
+                    @AddToIndex @Title { Objetivos Específicos } @Tag { obj.esp }
+
+                    //2.4f @BulletList gap { 1.0f }
+                        @ListItem {
+                            Realizar una revisión documental sobre herramientas de clasificación y recuperación de
+                            información digital
+                        }
+                        @ListItem {
+                            Implementar la aplicación servidor para el almacenamiento y gestión de etiquetas de
+                            recursos digitales
+                        }
+                        @ListItem {
+                            Desarrollar el módulo de la aplicación cliente encargada del rastreo personalizable de la
+                            información a etiquetar
+                        }
+                        @ListItem {
+                            Desarrollar el módulo de la aplicación cliente correspondiente a la interfaz web de usuario
+                        }
+                        @ListItem {
+                            Realizar las pruebas de caja gris de la herramienta
+                        }
+                    @EndList
+                @End @SubSection
+            @EndSubSections
+        @End @Section
+
+        @Section
+            @Title { Delimitaciones de la Investigación }
+            @Tag { delimitaciones }
+        @Begin
+            @AddToIndex @Title { Delimitaciones de la Investigación } @Tag { delimitaciones }
+
+            @PP
+            La investigación se llevará a cabo en la Unidad Académica de Lenguajes y Modelos Computacionales de la
+            Facultad Experimental de Ciencias de la Universidad del Zulia, en el contexto de la línea de
+            investigación: ``Modelos Computacionales''. La misma se desarrollará durante un año, en el periodo
+            comprendido desde mayo de 2014 hasta mayo de 2015, en los espacios del laboratorio de la mencionada
+            unidad académica.
+        @End @Section
+
+        @Section
+            @Title { Metodología de la Investigación }
+            @Tag { metodologia }
+        @Begin
+            @AddToIndex @Title { Metodología de la Investigación } @Tag { metodologia }
+
+            @PP
+            En esta investigación será empleada la metodología Scrum de desarrollo ágil de software, tal y como la
+            describen Schwaber y Sutherland (2011). En Scrum se recolectan todas las funcionalidades que debe poseer el
+            sistema final, descritas desde el punto de vista del cliente y llamadas @I { user stories }; éstas se
+            priorizan para planificar qué subconjunto será diseñado, desarrollado, integrado y testeado para el próximo
+            lanzamiento, el cual es a su vez subdividido en un conjunto de iteraciones, llamadas @I sprints. El objetivo
+            de un @I sprint es el de presentar al cliente un subconjunto del sistema en total y perfecto funcionamiento
+            en un periodo no mayor a un mes, logrando de esta manera la retroalimentación necesaria para el desarrollo
+            exitoso y adaptable del proyecto. En la etapa de planificación de un lanzamiento se estima el tiempo que
+            tomará diseñar, desarrollar, integrar y testear cada @I { user story }, estimación usada como base para la
+            estructuración de los @I sprints.
+            @PP
+            Se estima realizar un total de cuatro lanzamientos. En el primero, se entregará la interfaz web de usuario;
+            en el segundo, el módulo de etiquetado; en el tercero, el módulo de recuperación y en el cuarto, la
+            aplicación cliente. Se prevé que el primer lanzamiento estará constituido por tres sprints, mientras que el
+            resto de tan sólo dos; se estima además que cada sprint durará un mes.
+        @End @Section
+
+        @Section
+            @Title { Estudio de Factibilidad }
+            @Tag { factibilidad }
+        @Begin
+            @AddToIndex @Title { Estudio de Factibilidad } @Tag { factibilidad }
+
+            @BeginSubSections
+                @SubSection
+                    @Title { Recursos Humanos }
+                    @Tag { rec.hum }
+                @Begin
+                    @AddToIndex @Title { Recursos Humanos } @Tag { rec.hum }
+
+                    @PP
+                    El equipo de trabajo estará constituido por el MSc. Gerardo Pirela, quien desempeñará funciones como
+                    tutor y asesor; y el Br. Edinson Padrón, autor de esta investigación, además de diseñador y
+                    desarrollador de la herramienta.
+                @End @SubSection
+
+                @SubSection
+                    @Title { Recursos Materiales }
+                    @Tag { rec.mat }
+                @Begin
+                    @AddToIndex @Title { Recursos Materiales } @Tag { rec.mat }
+
+                    @PP
+                    Para el desarrollo de esta investigación se requiere de un computador con las siguientes
+                    especificaciones mínimas: procesador de 2GHz, 1GB de memoria RAM, 10GB de espacio libre en disco
+                    duro y conexión a Internet.
+                @End @SubSection
+
+                @SubSection
+                    @Title { Recursos Financieros }
+                    @Tag { rec.fin }
+                @Begin
+                    @AddToIndex @Title { Recursos Financieros } @Tag { rec.fin }
+
+                    @PP
+                    La mayor parte de los egresos serán asumidos por el laboratorio de la Unidad Académica de Lenguajes
+                    y Modelos Computacionales. El investigador se hará cargo de los costos que el laboratorio no pueda
+                    cubrir.
+                @End @SubSection
+
+                @SubSection
+                    @Title { Recursos Legales }
+                    @Tag { rec.leg }
+                @Begin
+                    @AddToIndex @Title { Recursos Legales } @Tag { rec.leg }
+
+                    @PP
+                    Se empleará software de código abierto de manera exclusiva; esto incluye el sistema operativo y
+                    ambientes de desarrollo, acatando las cláusulas dispuestas en sus respectivas licencias.
+                @End @SubSection
+            @EndSubSections
+        @End @Section
+
+        @Section
+            @Title { Viabilidad de la Investigación }
+            @Tag { viabilidad }
+        @Begin
+            @AddToIndex @Title { Viabilidad de la Investigación } @Tag { viabilidad }
+
+            @PP
+            Debido a que se dispone de todos los recursos humanos, materiales, legales y financieros, necesarios para el
+            desarrollo de esta investigación, se concluye que la misma es viable.
+        @End @Section
+
+        @Section
+            @Title { Resultados Esperados }
+            @Tag { resultados }
+        @Begin
+            @AddToIndex @Title { Resultados Esperados } @Tag { resultados }
+
+            @PP
+            Se espera desarrollar una herramienta web que, a través de un navegador, muestre y dé acceso a los usuarios
+            la información digital (documentos, fotos, música, enlaces, entre otros) contenida en los distintos
+            repositorios de su propiedad, y que les permita clasificarla y hallarla mediante el uso de etiquetas. Todo
+            esto a través de la implementación de un servicio web ubicado en un servidor y aplicaciones clientes que se
+            encargarán de comunicar los repositorios con el servidor.
+            //5c
+        @End @Section
+
+        @Section
+            @Title { Cronograma de Actividades }
+            @Tag { cronograma }
+        @Begin
+            @AddToIndex @Title { Cronograma de Actividades } @Tag { cronograma }
+            @PageMark { t.cronograma }  @AddToTIndex @Title {  Tabla 1. Cronograma } @Tag { t.cronograma }
+
+            //2.4f @MyCenter @B { Tabla 1. Cronograma }
+            //0f @CD 0.65 @Scale @IncludeGraphic "./include/img/tabla1.eps"
+            //0f @MyCenter @B { Fuente: Padrón (2014) }
+        @End @Section
+    @EndSections
+
+    @NP
+
+    @ExtraSection
+        @Title { REFERENCIAS BIBLIOGRÁFICAS }
+        @AlterTitle { Referencias bibliográficas }
+    @Begin
+        //1.2f @BulletList break { adjust }
+            @ListItem {
+                Atkinson, R.C.; Shiffrin, R.M. (1968). Chapter: Human memory: A proposed system and its control
+                processes. The psychology of learning and motivation. pp. 89-195.
+            }
+            @ListItem {
+                Baddeley, A.D. (1966). The influence of acoustic and semantic similarity on long-term memory for word
+                sequences. The Quarterly Journal of Experimental Psychology. pp. 302-309.
+            }
+            @ListItem {
+                Burgin, Mark (2010). Theory of Information: Fundamentality, Diversity and Unification. World Scientific.
+                p. VI.
+            }
+            @ListItem {
+                Furth, J. (1994). The Information Age in Charts, Fortune International.
+            }
+            @ListItem {
+                Giuliano, V.E. (1983). The United States of America in the Information Age, en Information Policy and
+                Scientific Research, Elsevier, Amsterdam, pp. 59-76.
+            }
+            @ListItem {
+                IBM (2012) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
+                "www-01.ibm.com/software/data/bigdata/"
+            }
+            @ListItem {
+                Mathes, Adam (2004) (Página consultada el 25 de junio de 2013) [On-line]. Dirección: //1.2fx
+                "www.adammathes.com/academic/computer-mediated-communication/folksonomies.html"
+            }
+            @ListItem {
+                Multics (1968) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
+                "www.multicians.org/fjcc4.html"
+            }
+            @ListItem {
+                Schwaber, Ken; Sutherland, Jeff (2011). The Definitive Guide to Scrum: The Rules of the Game.
+            }
+            @ListItem {
+                Specia, Lucia; Motta, Enrico (2007). Integrating Folksonomies with the Semantic Web. Knowledge Media
+                Institute - The Open University.
+            }
+        @EndList
+    @End @ExtraSection
+@End @TEG
+@End @Text
