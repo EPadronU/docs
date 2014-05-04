@@ -1,0 +1,392 @@
+@Include { "include/lib/licomteg.lout" }
+
+@Doc @Text @Begin
+@TEG
+    @MyFirstName { Edinson }
+    @MyLastName { Padrón Urdaneta }
+    @MyIDNumber { 19.216.488 }
+    @MyEmail { edinson.padron.urdaneta@gmail.com }
+    @MyPhoneNumber { +58 414 6574149 }
+    @MyAddress { Venezuela, Zulia, Maracaibo, Urb. La Paz, Calle 96D, Avenida 56 }
+    @PaperTitle { Herramienta Web para la Clasificación y Recuperación de Información Digital Basada en Etiquetas }
+    @IsReport { Y }
+@Begin
+    @Cover
+        @Tutor { MSc. Gerardo Pirela Morillo }
+        @Month { marzo }
+        @Year { 2014 }
+
+    @NP
+
+    @Facade
+        @TutorInfo {
+            MSc. Gerardo Pirela Morillo @FF
+            CI.: 12.404.565 @FF
+            Teléfono: 0412-1734718 @FF
+            Correo electrónico: gepirela@fec.luz.edu.ve
+        }
+
+    @NP
+
+    @Summary
+        @KeyWords { Aplicación web, Etiquetado, Clasificación, Recuperación, Información digital }
+    @Begin
+        @PP
+    @End @Summary
+
+    @NP
+
+    @Abstract
+        @KeyWords { Web application, Tagging, Classification, Retrieval, Digital information }
+    @Begin
+        @PP
+    @End @Abstract
+
+    @NP
+
+    @IndexOfContents
+
+    @NP
+
+    @ExtraSection
+        @Title { INTRODUCCIÓN }
+        @AlterTitle { Introductión }
+    @Begin
+        @PP
+
+    @End @ExtraSection
+
+    @NP
+
+    @Chapter
+        @Num { I }
+        @Title { El Problema }
+    @Begin
+        @BeginSections
+            @Section
+                @Title { Planteamiento del Problema  y Justificación de la Investigación }
+                @Tag { planteamiento }
+            @Begin
+                @AddToIndex
+                    @Title { Planteamiento del Problema  y Justificación de la Investigación }
+                    @Tag { planteamiento }
+
+                @PP
+                La época actual es llamada la ``era de la información'' (Giuliano, 1983) debido a la relevancia de ésta
+                en la sociedad. Furth (1994) escribió: ``La información es actualmente tan vital, y tan intangible, como
+                el aire que respiramos, el cual está lleno de ondas de radio''. Hoy en día es el bien más importante y
+                valioso para toda compañía, país y grupo social, por lo que su refinamiento a partir de la abundante
+                cantidad de datos que son creados cada segundo es un proceso primordial y que ofrece una ventaja
+                significativa.
+                @PP
+                En el año 2010 se produjo y almacenó un estimado de dos exabytes de información (esto incluye todos los
+                medios: libros, revistas, documentos, Internet, fotografías, televisión, radio, música, entre otros) de
+                los cuales, el 93% era digital (Burgin, 2010). Dos años después, la cantidad de información digital que
+                se generó, se elevó a 2.5 exabytes al día (IBM, 2012), evidenciando un crecimiento exponencial con la
+                Internet como principal catalizador de este fenómeno.
+                @PP
+                A la Internet se le suma el creciente uso de dispositivos móviles (teléfonos inteligentes, tabletas,
+                lectores electrónicos, entre otros) que permiten la accesible y cómoda creación y consumo de información
+                gracias a la web, lo cual provoca una cuantiosa producción de datos, además de contribuir con la
+                heterogeneidad y descentralización de los mismos, ocasionando así que su tratamiento sea una tarea
+                penosamente difícil de realizar.
+                @PP
+                En la actualidad, los distintos repositorios presentan al usuario la información digital en ellos
+                almacenados mediante una estructura jerárquica de directorios en forma de árbol invertido. Esta
+                representación, nacida en 1969 con el lanzamiento del sistema operativo Multics en respuesta a la
+                necesidad de un sistema de almacenamiento secundario en un ambiente de multiprogramación (Multics,
+                1968), rígida por causa de su inherente propiedad taxonómica, limita la manera en la que puede ser
+                organizada la información, mediante una relación padre-hijo, y hace de la búsqueda de la misma un
+                proceso arduo debido al uso de engorrosas rutas de directorios. Además, esta aproximación dista en gran
+                medida del método natural usado por el hombre para almacenar y recuperar información de su memoria a
+                largo plazo, el cual consiste en codificarla semánticamente para su almacenamiento (Baddeley, 1966),
+                asociando los datos que percibe (Atkinson y Shiffrin, 1968). Por lo tanto, el ser humano no es una
+                máquina que trabaje en base a datos aislados, sino interrelacionados, describiéndolos de manera
+                inherentemente subjetiva, breve y dinámica; haciendo necesario un método semejante para clasificar y
+                recuperar la información digital, siendo éste más flexible, intuitivo y natural.
+                @PP
+                Afortunadamente, la web ha dado origen a un nuevo sistema de clasificación. Originalmente diseñado e
+                implantado por el servicio del.icio.us (Mathes, 2004), el sistema ofrece la posibilidad de describir
+                recursos mediante un conjunto de palabras clave llamadas etiquetas (@I tags, por su término en inglés),
+                las cuales son consideradas por los usuarios como relevantes para caracterizar dichos recursos de
+                acuerdo a sus necesidades sin depender de un vocabulario controlado o de una estructura previamente
+                definida, estableciendo así una relación entre el recurso y un concepto en su mente, con el objeto de
+                organizar el contenido para uso futuro de una manera fácil y flexible (Specia y Motta, 2007). Este
+                esquema de catalogación se ha extendido en uso por una gran variedad de servicios web debido a su
+                popularidad entre los usuarios, quienes ven en éste una manera más natural, sencilla, rápida y personal
+                de clasificar la información digital que les es de interés, hallándola posteriormente con mínimo
+                esfuerzo, siendo ésta una mejor alternativa al problema de darle tratamiento a una gran cantidad de
+                datos, contrastada con la estructura jerárquica que ofrecen los sistemas de archivos modernos.
+                @PP
+                Hoy en día, existe una serie de herramientas que extienden las capacidades de los sistemas de archivos
+                al permitir el uso de etiquetas; sin embargo, estas herramientas presentan algunas limitaciones, tales
+                como: el tratamiento exclusivo de una fracción de la información digital existente, su operación bajo un
+                número reducido de plataformas, la prestación de un conjunto restringido de funcionalidades, entre
+                otros.
+                @PP
+                Con este trabajo de investigación se buscó desarrollar una herramienta web integral que garantizara la
+                interoperabilidad entre los distintos sistemas operativos y dispositivos al permitir un acceso
+                convenientemente centralizado a la información digital sin importar la distribución física de ésta,
+                brindando así transparencia de localización mediante el uso de un servidor central que contenga la
+                herramienta y aplicaciones que enlacen los repositorios de los usuarios con dicho servidor. Además, se
+                implantó una manera sencilla, versátil y personal de clasificar y recuperar la información digital
+                contenida en los mencionados repositorios al permitir su descripción y recuperación mediante el uso de
+                etiquetas definidas a conveniencia. Adaptando así la tecnología nacida en la web al ámbito de los
+                actuales sistemas de archivo.
+            @End @Section
+
+            @Section
+                @Title { Alcance del problema }
+                @Tag { alcance }
+            @Begin
+                @AddToIndex @Title { Alcance del problema } @Tag { alcance }
+
+                @PP
+                La investigación estuvo delimitada al desarrollo de un sistema cliente-servidor donde el cliente,
+                desarrollado para trabajar solo bajo los entornos Windows®, OSX® y Linux®, se comunica con una
+                aplicación web, manteniendo sincronizadas las etiquetas asociadas a los archivos ubicados en los
+                repositorios del usuario, permitiéndole así clasificarlos y recuperarlos mediante el uso de los
+                mencionadas etiquetas.
+            @End @Section
+
+            @Section
+                @Title { Objetivos }
+                @Tag { objetivos }
+            @Begin
+                @AddToIndex @Title { Objetivos } @Tag { objetivos }
+
+                @BeginSubSections
+                    @SubSection
+                        @Title { Objetivo General }
+                        @Tag { obj.gen }
+                    @Begin
+                        @AddToIndex @Title { Objetivo General } @Tag { obj.gen }
+
+                        //2.4f @BulletList
+                            @ListItem {
+                                Desarrollar una herramienta web para la clasificación y recuperación de información
+                                digital basada en etiquetas
+                            }
+                        @EndList
+                    @End @SubSection
+
+                    @SubSection
+                        @Title { Objetivos Específicos }
+                        @Tag { obj.esp }
+                    @Begin
+                        @AddToIndex @Title { Objetivos Específicos } @Tag { obj.esp }
+
+                        //2.4f @BulletList gap { 1.0f }
+                        @ListItem {
+                            Realizar una revisión documental sobre herramientas de clasificación y recuperación de
+                            información digital
+                        }
+                        @ListItem {
+                            Implementar la aplicación servidor para el almacenamiento y gestión de etiquetas de recursos
+                            digitales
+                        }
+                        @ListItem {
+                            Desarrollar el módulo de la aplicación cliente encargada del rastreo personalizable de la
+                            información a etiquetar
+                        }
+                        @ListItem {
+                            Desarrollar el módulo de la aplicación cliente correspondiente a la interfaz web de usuario
+                        }
+                        @ListItem {
+                            Realizar las pruebas de caja gris de la herramienta
+                        }
+                        @EndList
+                    @End @SubSection
+                @EndSubSections
+            @End @Section
+        @EndSections
+    @End @Chapter
+
+    @NP
+
+    @Chapter
+        @Num { II }
+        @Title { Marco Teórico }
+    @Begin
+        @BeginSections
+            @Section
+                @Title { Antecedentes de la Investigación }
+                @Tag { antecedentes }
+            @Begin
+                @AddToIndex @Title { Antecedentes de la Investigación } @Tag { antecedentes }
+
+                @PP
+                En la actualidad, los sistemas de clasificación basados en etiquetas son ampliamente usados por
+                innumerables aplicaciones web, sin embargo, su uso como complemento a los sistemas de archivo modernos
+                presenta una reducida gama de opciones, dentro de la cual se pueden mencionar:
+
+                @BeginSubSections
+                    @SubSection
+                        @Title { Tag }
+                    @Begin
+                        @PP
+                        Tags es una aplicación que permite etiquetar archivos y directorios en @I finder (explorador),
+                        correos electrónicos en @I Mail (gestor de emails), fotos en @I IPhoto (gestor de imágenes) y
+                        enlaces en @I Safari (navegador web); con el objetivo de mantener organizados dichos recursos y
+                        poder hallarlos de manera rápida y sencilla.
+                        @PP
+                        Tags también ofrece una vista previa de la información, atajos de teclado y una excelente
+                        integración con el sistema operativo. Desafortunadamente, el sistema solo está disponible para
+                        el sistema operativo @I { OS X }®, está sujeto a una licencia privativa y no es capaz de
+                        sincronizar recursos localizados en dispositivos diferentes.
+
+                        //2.4f @MyCenter @B { Gráfica 1. Tags }
+                        //0f @CD { 0.4 0.3 } @Scale @IncludeGraphic "./include/img/tags.eps"
+                        //0f @MyCenter @B { Fuente: Tags (2014) }
+                    @End @SubSection
+
+                    @SubSection
+                        @Title { TagTool }
+                    @Begin
+                        @PP
+                        TaggTool permite añadir etiquetas a archivos, directorios y «bookmarks». Adicionalmente, el
+                        usuario puede proporcionar una descripción del recurso, además de una calificación cuantitativa
+                        (@I rating). Esta herramienta ofrece la posibilidad de importat metadatos pre-existentes en los
+                        recursos y realizar búsquedas en base a estos.
+                        @PP
+                        TaggTool también posee una alta integración con el sistema operativo y brinda una vista previa
+                        de los recursos gestionados. Además, facilita un sistema de etiquetado automático basado en la
+                        naturaleza de los recursos, y muestra una nube de etiquetas para la visualización de las
+                        mismas.
+                        @PP
+                        Al igual que Tags, TaggTool está sujeto a una licencia privativa y no es capaz de sincronizar
+                        recursos localizados en dispositivos diferentes. Otra desventaja que presenta este sistema
+                        es que está disponible solo para el sistema operativo @I { Microsoft Windows }®.
+
+                        //2.4f @MyCenter @B { Gráfica 2. TaggTool }
+                        //0f @CD { 0.4 0.3 } @Scale @IncludeGraphic "./include/img/taggtool.eps"
+                        //0f @MyCenter @B { Fuente: TaggTool (2014) }
+                    @End @SubSection
+
+                    @SubSection
+                        @Title { Tables }
+                    @Begin
+                        @PP
+                        Tabbles ofrece la posibilidad de clasificar, buscar, organizar y compartir (a través de una LAN
+                        o la Internet) archivos, carpetas y «bookmarks», mediante el uso de etiquetas. Adicionalmente,
+                        la herramienta ofrece un sistema de auto-etiquetado, además de una excelente integración con el
+                        sistema operativo.
+                        @PP
+                        A pesar de ser capaz de gestionar, compartir y sincronizar recursos localizados en dispositivos
+                        distintos, Tabbles está disponible únicamente para el sistema operativo Microsoft Windows® bajo
+                        una licencia privativa.
+
+                        //2.4f @MyCenter @B { Gráfica 3. Tabbles }
+                        //0f @CD { 0.6  0.5 } @Scale @IncludeGraphic "./include/img/tabbles.eps"
+                        //0f @MyCenter @B { Fuente: Tabbles (2014) }
+                    @End @SubSection
+                @EndSubSections
+            @End @Section
+
+            @Section
+                @Title { Bases Teóricas }
+                @Tag { bases.teoricas }
+            @Begin
+                @AddToIndex @Title { Bases Teóricas } @Tag { bases.teoricas }
+
+                @BeginSubSections
+                    @SubSection
+                        @Title { Aplicación web }
+                        @Tag { appweb }
+                    @Begin
+                        @PP
+                        Una aplicación web es un programa desarrollado mediante el uso de herramientas y lenguajes (como
+                        por ejemplo: CSS, HTML, JavaScript) suportados por navegadores web y que dependen de éstos para
+                        su uso por parte de los usuarios (PC Magazine, 2014).
+                    @End @SubSection
+
+                    @SubSection
+                        @Title { Sistema de archivo }
+                        @Tag { sis.arc }
+                    @Begin
+                        @PP
+                        TODO (linfo.org, 2004).
+                    @End @SubSection
+
+                    @SubSection
+                        @Title { Metadatos }
+                        @Tag { metadato }
+                    @Begin
+                        @PP
+                        TODO (W. R. Durrell, 1985).
+                    @End @SubSection
+
+                    @SubSection
+                        @Title { Etiqueta }
+                        @Tag { etiqueta }
+                    @Begin
+                        @PP
+                        Las etiquetas son un conjunto de palabras clave empleadas en la organización de contenido. El
+                        uso de etiquetas le permite a los usuarios clasificar sus recursos de manera flexible y
+                        personal, caracterizándolos de acuerdo a sus propias necesidades sin tener que depender en un
+                        vocabulario controlado o una estructura previamente definida (Specia y Motta, 2007).
+                    @End @SubSection
+                @EndSubSections
+            @End @Section
+        @EndSections
+    @End @Chapter
+
+    @NP
+
+    @ExtraSection
+        @Title { REFERENCIAS BIBLIOGRÁFICAS }
+        @AlterTitle { Referencias bibliográficas }
+    @Begin
+        //1.2f @BulletList
+            @ListItem {
+                Atkinson, R.C.; Shiffrin, R.M. (1968). Chapter: Human memory: A proposed system and its control
+                processes. The psychology of learning and motivation. pp. 89-195.
+            }
+            @ListItem {
+                Baddeley, A.D. (1966). The influence of acoustic and semantic similarity on long-term memory for word
+                sequences. The Quarterly Journal of Experimental Psychology. pp. 302-309.
+            }
+            @ListItem {
+                Burgin, Mark (2010). Theory of Information: Fundamentality, Diversity and Unification. World Scientific.
+                p. VI.
+            }
+            @ListItem {
+                Furth, J. (1994). The Information Age in Charts, Fortune International.
+            }
+            @ListItem {
+                Giuliano, V.E. (1983). The United States of America in the Information Age, en Information Policy and
+                Scientific Research, Elsevier, Amsterdam, pp. 59-76.
+            }
+            @ListItem {
+                IBM (2012) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
+                "www-01.ibm.com/software/data/bigdata/"
+            }
+            @ListItem {
+                linfo.org (2004) (Página consultada el 23 de enero de 2014) [On-line]. Dirección: "goo.gl/pJqjHc".
+            }
+            @ListItem {
+                Mathes, Adam (2004) (Página consultada el 25 de junio de 2013) [On-line]. Dirección: @FF
+                "www.adammathes.com/academic/computer-mediated-communication/folksonomies.html"
+            }
+            @ListItem {
+                Multics (1968) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
+                "www.multicians.org/fjcc4.html"
+            }
+            @ListItem {
+                PC Magazine (2014) (Página consultada el 23 de enero  de 2014) [On-line]. Dirección:
+                "http://www.pcmag.com/encyclopedia/term/54272/web-application"
+            }
+            @ListItem {
+                Schwaber, Ken; Sutherland, Jeff (2011). The Definitive Guide to Scrum: The Rules of the Game.
+            }
+            @ListItem {
+                Specia, Lucia; Motta, Enrico (2007). Integrating Folksonomies with the Semantic Web. Knowledge Media
+                Institute - The Open University.
+            }
+            @ListItem {
+                W. R. Durrell (1985). Data Administration. A Practical Guide to Data Administration. McGraw-Hill.
+            }
+        @EndList
+    @End @ExtraSection
+@End @TEG
+@End @Text
