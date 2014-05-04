@@ -1,3 +1,5 @@
+# vim: filetype=lout
+
 ###############################################################################
 # Macros                                                                      #
 ###############################################################################
@@ -76,6 +78,7 @@ def @AddToTIndex into { @TablePlace&&foll_or_prec }
 # Símbolos visibles fuera de @TEG
 export @Abstract @Chapter @Cover @ExtraSection @Facade @IndexOfContents @IndexOfGraphics @IndexOfTables @Introduction @Summary
 
+
 # El núcleo de este archivo de configuración
 def @TEG
     named compulsory @MyAddress { }
@@ -85,7 +88,7 @@ def @TEG
     named compulsory @MyLastName { }
     named compulsory @MyPhoneNumber { }
     named compulsory @PaperTitle { }
-    named @IsReport { N }
+    named @Report { N }
     named @Sex { M }
     body @Body
 {
@@ -114,9 +117,10 @@ def @TEG
     def @Chapter
         named compulsory @Num { }
         named compulsory @Title { }
+        named @AlterTitle { }
         right @Body
     {
-        @AddChapterToIndex @Title { @Title } @Num { @Num } ||
+        @AddChapterToIndex @Title { @AlterTitle @Case { dfl @Yield @Title else @Yield @AlterTitle } } @Num { @Num } ||
 
         @MyCenter @B { CAPÍTULO @Num //2.4f @Title }
         // { @Body }
@@ -124,13 +128,11 @@ def @TEG
 
     def @Cover
         named compulsory @Month { }
-        named compulsory @Tutor { }
         named compulsory @Year { }
-        named @Cotutor { dfl }
     {
         macro @Grade { @Sex @Case { { M m } @Yield { Licenciado } else @Yield { Licenciada } } }
 
-        macro @DocType { @IsReport @Case { { Y y } @Yield { Informe } else @Yield { Proyecto } } }
+        macro @DocType { @Report @Case { { Y y } @Yield { Informe } else @Yield { Proyecto } } }
 
         24.60c @High {
             @CD {
@@ -150,16 +152,12 @@ def @TEG
             //9.6f @CD 15c @Wide { @MyCenter @Options { 1.2fx } @B { @PaperTitle } }
 
             //1.2f @MyCenter @Options { 1.2fx } @B {
-                @DocType de Trabajo Especial de Grado presentado como @FF
-                requisito para optar al título de @Grade en Computación
+                Informe Presentado como Requisito para Aprobar @FF
+                PRÁCTICA PROFESIONAL II
             }
 
             //2.4f rlines @Break {
                 Autor: Br. @MyFirstName @MyLastName
-
-               //2.4f Tutor: @Tutor
-
-               //2.4f @Cotutor @Case { dfl @Yield { } else @Yield { Cotutor: @Cotutor } }
             }
 
             // @VExpand {}
@@ -257,12 +255,6 @@ def @TEG
         right @Body
     {
         @PageMark @Tag // @AddToIndex @Title { Resumen } @Tag { @Tag } //
-
-        1.2fx @Break {
-            { @MyLastName }, { @MyFirstName }. @B { ``@PaperTitle '' }. Trabajo Especial de Grado. @JN
-            Universidad del Zulia. Facultad Experimental de Ciencias. División de Programas @JN
-            Especiales. Maracaibo, Venezuela. @Date @Format { @Year }. @PageOf { last.page }p.
-        }
 
         //2.4f @MyCenter @B RESUMEN
 

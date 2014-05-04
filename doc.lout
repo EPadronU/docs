@@ -1,0 +1,368 @@
+@Include { "include/lib/licomteg.lout" }
+
+@Doc @Text @Begin
+@TEG
+    @MyFirstName { Edinson }
+    @MyLastName { Padrón Urdaneta }
+    @MyIDNumber { 19.216.488 }
+    @MyEmail { edinson.padron.urdaneta@gmail.com }
+    @MyPhoneNumber { +584146574149 }
+    @MyAddress { Maracaibo, Venezuela. Urb. La Paz, Calle 96D }
+    @PaperTitle { INFORME DE PASANTÍAS }
+@Begin
+    #~ Cover ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    @Cover
+        @Month { febrero }
+        @Year { 2014 }
+    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    @NP
+
+    #~ Approve sheet ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    @ExtraSection
+        @Title { HOJA DE APROBACIÓN }
+        @AlterTitle { Hoja de aprobación }
+        @Tag { aprobacion }
+    @Begin
+        //7.0f @MyCenter {
+            10c @Wide @Underline @HExpand {}
+            &/0.6f TUTOR
+            &/0.6f Cargo: 7.5c @Wide @Underline @HExpand {}
+        }
+
+        //7.0f @MyCenter {
+            10c @Wide @Underline @HExpand {}
+            &/0.6f CO-TUTOR
+            &/0.6f Cargo: 7.5c @Wide @Underline @HExpand {}
+        }
+
+        //20.0f @MyCenter {
+            10c @Wide @Underline @HExpand {}
+            &/0.6f COORDINADOR DE PASANTÍAS
+            &/0.6f Licdo. Olinto Rodríguez Atencio
+        }
+    @End @ExtraSection
+    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    @NP
+
+    #~ Presentation ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    @ExtraSection
+        @Title { PRESENTACIÓN }
+        @AlterTitle { Hoja de presentación }
+        @Tag { presentacion }
+    @Begin
+        //1.2f @BulletList labelwidth { 0.3c } indent { 0s }
+            @ListItem { Nombres y apellidos del pasante }
+            @ListInterruptItem { &6s Br. Edinson Evenecer Padrón Urdaneta }
+
+            @ListItem { Cédula de identidad }
+            @ListInterruptItem { &6s 19.216.488 }
+
+            @ListItem { Nombre de la organización }
+            @ListInterruptItem { &6s Facultad Experimental de Ciencias de la Universidad del Zulia }
+
+            @ListItem { Dirección de la empresa }
+            @ListInterruptItem { &6s Av. 22 con Calle 60 (Avenida Universidad), Maracaibo, Venezuela }
+
+            @ListItem { Teléfono de la empresa }
+            @ListInterruptItem { &6s +582614127747 }
+
+            @ListItem { Departamento }
+            @ListInterruptItem { &6s Departamento de Computación }
+
+            @ListItem { Jefe inmediato }
+            @ListInterruptItem { &6s MSc. María Emilia Portillo }
+
+            @ListItem { Cargo que ocupa }
+            @ListInterruptItem { &6s Coordinadora del Consejo de Trabajo Especial de Grado }
+
+            @ListItem { Área en la que se realizó el trabajo }
+            @ListInterruptItem { &6s Consejo de Trabajo Especial de Grado }
+
+            @ListItem { Nivel de realización de las pasantías }
+            @ListInterruptItem { &6s Desarrollo de un framework para el formato de Trabajos Especiales de Grado }
+
+            @ListItem { Fecha de inicio }
+            @ListInterruptItem { &6s Agosto 11 de 2012 }
+
+            @ListItem { Fecha de culminación }
+            @ListInterruptItem { &6s Junio 20 de 2013 }
+        @EndList
+    @End @ExtraSection
+    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    @NP
+
+    #~ Summary ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    @Summary
+        @KeyWords { Documento, Trabajo Especial de Grado, Framework, Formato, Presentación }
+    @Begin
+        @PP
+        Las pasantías fueron realizadas en el Departamento de Computación de la Facultad Experimental de Ciencias de la
+        Universidad del Zulia en un lapso neto de cuatro semanas, periodo de tiempo durante el cual se desarrolló un
+        framework multiplataforma que le permite a los alumnos de la Licenciatura en Computación darle formato a la
+        presentación de sus informes y proyectos de Trabajo Especial de Grado de una manera sencilla. En el desarrollo
+        del mencionado framework se usó el sistema de formateo de documentos «lout» y el editor de texto «vim», ambos de
+        código abierto y corriendo en una laptop Soneview con las siguientes especificaciones: 2GiB de RAM, procesador
+        doble núcleo de 2GHz y un HDD de 380 GiB.
+    @End @Summary
+    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    @NP
+
+    #~ Index ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    @IndexOfContents
+    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    @NP
+
+    #~ Introduction ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    @ExtraSection
+        @Title { INTRODUCCIÓN }
+        @AlterTitle { Introducción }
+        @Tag { intro }
+    @Begin
+        @PP
+        Las prácticas profesionales en los planes de estudio del nivel universitario constituyen una importante fuente
+        de formación, ya que le permiten al estudiante entrar en contacto con la realidad de la industria, y poner en
+        práctica todos los conocimientos adquiridos en los estudios de pregrado.
+        @PP
+        Las pasantías se realizaron en la Facultad Experimental de Ciencias de la Universidad del Zulia, ubicada en la
+        Avenida 22 con la Avenida Universidad de la ciudad de Maracaibo, Venezuela. Específicamente las actividades se
+        realizaron en el Departamento de Computación de la mencionada facultad y se desarrollaron en cuatro (4) semanas.
+        @PP
+        En el presente informe, estructurado en cuatro (4) capítulos, se describe la empresa, las actividades realizadas
+        en la misma y los conocimientos adquiridos durante el desempeño de las pasantías.
+
+    @End @ExtraSection
+    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    @NP
+
+    #~ Chapter I ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    @Chapter
+        @Num { I }
+        @Title { Aspectos Generales @FF de la Empresa }
+        @AlterTitle { Aspectos Generales de la Empresa }
+    @Begin
+        @BeginSections
+            @Section
+                @Title { Descripción de la empresa }
+                @Tag { descripcion }
+            @Begin
+                @AddToIndex @Title { Descripción de la empresa } @Tag { descripcion }
+
+                @PP
+                «Fundada en 1891, LUZ es una institución centenaria, con raíces fuertemente hundidas en el espíritu de
+                la región. Su camino, desde 1891 hasta ahora --período que incluye el lapso de su cierre en 1904 hasta
+                su reapertura en 1946--, no ha sido fácil: el déficit presupuestario ha sido una constante, así como el
+                enfrentamiento con los gobiernos nacionales y con camarillas de poder que han intentado ponerla al
+                servicio de una determinada ideología o modelo político. Pese a todo, la Universidad se ha mantenido en
+                su ruta y enfrenta el tercer milenio plantada en las líneas de desarrollo que el futuro demanda» (LUZ,
+                2014).
+            @End @Section
+
+            @Section
+                @Title { Misión de la empresa }
+                @Tag { mision }
+            @Begin
+                @AddToIndex @Title { Misión de la empresa } @Tag { mision }
+
+                @PP
+                «La Universidad del Zulia es una institución científica-educativa fundamentada en los más sólidos
+                principios de ética, justicia, libertad y autonomía, cuyo propósito es la creación, transmisión y
+                aplicación del conocimiento como valor social que genere competencias para la creatividad e innovación,
+                para promover y organizar mediante la educación permanente, el desarrollo pleno de las potencialidades
+                humanas y ciudadanas del individuo, así como el fortalecimiento del análisis crítico, de su anticipación
+                y visión del futuro, para la elaboración oportuna de alternativas viables a los problemas de la región y
+                el país. Una institución clave para el desarrollo regional y nacional» (LUZ, 2014).
+            @End @Section
+
+            @Section
+                @Title { Visión de la empresa }
+                @Tag { vision }
+            @Begin
+                @AddToIndex @Title { Visión de la empresa } @Tag { vision }
+
+                @PP
+                «La Universidad del Zulia se conducirá como una institución de excelencia académica con compromiso
+                social, líder en la generación de conocimiento científico competitivo, transferible a través de la
+                formación integral de ciudadanos del mundo, capacitados para interactuar con independencia y asertividad
+                en sociedades globales. Vanguardista en el fortalecimiento del desarrollo tecnológico nacional,
+                atendiendo a la pertinencia social, el soporte a la producción de la economía local, regional y
+                nacional, así como también a la necesidad del desarrollo sostenible» (LUZ, 2014).
+            @End @Section
+        @EndSections
+    @End @Chapter
+    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    @NP
+
+    #~ Chapter II ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    @Chapter
+        @Num { II }
+        @Title { Actividades realizadas }
+    @Begin
+        @BeginSections
+            @Section
+                @Title { Descripción de las actividades }
+                @Tag { descac }
+            @Begin
+                @AddToIndex @Title { Descripción de las actividades } @Tag { descac }
+
+                @PP
+                En primer lugar, se recabó información respecto a sistemas que permitieran desarrollar el framework de
+                manera rápida y sencilla con el fin de no tener que «reinventar la rueda»; fruto de este proceso se
+                plantearon LaTex y Lout como sistemas candidatos.
+                @PP
+                El siguiente paso fue el de conocer las ventajas y desventajas de ambos sistemas para ayudar en la
+                selección del más apropiado para la tarea planteada. Luego de varios días profundizando en las
+                características de ambas herramientas se optó por Lout, debido a que presenta las siguientes
+                características favorables: es ligero -- el archivo de instalación ocupa alrededor de 2.2 MiB, es fácil
+                de instalar y extender, es sencillo de comprender y su uso requiere de la implementación de una sintaxis
+                reconocible en el mundo de la programación, lo que es ideal teniendo en cuenta que los usuarios del
+                framework son estudiantes de la Licenciatura en Computación.
+                @PP
+                Posteriormente, se dedicó tiempo a leer y comprender la normativa para la presentación de documentos que
+                establece la Universidad del Zulia, junto a las modificaciones que introduce en particular el
+                Departamento de Computación de su Facultad Experimental de Ciencias, ésto con el fin de implementar de
+                manera fiel todos las directrices que debe cumplir el informe y el proyecto de Trabajo Especial de Grado
+                de los futuros Licenciados en Computación. A lo anterior, siguió el desarrollo del framework «licomteg»,
+                nombre que le dio el autor, apoyado en el sistema Lout, mencionado en párrafos anteriores, mediante un
+                proceso iterativo-incremental acompañado con pruebas realizadas en conjunto con profesores adscritos al
+                Departamento de Computación para asegurar su correctitud hasta que todos los requisitos se vieron
+                cumplidos.
+                @PP
+                Por último, se aprovechó el curso de Seminario del primer periodo de 2013 de la Licenciatura en
+                Computación para que los alumnos de dicha cátedra pusieran el framework a prueba y se pudieran
+                identificar errores, vulnerabilidades y mejoras que posteriormente fueron corregidos e implementados
+                respectivamente.
+            @End @Section
+        @EndSections
+    @End @Chapter
+    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    @NP
+
+    #~ Chapter III ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    @Chapter
+        @Num { III }
+        @Title { Desarrollo de actividades }
+    @Begin
+        @BeginSections
+            @Section
+                @Title { Semana 1 }
+                @Tag { semana1 }
+            @Begin
+                @AddToIndex @Title { Semana 1 } @Tag { semana1 }
+
+                //1.2f @BulletList
+                    @ListItem { Búsqueda de herramientas de apoyo }
+                    @ListItem { Elección de herramientas de apoyo }
+                    @ListItem { Lectura y comprensión de la normativa de presentación de documentos de LUZ }
+                @EndList
+            @End @Section
+
+            @Section
+                @Title { Semana 2 }
+                @Tag { semana2 }
+            @Begin
+                @AddToIndex @Title { Semana 2 } @Tag { semana2 }
+
+                //1.2f @BulletList
+                    @ListItem { Aprendizaje en el uso del sistema Lout como usuario }
+                    @ListItem { Aprendizaje en el uso del sistema Lout como desarrollador }
+                @EndList
+            @End @Section
+
+            @Section
+                @Title { Semana 3 }
+                @Tag { semana3 }
+            @Begin
+                @AddToIndex @Title { Semana 3 } @Tag { semana3 }
+
+                //1.2f @BulletList
+                    @ListItem { Desarrollo y pruebas del framework }
+                @EndList
+            @End @Section
+
+            @Section
+                @Title { Semana 4 }
+                @Tag { semana4 }
+            @Begin
+                @AddToIndex @Title { Semana 4 } @Tag { semana4 }
+
+                //1.2f @BulletList
+                    @ListItem { Pruebas del framework con «beta testers» }
+                    @ListItem { Corrección de errores y vulnerabilidades }
+                    @ListItem { Implementación de mejoras }
+                @EndList
+            @End @Section
+        @EndSections
+    @End @Chapter
+    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    @NP
+
+    #~ Chapter IV ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    @Chapter
+        @Num { IV }
+        @Title { Conocimientos adquiridos }
+    @Begin
+        @BeginSections
+            @Section
+                @Title { Conocimientos adquiridos en la carrera como base suficiente para el cargo }
+                @Tag { kjsdk }
+            @Begin
+                @AddToIndex @Title { Conocimientos adquiridos en la carrera como base suficiente para el cargo } @Tag { kjsdk }
+
+                @PP
+                Las técnicas sistemáticas de resolución de problemas, la capacidad de evaluar minuciosa y objetivamente
+                sistemas y herramientas, y el razonamiento algorítmico, habilidades adquiridas y refinadas a lo largo de
+                la carrera, demostraron ser indispensables en el desarrollo del framework «licomteg».
+            @End @Section
+
+            @Section
+                @Title {  Carencias planteadas en la carrera }
+                @Tag { dkay }
+            @Begin
+                @AddToIndex @Title {  Carencias planteadas en la carrera } @Tag { dkay }
+
+                @PP
+                Familiarizarse con el sistema operativo más allá de las interfaces gráficas y la capacidad de
+                desarrollar software sin la intervención de un IDE son unas de las muchas habilidades de las cuales se
+                priva actualmente a aquellos suscritos a la carrera. El autor considera que dicha privación incurre en
+                un impacto negativo en la preparación de los futuros Licenciados en Computación. Por ejemplo, la
+                realización de estas pasantías no hubiera sido posible sin los conocimientos que el autor posee en el
+                área de administración de sistemas basados en Linux.
+            @End @Section
+
+            @Section
+                @Title { Conocimientos adquiridos en la empresa o nuevas áreas dominadas }
+                @Tag { lkl }
+            @Begin
+                @AddToIndex @Title { Conocimientos adquiridos en la empresa o nuevas áreas dominadas } @Tag { lkl }
+
+                @PP
+                Fue posible poner en práctica los conocimientos teóricos adquiridos a lo largo de la carrera y se logró
+                formar parte de un proceso real de desarrollo de software donde todos los ciclos de vida del mismo se
+                dieron en su totalidad; procesos que ayudaron a la maduración profesional del tutor.
+            @End @Section
+
+        @EndSections
+    @End @Chapter
+    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    @NP
+
+    #~ Conclusions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    @ExtraSection
+        @Title { CONCLUSIONES }
+        @AlterTitle { Conclusiones }
+    @Begin
+        @PP
+
+    @End @ExtraSection
+    #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@End @TEG @End @Text
