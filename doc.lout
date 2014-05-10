@@ -22,7 +22,7 @@
         @TutorInfo {
             MSc. Gerardo Pirela Morillo @FF
             CI.: 12.404.565 @FF
-            Teléfono: 0412-1734718 @FF
+            Teléfono: +58 412 1734718 @FF
             Correo electrónico: gepirela@fec.luz.edu.ve
         }
 
@@ -50,7 +50,7 @@
 
     @ExtraSection
         @Title { INTRODUCCIÓN }
-        @AlterTitle { Introductión }
+        @AlterTitle { Introducción }
     @Begin
         @PP
 
@@ -81,8 +81,8 @@
                 @PP
                 En el año 2010 se produjo y almacenó un estimado de dos exabytes de información (esto incluye todos los
                 medios: libros, revistas, documentos, Internet, fotografías, televisión, radio, música, entre otros) de
-                los cuales, el 93% era digital (Burgin, 2010). Dos años después, la cantidad de información digital que
-                se generó, se elevó a 2.5 exabytes al día (IBM, 2012), evidenciando un crecimiento exponencial con la
+                los cuales, el 93% era digital (Burgin, 2010). Dos años después, la cantidad de información digital
+                generada, se elevó a 2.5 exabytes al día (IBM, 2012), evidenciando un crecimiento exponencial, con la
                 Internet como principal catalizador de este fenómeno.
                 @PP
                 A la Internet se le suma el creciente uso de dispositivos móviles (teléfonos inteligentes, tabletas,
@@ -101,7 +101,7 @@
                 medida del método natural usado por el hombre para almacenar y recuperar información de su memoria a
                 largo plazo, el cual consiste en codificarla semánticamente para su almacenamiento (Baddeley, 1966),
                 asociando los datos que percibe (Atkinson y Shiffrin, 1968). Por lo tanto, el ser humano no es una
-                máquina que trabaje en base a datos aislados, sino interrelacionados, describiéndolos de manera
+                máquina que trabaje en base a datos aislados, éste busca interrelacionarlos, describiéndolos de manera
                 inherentemente subjetiva, breve y dinámica; haciendo necesario un método semejante para clasificar y
                 recuperar la información digital, siendo éste más flexible, intuitivo y natural.
                 @PP
@@ -143,9 +143,9 @@
 
                 @PP
                 La investigación estuvo delimitada al desarrollo de un sistema cliente-servidor donde el cliente,
-                desarrollado para trabajar solo bajo los entornos Windows®, OSX® y Linux®, se comunica con una
+                desarrollado para trabajar solo bajo los entornos Windows®, OS X® y Linux®, se comunica con una
                 aplicación web, manteniendo sincronizadas las etiquetas asociadas a los archivos ubicados en los
-                repositorios del usuario, permitiéndole así clasificarlos y recuperarlos mediante el uso de los
+                repositorios del usuario, permitiéndole así clasificarlos y recuperarlos mediante el uso de las
                 mencionadas etiquetas.
             @End @Section
 
@@ -222,7 +222,7 @@
 
                 @BeginSubSections
                     @SubSection
-                        @Title { Tag }
+                        @Title { Tags }
                     @Begin
                         @PP
                         Tags es una aplicación que permite etiquetar archivos y directorios en @I finder (explorador),
@@ -231,8 +231,8 @@
                         poder hallarlos de manera rápida y sencilla.
                         @PP
                         Tags también ofrece una vista previa de la información, atajos de teclado y una excelente
-                        integración con el sistema operativo. Desafortunadamente, el sistema solo está disponible para
-                        el sistema operativo @I { OS X }®, está sujeto a una licencia privativa y no es capaz de
+                        integración con el sistema operativo. Desafortunadamente, esta aplicación solo está disponible
+                        para el sistema operativo @I { OS X }®, está sujeta a una licencia privativa y no es capaz de
                         sincronizar recursos localizados en dispositivos diferentes.
 
                         //2.4f @MyCenter @B { Gráfica 1. Tags }
@@ -246,7 +246,7 @@
                         @PP
                         TaggTool permite añadir etiquetas a archivos, directorios y «bookmarks». Adicionalmente, el
                         usuario puede proporcionar una descripción del recurso, además de una calificación cuantitativa
-                        (@I rating). Esta herramienta ofrece la posibilidad de importat metadatos pre-existentes en los
+                        (@I rating). Esta herramienta ofrece la posibilidad de importar metadatos pre-existentes en los
                         recursos y realizar búsquedas en base a estos.
                         @PP
                         TaggTool también posee una alta integración con el sistema operativo y brinda una vista previa
@@ -296,7 +296,7 @@
                     @Begin
                         @PP
                         Una aplicación web es un programa desarrollado mediante el uso de herramientas y lenguajes (como
-                        por ejemplo: CSS, HTML, JavaScript) suportados por navegadores web y que dependen de éstos para
+                        por ejemplo: CSS, HTML, JavaScript) suportados por navegadores web y que depende de éstos para
                         su uso por parte de los usuarios (PC Magazine, 2014).
                     @End @SubSection
 
@@ -323,7 +323,7 @@
                         @PP
                         Las etiquetas son un conjunto de palabras clave empleadas en la organización de contenido. El
                         uso de etiquetas le permite a los usuarios clasificar sus recursos de manera flexible y
-                        personal, caracterizándolos de acuerdo a sus propias necesidades sin tener que depender en un
+                        personal, caracterizándolos de acuerdo a sus propias necesidades sin tener que depender de un
                         vocabulario controlado o una estructura previamente definida (Specia y Motta, 2007).
                     @End @SubSection
                 @EndSubSections
