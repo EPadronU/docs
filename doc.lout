@@ -130,9 +130,9 @@
         @PP
         Las pasantías se realizaron en la Facultad Experimental de Ciencias de la Universidad del Zulia, ubicada en la
         Avenida 22 con la Avenida Universidad de la ciudad de Maracaibo, Venezuela. Específicamente las actividades se
-        realizaron en el Departamento de Computación de la mencionada facultad y se desarrollaron en cuatro (4) semanas.
+        realizaron en el Departamento de Computación de la mencionada facultad y se desarrollaron en cuatro semanas.
         @PP
-        En el presente informe, estructurado en cuatro (4) capítulos, se describe la empresa, las actividades realizadas
+        En el presente informe, estructurado en cuatro capítulos, se describe la empresa, las actividades realizadas
         en la misma y los conocimientos adquiridos durante el desempeño de las pasantías.
 
     @End @ExtraSection
@@ -143,7 +143,7 @@
     #~ Chapter I ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     @Chapter
         @Num { I }
-        @Title { Aspectos Generales @FF de la Empresa }
+        @Title { Aspectos generales @FF de la empresa }
         @AlterTitle { Aspectos Generales de la Empresa }
     @Begin
         @BeginSections
@@ -216,7 +216,7 @@
                 manera rápida y sencilla con el fin de no tener que «reinventar la rueda»; fruto de este proceso se
                 plantearon LaTex y Lout como sistemas candidatos.
                 @PP
-                El siguiente paso fue el de conocer las ventajas y desventajas de ambos sistemas para ayudar en la
+                El siguiente paso fue conocer las ventajas y desventajas de ambos sistemas para ayudar en la
                 selección del más apropiado para la tarea planteada. Luego de varios días profundizando en las
                 características de ambas herramientas se optó por Lout, debido a que presenta las siguientes
                 características favorables: es ligero -- el archivo de instalación ocupa alrededor de 2.2 MiB, es fácil
@@ -226,7 +226,7 @@
                 @PP
                 Posteriormente, se dedicó tiempo a leer y comprender la normativa para la presentación de documentos que
                 establece la Universidad del Zulia, junto a las modificaciones que introduce en particular el
-                Departamento de Computación de su Facultad Experimental de Ciencias, ésto con el fin de implementar de
+                Departamento de Computación de su Facultad Experimental de Ciencias, esto con el fin de implementar de
                 manera fiel todos las directrices que debe cumplir el informe y el proyecto de Trabajo Especial de Grado
                 de los futuros Licenciados en Computación. A lo anterior, siguió el desarrollo del framework «licomteg»,
                 nombre que le dio el autor, apoyado en el sistema Lout, mencionado en párrafos anteriores, mediante un
@@ -362,7 +362,16 @@
         @AlterTitle { Conclusiones }
     @Begin
         @PP
+        Las prácticas profesionales fungen como catalizador fundamental para el crecimiento y madurez profesional de
+        todo bachiller. A través de éstas, el futuro Licenciado en Computación está en la posibilidad de relacionarse
+        por primera vez, desde el comienzo de sus estudios universitarios, con el ambiente de trabajo, permitiéndole
+        formar parte de un proceso de desarrollo real, abarcando todas las etapas del ciclo de vida del software junto a
+        la dinámica de una estructura organizacional  y a través del trabajo en equipo.
 
+        @PP
+        Todo esto con el fin de preparar a los futuros profesionales para su desempeño optimo en el campo laboral,
+        brindadores confianza y aptitud, moldeando así futuros Licenciados en Computación capaces de aplicar de manera
+        efectiva los conocimientos adquiridos a lo largo de la carrera en el ámbito laboral.
     @End @ExtraSection
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @End @TEG @End @Text
