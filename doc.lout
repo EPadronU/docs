@@ -48,6 +48,14 @@
 
     @NP
 
+    @IndexOfTables
+
+    @NP
+
+    @IndexOfGraphics
+
+    @NP
+
     @ExtraSection
         @Title { INTRODUCCIÓN }
         @AlterTitle { Introducción }
@@ -223,7 +231,10 @@
                 @BeginSubSections
                     @SubSection
                         @Title { Tags }
+                        @Tag { ant.tags }
                     @Begin
+                        @AddToIndex @Title { Tags } @Tag { ant.tags }
+
                         @PP
                         Tags es una aplicación que permite etiquetar archivos y directorios en @I finder (explorador),
                         correos electrónicos en @I Mail (gestor de emails), fotos en @I IPhoto (gestor de imágenes) y
@@ -242,7 +253,10 @@
 
                     @SubSection
                         @Title { TagTool }
+                        @Tag { ant.tagtool }
                     @Begin
+                        @AddToIndex @Title { TagTool } @Tag { ant.tagtool }
+
                         @PP
                         TaggTool permite añadir etiquetas a archivos, directorios y «bookmarks». Adicionalmente, el
                         usuario puede proporcionar una descripción del recurso, además de una calificación cuantitativa
@@ -265,7 +279,10 @@
 
                     @SubSection
                         @Title { Tables }
+                        @Tag { ant.tables }
                     @Begin
+                        @AddToIndex @Title { Tables } @Tag { ant.tables }
+
                         @PP
                         Tabbles ofrece la posibilidad de clasificar, buscar, organizar y compartir (a través de una LAN
                         o la Internet) archivos, carpetas y «bookmarks», mediante el uso de etiquetas. Adicionalmente,
@@ -291,9 +308,11 @@
 
                 @BeginSubSections
                     @SubSection
-                        @Title { Aplicación web }
+                        @Title { Aplicación Web }
                         @Tag { appweb }
                     @Begin
+                        @AddToIndex @Title { Aplicación Web } @Tag { appweb }
+
                         @PP
                         Una aplicación web es un programa desarrollado mediante el uso de herramientas y lenguajes (como
                         por ejemplo: CSS, HTML, JavaScript) suportados por navegadores web y que depende de éstos para
@@ -301,25 +320,52 @@
                     @End @SubSection
 
                     @SubSection
-                        @Title { Sistema de archivo }
+                        @Title { Sistema de Archivo }
                         @Tag { sis.arc }
                     @Begin
+                        @AddToIndex @Title { Sistema de Archivo } @Tag { sis.arc }
+
                         @PP
-                        TODO (linfo.org, 2004).
+                        Es el método para almacenar y recuperar archivos hacia y desde un medio de almacenamiento
+                        secundario. El sistema de archivo gestiona una estructura de directorios, la cual provee de un
+                        índice a los archivos, y define la sintaxis usada para accederlos. Los sistemas de archivos
+                        dictan cómo son nombrados los archivos así como también el tamaño máximo de éstos (PC Magazine,
+                        2014).
+                    @End @SubSection
+
+                    @SubSection
+                        @Title { Transparencia de Localización }
+                        @Tag { trans.loca }
+                    @Begin
+                        @AddToIndex @Title { Transparencia de Localización } @Tag { trans.loca }
+
+                        @PP
+                        En computación, la transparencia de localización tiene que ver con el uso de nombres para
+                        identificar recursos sin la necesidad de que los usuarios conozcan la localización exacta de
+                        éstos. Gracias al uso de índices, el nombre puede ser usado para acceder a los recursos, los
+                        cuales pueden estar ubicados local o remotamente, y permiten el uso de dichos recursos a
+                        cualquiera que esté autorizado para su acceso (wise GEEK, 2014).
                     @End @SubSection
 
                     @SubSection
                         @Title { Metadatos }
                         @Tag { metadato }
                     @Begin
+                        @AddToIndex @Title { Metadatos } @Tag { metadato }
+
                         @PP
-                        TODO (W. R. Durrell, 1985).
+                        Es información estructurada que describe, explica, ubica o, al menos que se indique lo
+                        contrario, hace más fácil de recuperar, usar o manejar una fuente de información. Los metadatos
+                        son llamados frecuentemente ``datos sobre datos'' o ``información sobre información'' (Guenther
+                        y Radebaugh, 2004).
                     @End @SubSection
 
                     @SubSection
                         @Title { Etiqueta }
                         @Tag { etiqueta }
                     @Begin
+                        @AddToIndex @Title { Etiqueta } @Tag { etiqueta }
+
                         @PP
                         Las etiquetas son un conjunto de palabras clave empleadas en la organización de contenido. El
                         uso de etiquetas le permite a los usuarios clasificar sus recursos de manera flexible y
@@ -327,6 +373,206 @@
                         vocabulario controlado o una estructura previamente definida (Specia y Motta, 2007).
                     @End @SubSection
                 @EndSubSections
+            @End @Section
+        @EndSections
+    @End @Chapter
+
+    @NP
+    @Chapter
+        @Num { III }
+        @Title { Marco Metodológico }
+    @Begin
+        @BeginSections
+            @Section
+                @Title { Primer Lanzamiento }
+                @Tag { primer.lanzamiento }
+            @Begin
+                @BeginSubSections
+                    @SubSection
+                        @Title { Primer Sprint }
+                        @Tag { primer.sprint }
+                    @Begin
+                        @PP
+                        Durante este @I sprint se culminó la revisión de literatura relacionada con los sistemas de
+                        clasificación y recuperación de información digital basados en etiquetas, con la recopilación
+                        de los antecedentes de esta investigación. Además, se comenzó a diseñar e implementar la
+                        interfaz web de usuario a través del diseño de bocetos físicos y digitales; y la base de
+                        datos, mediante el esquema fundamental de la misma. Adicionalmente, se dio inicio al proceso
+                        de codificación e implementación de la aplicación servidor, diseñando la funcionalidad base
+                        para recibir y responder peticiones HTTP. Todo esto junto a las respectivas pruebas de caja
+                        gris de los componentes desarrollados, acción que se mantuvo durante todo el ciclo de
+                        desarrollo de la herramienta.
+                    @End @SubSection
+
+                    @SubSection
+                        @Title { Segundo Sprint }
+                        @Tag { segundo.sprint }
+                    @Begin
+                        @PP
+                        Durante este sprint se continuó con las actividades iniciadas en el anterior refinando el
+                        diseño de la base de datos, añadiendo nuevas características a la aplicación servidor y
+                        mejorando la interfaz web de usuario con el fin de hacerla más intuitiva y funcional.
+                    @End @SubSection
+
+                    @SubSection
+                        @Title { Tercer Sprint }
+                        @Tag { tercer.sprint }
+                    @Begin
+                        @PP
+                        Al igual que en el anterior, durante este sprint se dio continuidad a las labores
+                        anteriormente descritas, añadiendo un nuevo conjunto de características a la aplicación
+                        servidor, reflejando éstas mejoras en la interfaz web del usuario y dándole los toques finales
+                        a la base de datos, finalizando el proceso de diseño e implementación de la misma.
+                    @End @SubSection
+                @EndSubSections
+            @End @Section
+
+            @Section
+                @Title { Segundo Lanzamiento }
+                @Tag { segundo.lanzamiento }
+            @Begin
+                @BeginSubSections
+                    @SubSection
+                        @Title { Cuarto Sprint }
+                        @Tag { cuarto.sprint }
+                    @Begin
+                        @PP
+                        En este sprint se comenzó el diseño de una API pública, implementada en la aplicación
+                        servidor, para permitir una comunicación sencilla con la misma, potenciando así la posibilidad
+                        de desarrollar una aplicación cliente que se comunique con la aplicación servidor de manera
+                        efectiva. También se hicieron un par de cambios menores a la interfaz web de usuario.
+                    @End @SubSection
+
+                    @SubSection
+                        @Title { Quinto Sprint }
+                        @Tag { quinto.sprint }
+                    @Begin
+                        @PP
+                        Es en este sprint que se da inicio a la codificación e implementación de la aplicación
+                        cliente, conformada, al final de este ciclo, solo por el mecanismo de rastreo de recursos del
+                        sistema. Por otro lado, se sigue con la expansión de la API mencionada anteriormente y el
+                        refinamiento de la interfaz web de usuario, acciones que se repiten hasta el final del tercer
+                        lanzamiento.
+                    @End @SubSection
+                @EndSubSections
+            @End @Section
+
+
+            @Section
+                @Title { Tercer Lanzamiento }
+                @Tag { tercer.lanzamiento }
+            @Begin
+                @BeginSubSections
+                    @SubSection
+                        @Title { Sexto Sprint }
+                        @Tag { sexto.sprint }
+                    @Begin
+                        @PP
+                        Se desarrolló el módulo que permite al usuario seleccionar a potestad cuáles directorios serán
+                        incluidos en el proceso de rastreo, así como el módulo que se encarga de mantener sincronizada
+                        con el servidor la información generada a partir del mencionado rastreo.
+                    @End @SubSection
+
+                    @SubSection
+                        @Title { Séptimo Sprint }
+                        @Tag { septimo.sprint }
+                    @Begin
+                        @PP
+                        A lo largo de este sprint, se implementó la gestión de usuarios en la aplicación servidor, se
+                        adaptó la interfaz web de usuario para reflejar dichos cambios y se implementó en ambas
+                        aplicaciones un mecanismo de comunicación sencillo, robusto y seguro, basado en @I tokens.
+                    @End @SubSection
+                @EndSubSections
+            @End @Section
+
+            @Section
+                @Title { Cuarto Lanzamiento }
+                @Tag { cuarto.lanzamiento }
+            @Begin
+                @BeginSubSections
+                    @SubSection
+                        @Title { Octavo Sprint }
+                        @Tag { octavo.sprint }
+                    @Begin
+                        @PP
+                        Durante este sprint se desarrolló e integró un mecanismo de etiquetado automático de la
+                        información rastreada.
+                    @End @SubSection
+
+                    @SubSection
+                        @Title { Noveno Sprint }
+                        @Tag { noveno.sprint }
+                    @Begin
+                        @PP
+                        Este sprint cerró el ciclo de desarrollo de esta investigación, durante el cual se llevaron a
+                        cabo las pruebas más rigurosas del sistema, con la finalidad de detectar y posteriormente
+                        corregir errores funcionales que residían en la aplicación.
+                    @End @SubSection
+                @EndSubSections
+            @End @Section
+        @EndSections
+
+        @AddToIndex @Title { Distribución de Actividades } @Tag { dist.act }
+        @PageMark { dist.act } @AddToTIndex @Title { Tabla 1. Cronograma } @Tag { dist.act }
+
+        //2.4f @MyCenter @B { Tabla 1. Distribución de Actividades }
+        //0f @CD 0.65 @Scale @IncludeGraphic "./include/img/tabla1.eps"
+        //0f @MyCenter @B { Fuente: Padrón (2014) }
+    @End @Chapter
+
+    @NP
+
+    @Chapter
+        @Num { IV }
+        @Title { El título de este capítulo }
+    @Begin
+        @BeginSections
+            @Section
+                @Title { El título de esta sección }
+                @Tag { 92183981293 }
+            @Begin
+                @PP
+                En primer lugar, se describirán las clases que definen los modelos usados por el módulo servidor.
+                @B BaseModel pauta la interfaz mínima que debe poseer todo modelo, obligando la implementación de tres
+                métodos fundamentales, @I exist, que determina si un registro existe o no; @I { get_by_id }, el cual
+                realiza una búsqueda de registros a partir de un conjunto de identificadores; y finalmente, @I json,
+                el cual transforma un registro al formato @I { json }.
+                @PP
+                La clase @B User aglomera la información relacionada con el nombre e información de acceso de un
+                usuario del sistema. Las clases @B Device, @B Search y @B Tag, son usadas para representar los
+                dispositivos, búsquedas y etiquetas de los usuarios, respectivamente; estas clases dependen
+                directamente de la clase @B User.
+                @PP
+                Por su lado, la clase @B Resource sirve para representar los recursos almacenados en los distintos
+                dispositivos de los usuarios. Las clases @B TagResources y @B TagSearch son empleadas para relacionar
+                etiquetas con recursos (en el primer caso) y búsquedas (en el segundo caso).
+                @PP
+                Las anteriores, están plasmadas en el diagrama de clases de la gráfica 4, presentada más abajo; y a
+                excepción de @B BaseModel, corresponden a una y sola una tabla en la base de datos, describiendo en
+                totalidad los modelos implementados en el sistema.
+                @PP
+                En el caso del módulo cliente, se tiene la clase @B Manager, la cual sirve como pilar fundamental al
+                encargarse de la generación,  lectura y respaldo de los archivos de configuración y estado del
+                sistema, así como también de la comunicación con el módulo servidor. El respaldo y comunicación con el
+                servidor se lleva a cabo gracias a las clases @B Cache y @B SyncAgent, respectivamente. Estas tareas
+                corresponden a dos hilos de ejecución independientes, ambos instancias de la clase @B DaemonThread.
+                La clase @B Crawler encapsula las rutinas relacionados con el rastreo de recursos en el dispositivo
+                anfitrión, mientras que la clase @B AutoTagger es la encargada del etiquetado automático de los
+                mencionados recursos.
+                @PP
+                Por último, @B SettingsForm es una clase empleada en la verificación de los datos enviados por el
+                usuario en el formulario dispuesto para la actualización de los parámetros de configuración del
+                sistema.
+
+                //2.4f @MyCenter @B { Gráfica 4. Diagrama de Clases de los Modelos }
+                //0f @CD 0.4 @Scale @IncludeGraphic "./include/img/classes-serv.eps"
+                //0f @MyCenter @B { Fuente: Padrón (2014) }
+
+                @NP
+
+                //2.4f @MyCenter @B { Gráfica 5. Diagrama de Clases del Módulo Cliente }
+                //0f @CD 0.4 @Scale @IncludeGraphic "./include/img/classes-clnt.eps"
+                //0f @MyCenter @B { Fuente: Padrón (2014) }
             @End @Section
         @EndSections
     @End @Chapter
@@ -362,9 +608,6 @@
                 "www-01.ibm.com/software/data/bigdata/"
             }
             @ListItem {
-                linfo.org (2004) (Página consultada el 23 de enero de 2014) [On-line]. Dirección: "goo.gl/pJqjHc".
-            }
-            @ListItem {
                 Mathes, Adam (2004) (Página consultada el 25 de junio de 2013) [On-line]. Dirección: @FF
                 "www.adammathes.com/academic/computer-mediated-communication/folksonomies.html"
             }
@@ -374,7 +617,7 @@
             }
             @ListItem {
                 PC Magazine (2014) (Página consultada el 23 de enero  de 2014) [On-line]. Dirección:
-                "http://www.pcmag.com/encyclopedia/term/54272/web-application"
+                "http://www.pcmag.com/encyclopedia/"
             }
             @ListItem {
                 Schwaber, Ken; Sutherland, Jeff (2011). The Definitive Guide to Scrum: The Rules of the Game.
@@ -384,7 +627,11 @@
                 Institute - The Open University.
             }
             @ListItem {
-                W. R. Durrell (1985). Data Administration. A Practical Guide to Data Administration. McGraw-Hill.
+                Guenther, Rebecca; Radebaugh, Jaqueline (2004). Understanding Metadata. NISO Press.
+            }
+            @ListItem {
+                wise GEEK (2014) (Página consultada el 20 de mayo  de 2014) [On-line]. Dirección:
+                "http://www.wisegeek.com/what-is-location-transparency.htm"
             }
         @EndList
     @End @ExtraSection
