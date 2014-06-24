@@ -1,5 +1,3 @@
-# vim: filetype=lout
-
 ###############################################################################
 # Macros                                                                      #
 ###############################################################################
@@ -78,7 +76,6 @@ def @AddToTIndex into { @TablePlace&&foll_or_prec }
 # Símbolos visibles fuera de @TEG
 export @Abstract @Chapter @Cover @ExtraSection @Facade @IndexOfContents @IndexOfGraphics @IndexOfTables @Introduction @Summary
 
-
 # El núcleo de este archivo de configuración
 def @TEG
     named compulsory @MyAddress { }
@@ -88,7 +85,7 @@ def @TEG
     named compulsory @MyLastName { }
     named compulsory @MyPhoneNumber { }
     named compulsory @PaperTitle { }
-    named @Report { N }
+    named @IsReport { N }
     named @Sex { M }
     body @Body
 {
@@ -132,7 +129,7 @@ def @TEG
     {
         macro @Grade { @Sex @Case { { M m } @Yield { Licenciado } else @Yield { Licenciada } } }
 
-        macro @DocType { @Report @Case { { Y y } @Yield { Informe } else @Yield { Proyecto } } }
+        macro @DocType { @IsReport @Case { { Y y } @Yield { Informe } else @Yield { Proyecto } } }
 
         24.60c @High {
             @CD {
@@ -176,7 +173,7 @@ def @TEG
         @PageMark @Tag // @AddToIndex @Title { @AlterTitle @Case { dfl @Yield @Title else @Yield @AlterTitle } } @Tag { @Tag } //
 
         @MyCenter @B @Title
-        //1.0f ragged @Break { @Body }
+        //1.0f { @Body }
     }
 
     def @Facade
