@@ -2,638 +2,638 @@
 
 @Doc @Text @Begin
 @TEG
-    @MyFirstName { Edinson }
-    @MyLastName { Padrón Urdaneta }
-    @MyIDNumber { 19.216.488 }
-    @MyEmail { edinson.padron.urdaneta@gmail.com }
-    @MyPhoneNumber { +58 414 6574149 }
-    @MyAddress { Venezuela, Zulia, Maracaibo, Urb. La Paz, Calle 96D, Avenida 56 }
-    @PaperTitle { Herramienta Web para la Clasificación y Recuperación de Información Digital Basada en Etiquetas }
-    @IsReport { Y }
+  @MyFirstName { Edinson }
+  @MyLastName { Padrón Urdaneta }
+  @MyIDNumber { 19.216.488 }
+  @MyEmail { edinson.padron.urdaneta@gmail.com }
+  @MyPhoneNumber { +58 414 6574149 }
+  @MyAddress { Venezuela, Zulia, Maracaibo, Urb. La Paz, Calle 96D, Avenida 56 }
+  @PaperTitle { Herramienta Web para la Clasificación y Recuperación de Información Digital Basada en Etiquetas }
+  @IsReport { Y }
 @Begin
-    @Cover
-        @Tutor { MSc. Gerardo Pirela Morillo }
-        @Month { marzo }
-        @Year { 2014 }
+  @Cover
+    @Tutor { MSc. Gerardo Pirela Morillo }
+    @Month { marzo }
+    @Year { 2014 }
 
-    @NP
+  @NP
 
-    @Facade
-        @TutorInfo {
-            MSc. Gerardo Pirela Morillo @FF
-            CI.: 12.404.565 @FF
-            Teléfono: +58 412 1734718 @FF
-            Correo electrónico: gepirela@fec.luz.edu.ve
-        }
+  @Facade
+    @TutorInfo {
+      MSc. Gerardo Pirela Morillo @FF
+      CI.: 12.404.565 @FF
+      Teléfono: +58 412 1734718 @FF
+      Correo electrónico: gepirela@fec.luz.edu.ve
+    }
 
-    @NP
+  @NP
 
-    @Summary
-        @KeyWords { Aplicación web, Etiquetado, Clasificación, Recuperación, Información digital }
-    @Begin
+  @Summary
+    @KeyWords { Aplicación web, Etiquetado, Clasificación, Recuperación, Información digital }
+  @Begin
+    @PP
+  @End @Summary
+
+  @NP
+
+  @Abstract
+    @KeyWords { Web application, Tagging, Classification, Retrieval, Digital information }
+  @Begin
+    @PP
+  @End @Abstract
+
+  @NP
+
+  @IndexOfContents
+
+  @NP
+
+  @IndexOfTables
+
+  @NP
+
+  @IndexOfGraphics
+
+  @NP
+
+  @ExtraSection
+    @Title { INTRODUCCIÓN }
+    @AlterTitle { Introducción }
+  @Begin
+    @PP
+
+  @End @ExtraSection
+
+  @NP
+
+  @Chapter
+    @Num { I }
+    @Title { El Problema }
+  @Begin
+    @BeginSections
+      @Section
+        @Title { Planteamiento del Problema  y Justificación de la Investigación }
+        @Tag { planteamiento }
+      @Begin
+        @AddToIndex
+          @Title { Planteamiento del Problema  y Justificación de la Investigación }
+          @Tag { planteamiento }
+
         @PP
-    @End @Summary
-
-    @NP
-
-    @Abstract
-        @KeyWords { Web application, Tagging, Classification, Retrieval, Digital information }
-    @Begin
+        La época actual es llamada la ``era de la información'' (Giuliano, 1983) debido a la relevancia de ésta
+        en la sociedad. Furth (1994) escribió: ``La información es actualmente tan vital, y tan intangible, como
+        el aire que respiramos, el cual está lleno de ondas de radio''. Hoy en día es el bien más importante y
+        valioso para toda compañía, país y grupo social, por lo que su refinamiento a partir de la abundante
+        cantidad de datos que son creados cada segundo es un proceso primordial y que ofrece una ventaja
+        significativa.
         @PP
-    @End @Abstract
-
-    @NP
-
-    @IndexOfContents
-
-    @NP
-
-    @IndexOfTables
-
-    @NP
-
-    @IndexOfGraphics
-
-    @NP
-
-    @ExtraSection
-        @Title { INTRODUCCIÓN }
-        @AlterTitle { Introducción }
-    @Begin
+        En el año 2010 se produjo y almacenó un estimado de dos exabytes de información (esto incluye todos los
+        medios: libros, revistas, documentos, Internet, fotografías, televisión, radio, música, entre otros) de
+        los cuales, el 93% era digital (Burgin, 2010). Dos años después, la cantidad de información digital
+        generada, se elevó a 2.5 exabytes al día (IBM, 2012), evidenciando un crecimiento exponencial, con la
+        Internet como principal catalizador de este fenómeno.
         @PP
+        A la Internet se le suma el creciente uso de dispositivos móviles (teléfonos inteligentes, tabletas,
+        lectores electrónicos, entre otros) que permiten la accesible y cómoda creación y consumo de información
+        gracias a la web, lo cual provoca una cuantiosa producción de datos, además de contribuir con la
+        heterogeneidad y descentralización de los mismos, ocasionando así que su tratamiento sea una tarea
+        penosamente difícil de realizar.
+        @PP
+        En la actualidad, los distintos repositorios presentan al usuario la información digital en ellos
+        almacenados mediante una estructura jerárquica de directorios en forma de árbol invertido. Esta
+        representación, nacida en 1969 con el lanzamiento del sistema operativo Multics en respuesta a la
+        necesidad de un sistema de almacenamiento secundario en un ambiente de multiprogramación (Multics,
+        1968), rígida por causa de su inherente propiedad taxonómica, limita la manera en la que puede ser
+        organizada la información, mediante una relación padre-hijo, y hace de la búsqueda de la misma un
+        proceso arduo debido al uso de engorrosas rutas de directorios. Además, esta aproximación dista en gran
+        medida del método natural usado por el hombre para almacenar y recuperar información de su memoria a
+        largo plazo, el cual consiste en codificarla semánticamente para su almacenamiento (Baddeley, 1966),
+        asociando los datos que percibe (Atkinson y Shiffrin, 1968). Por lo tanto, el ser humano no es una
+        máquina que trabaje en base a datos aislados, éste busca interrelacionarlos, describiéndolos de manera
+        inherentemente subjetiva, breve y dinámica; haciendo necesario un método semejante para clasificar y
+        recuperar la información digital, siendo éste más flexible, intuitivo y natural.
+        @PP
+        Afortunadamente, la web ha dado origen a un nuevo sistema de clasificación. Originalmente diseñado e
+        implantado por el servicio del.icio.us (Mathes, 2004), el sistema ofrece la posibilidad de describir
+        recursos mediante un conjunto de palabras clave llamadas etiquetas (@I tags, por su término en inglés),
+        las cuales son consideradas por los usuarios como relevantes para caracterizar dichos recursos de
+        acuerdo a sus necesidades sin depender de un vocabulario controlado o de una estructura previamente
+        definida, estableciendo así una relación entre el recurso y un concepto en su mente, con el objeto de
+        organizar el contenido para uso futuro de una manera fácil y flexible (Specia y Motta, 2007). Este
+        esquema de catalogación se ha extendido en uso por una gran variedad de servicios web debido a su
+        popularidad entre los usuarios, quienes ven en éste una manera más natural, sencilla, rápida y personal
+        de clasificar la información digital que les es de interés, hallándola posteriormente con mínimo
+        esfuerzo, siendo ésta una mejor alternativa al problema de darle tratamiento a una gran cantidad de
+        datos, contrastada con la estructura jerárquica que ofrecen los sistemas de archivos modernos.
+        @PP
+        Hoy en día, existe una serie de herramientas que extienden las capacidades de los sistemas de archivos
+        al permitir el uso de etiquetas; sin embargo, estas herramientas presentan algunas limitaciones, tales
+        como: el tratamiento exclusivo de una fracción de la información digital existente, su operación bajo un
+        número reducido de plataformas, la prestación de un conjunto restringido de funcionalidades, entre
+        otros.
+        @PP
+        Con este trabajo de investigación se buscó desarrollar una herramienta web integral que garantizara la
+        interoperabilidad entre los distintos sistemas operativos y dispositivos al permitir un acceso
+        convenientemente centralizado a la información digital sin importar la distribución física de ésta,
+        brindando así transparencia de localización mediante el uso de un servidor central que contenga la
+        herramienta y aplicaciones que enlacen los repositorios de los usuarios con dicho servidor. Además, se
+        implantó una manera sencilla, versátil y personal de clasificar y recuperar la información digital
+        contenida en los mencionados repositorios al permitir su descripción y recuperación mediante el uso de
+        etiquetas definidas a conveniencia. Adaptando así la tecnología nacida en la web al ámbito de los
+        actuales sistemas de archivo.
+      @End @Section
 
-    @End @ExtraSection
+      @Section
+        @Title { Alcance del problema }
+        @Tag { alcance }
+      @Begin
+        @AddToIndex @Title { Alcance del problema } @Tag { alcance }
 
-    @NP
+        @PP
+        La investigación estuvo delimitada al desarrollo de un sistema cliente-servidor donde el cliente,
+        desarrollado para trabajar solo bajo los entornos Windows®, OS X® y Linux®, se comunica con una
+        aplicación web, manteniendo sincronizadas las etiquetas asociadas a los archivos ubicados en los
+        repositorios del usuario, permitiéndole así clasificarlos y recuperarlos mediante el uso de las
+        mencionadas etiquetas.
+      @End @Section
 
-    @Chapter
-        @Num { I }
-        @Title { El Problema }
-    @Begin
-        @BeginSections
-            @Section
-                @Title { Planteamiento del Problema  y Justificación de la Investigación }
-                @Tag { planteamiento }
-            @Begin
-                @AddToIndex
-                    @Title { Planteamiento del Problema  y Justificación de la Investigación }
-                    @Tag { planteamiento }
+      @Section
+        @Title { Objetivos }
+        @Tag { objetivos }
+      @Begin
+        @AddToIndex @Title { Objetivos } @Tag { objetivos }
 
-                @PP
-                La época actual es llamada la ``era de la información'' (Giuliano, 1983) debido a la relevancia de ésta
-                en la sociedad. Furth (1994) escribió: ``La información es actualmente tan vital, y tan intangible, como
-                el aire que respiramos, el cual está lleno de ondas de radio''. Hoy en día es el bien más importante y
-                valioso para toda compañía, país y grupo social, por lo que su refinamiento a partir de la abundante
-                cantidad de datos que son creados cada segundo es un proceso primordial y que ofrece una ventaja
-                significativa.
-                @PP
-                En el año 2010 se produjo y almacenó un estimado de dos exabytes de información (esto incluye todos los
-                medios: libros, revistas, documentos, Internet, fotografías, televisión, radio, música, entre otros) de
-                los cuales, el 93% era digital (Burgin, 2010). Dos años después, la cantidad de información digital
-                generada, se elevó a 2.5 exabytes al día (IBM, 2012), evidenciando un crecimiento exponencial, con la
-                Internet como principal catalizador de este fenómeno.
-                @PP
-                A la Internet se le suma el creciente uso de dispositivos móviles (teléfonos inteligentes, tabletas,
-                lectores electrónicos, entre otros) que permiten la accesible y cómoda creación y consumo de información
-                gracias a la web, lo cual provoca una cuantiosa producción de datos, además de contribuir con la
-                heterogeneidad y descentralización de los mismos, ocasionando así que su tratamiento sea una tarea
-                penosamente difícil de realizar.
-                @PP
-                En la actualidad, los distintos repositorios presentan al usuario la información digital en ellos
-                almacenados mediante una estructura jerárquica de directorios en forma de árbol invertido. Esta
-                representación, nacida en 1969 con el lanzamiento del sistema operativo Multics en respuesta a la
-                necesidad de un sistema de almacenamiento secundario en un ambiente de multiprogramación (Multics,
-                1968), rígida por causa de su inherente propiedad taxonómica, limita la manera en la que puede ser
-                organizada la información, mediante una relación padre-hijo, y hace de la búsqueda de la misma un
-                proceso arduo debido al uso de engorrosas rutas de directorios. Además, esta aproximación dista en gran
-                medida del método natural usado por el hombre para almacenar y recuperar información de su memoria a
-                largo plazo, el cual consiste en codificarla semánticamente para su almacenamiento (Baddeley, 1966),
-                asociando los datos que percibe (Atkinson y Shiffrin, 1968). Por lo tanto, el ser humano no es una
-                máquina que trabaje en base a datos aislados, éste busca interrelacionarlos, describiéndolos de manera
-                inherentemente subjetiva, breve y dinámica; haciendo necesario un método semejante para clasificar y
-                recuperar la información digital, siendo éste más flexible, intuitivo y natural.
-                @PP
-                Afortunadamente, la web ha dado origen a un nuevo sistema de clasificación. Originalmente diseñado e
-                implantado por el servicio del.icio.us (Mathes, 2004), el sistema ofrece la posibilidad de describir
-                recursos mediante un conjunto de palabras clave llamadas etiquetas (@I tags, por su término en inglés),
-                las cuales son consideradas por los usuarios como relevantes para caracterizar dichos recursos de
-                acuerdo a sus necesidades sin depender de un vocabulario controlado o de una estructura previamente
-                definida, estableciendo así una relación entre el recurso y un concepto en su mente, con el objeto de
-                organizar el contenido para uso futuro de una manera fácil y flexible (Specia y Motta, 2007). Este
-                esquema de catalogación se ha extendido en uso por una gran variedad de servicios web debido a su
-                popularidad entre los usuarios, quienes ven en éste una manera más natural, sencilla, rápida y personal
-                de clasificar la información digital que les es de interés, hallándola posteriormente con mínimo
-                esfuerzo, siendo ésta una mejor alternativa al problema de darle tratamiento a una gran cantidad de
-                datos, contrastada con la estructura jerárquica que ofrecen los sistemas de archivos modernos.
-                @PP
-                Hoy en día, existe una serie de herramientas que extienden las capacidades de los sistemas de archivos
-                al permitir el uso de etiquetas; sin embargo, estas herramientas presentan algunas limitaciones, tales
-                como: el tratamiento exclusivo de una fracción de la información digital existente, su operación bajo un
-                número reducido de plataformas, la prestación de un conjunto restringido de funcionalidades, entre
-                otros.
-                @PP
-                Con este trabajo de investigación se buscó desarrollar una herramienta web integral que garantizara la
-                interoperabilidad entre los distintos sistemas operativos y dispositivos al permitir un acceso
-                convenientemente centralizado a la información digital sin importar la distribución física de ésta,
-                brindando así transparencia de localización mediante el uso de un servidor central que contenga la
-                herramienta y aplicaciones que enlacen los repositorios de los usuarios con dicho servidor. Además, se
-                implantó una manera sencilla, versátil y personal de clasificar y recuperar la información digital
-                contenida en los mencionados repositorios al permitir su descripción y recuperación mediante el uso de
-                etiquetas definidas a conveniencia. Adaptando así la tecnología nacida en la web al ámbito de los
-                actuales sistemas de archivo.
-            @End @Section
+        @BeginSubSections
+          @SubSection
+            @Title { Objetivo General }
+            @Tag { obj.gen }
+          @Begin
+            @AddToIndex @Title { Objetivo General } @Tag { obj.gen }
 
-            @Section
-                @Title { Alcance del problema }
-                @Tag { alcance }
-            @Begin
-                @AddToIndex @Title { Alcance del problema } @Tag { alcance }
+            //2.4f @BulletList
+              @ListItem {
+                Desarrollar una herramienta web para la clasificación y recuperación de información
+                digital basada en etiquetas
+              }
+            @EndList
+          @End @SubSection
 
-                @PP
-                La investigación estuvo delimitada al desarrollo de un sistema cliente-servidor donde el cliente,
-                desarrollado para trabajar solo bajo los entornos Windows®, OS X® y Linux®, se comunica con una
-                aplicación web, manteniendo sincronizadas las etiquetas asociadas a los archivos ubicados en los
-                repositorios del usuario, permitiéndole así clasificarlos y recuperarlos mediante el uso de las
-                mencionadas etiquetas.
-            @End @Section
+          @SubSection
+            @Title { Objetivos Específicos }
+            @Tag { obj.esp }
+          @Begin
+            @AddToIndex @Title { Objetivos Específicos } @Tag { obj.esp }
 
-            @Section
-                @Title { Objetivos }
-                @Tag { objetivos }
-            @Begin
-                @AddToIndex @Title { Objetivos } @Tag { objetivos }
+            //2.4f @BulletList gap { 1.0f }
+            @ListItem {
+              Realizar una revisión documental sobre herramientas de clasificación y recuperación de
+              información digital
+            }
+            @ListItem {
+              Implementar la aplicación servidor para el almacenamiento y gestión de etiquetas de recursos
+              digitales
+            }
+            @ListItem {
+              Desarrollar el módulo de la aplicación cliente encargada del rastreo personalizable de la
+              información a etiquetar
+            }
+            @ListItem {
+              Desarrollar el módulo de la aplicación cliente correspondiente a la interfaz web de usuario
+            }
+            @ListItem {
+              Realizar las pruebas de caja gris de la herramienta
+            }
+            @EndList
+          @End @SubSection
+        @EndSubSections
+      @End @Section
+    @EndSections
+  @End @Chapter
 
-                @BeginSubSections
-                    @SubSection
-                        @Title { Objetivo General }
-                        @Tag { obj.gen }
-                    @Begin
-                        @AddToIndex @Title { Objetivo General } @Tag { obj.gen }
+  @NP
 
-                        //2.4f @BulletList
-                            @ListItem {
-                                Desarrollar una herramienta web para la clasificación y recuperación de información
-                                digital basada en etiquetas
-                            }
-                        @EndList
-                    @End @SubSection
+  @Chapter
+    @Num { II }
+    @Title { Marco Teórico }
+  @Begin
+    @BeginSections
+      @Section
+        @Title { Antecedentes de la Investigación }
+        @Tag { antecedentes }
+      @Begin
+        @AddToIndex @Title { Antecedentes de la Investigación } @Tag { antecedentes }
 
-                    @SubSection
-                        @Title { Objetivos Específicos }
-                        @Tag { obj.esp }
-                    @Begin
-                        @AddToIndex @Title { Objetivos Específicos } @Tag { obj.esp }
+        @PP
+        En la actualidad, los sistemas de clasificación basados en etiquetas son ampliamente usados por
+        innumerables aplicaciones web, sin embargo, su uso como complemento a los sistemas de archivo modernos
+        presenta una reducida gama de opciones, dentro de la cual se pueden mencionar:
 
-                        //2.4f @BulletList gap { 1.0f }
-                        @ListItem {
-                            Realizar una revisión documental sobre herramientas de clasificación y recuperación de
-                            información digital
-                        }
-                        @ListItem {
-                            Implementar la aplicación servidor para el almacenamiento y gestión de etiquetas de recursos
-                            digitales
-                        }
-                        @ListItem {
-                            Desarrollar el módulo de la aplicación cliente encargada del rastreo personalizable de la
-                            información a etiquetar
-                        }
-                        @ListItem {
-                            Desarrollar el módulo de la aplicación cliente correspondiente a la interfaz web de usuario
-                        }
-                        @ListItem {
-                            Realizar las pruebas de caja gris de la herramienta
-                        }
-                        @EndList
-                    @End @SubSection
-                @EndSubSections
-            @End @Section
-        @EndSections
-    @End @Chapter
+        @BeginSubSections
+          @SubSection
+            @Title { Tags }
+            @Tag { ant.tags }
+          @Begin
+            @AddToIndex @Title { Tags } @Tag { ant.tags }
 
-    @NP
+            @PP
+            Tags es una aplicación que permite etiquetar archivos y directorios en @I finder (explorador),
+            correos electrónicos en @I Mail (gestor de emails), fotos en @I IPhoto (gestor de imágenes) y
+            enlaces en @I Safari (navegador web); con el objetivo de mantener organizados dichos recursos y
+            poder hallarlos de manera rápida y sencilla.
+            @PP
+            Tags también ofrece una vista previa de la información, atajos de teclado y una excelente
+            integración con el sistema operativo. Desafortunadamente, esta aplicación solo está disponible
+            para el sistema operativo @I { OS X }®, está sujeta a una licencia privativa y no es capaz de
+            sincronizar recursos localizados en dispositivos diferentes.
 
-    @Chapter
-        @Num { II }
-        @Title { Marco Teórico }
-    @Begin
-        @BeginSections
-            @Section
-                @Title { Antecedentes de la Investigación }
-                @Tag { antecedentes }
-            @Begin
-                @AddToIndex @Title { Antecedentes de la Investigación } @Tag { antecedentes }
+            //2.4f @MyCenter @B { Gráfica 1. Tags }
+            //0f @CD { 0.4 0.3 } @Scale @IncludeGraphic "./include/img/tags.eps"
+            //0f @MyCenter @B { Fuente: Tags (2014) }
+          @End @SubSection
 
-                @PP
-                En la actualidad, los sistemas de clasificación basados en etiquetas son ampliamente usados por
-                innumerables aplicaciones web, sin embargo, su uso como complemento a los sistemas de archivo modernos
-                presenta una reducida gama de opciones, dentro de la cual se pueden mencionar:
+          @SubSection
+            @Title { TagTool }
+            @Tag { ant.tagtool }
+          @Begin
+            @AddToIndex @Title { TagTool } @Tag { ant.tagtool }
 
-                @BeginSubSections
-                    @SubSection
-                        @Title { Tags }
-                        @Tag { ant.tags }
-                    @Begin
-                        @AddToIndex @Title { Tags } @Tag { ant.tags }
+            @PP
+            TaggTool permite añadir etiquetas a archivos, directorios y «bookmarks». Adicionalmente, el
+            usuario puede proporcionar una descripción del recurso, además de una calificación cuantitativa
+            (@I rating). Esta herramienta ofrece la posibilidad de importar metadatos pre-existentes en los
+            recursos y realizar búsquedas en base a estos.
+            @PP
+            TaggTool también posee una alta integración con el sistema operativo y brinda una vista previa
+            de los recursos gestionados. Además, facilita un sistema de etiquetado automático basado en la
+            naturaleza de los recursos, y muestra una nube de etiquetas para la visualización de las
+            mismas.
+            @PP
+            Al igual que Tags, TaggTool está sujeto a una licencia privativa y no es capaz de sincronizar
+            recursos localizados en dispositivos diferentes. Otra desventaja que presenta este sistema
+            es que está disponible solo para el sistema operativo @I { Microsoft Windows }®.
 
-                        @PP
-                        Tags es una aplicación que permite etiquetar archivos y directorios en @I finder (explorador),
-                        correos electrónicos en @I Mail (gestor de emails), fotos en @I IPhoto (gestor de imágenes) y
-                        enlaces en @I Safari (navegador web); con el objetivo de mantener organizados dichos recursos y
-                        poder hallarlos de manera rápida y sencilla.
-                        @PP
-                        Tags también ofrece una vista previa de la información, atajos de teclado y una excelente
-                        integración con el sistema operativo. Desafortunadamente, esta aplicación solo está disponible
-                        para el sistema operativo @I { OS X }®, está sujeta a una licencia privativa y no es capaz de
-                        sincronizar recursos localizados en dispositivos diferentes.
+            //2.4f @MyCenter @B { Gráfica 2. TaggTool }
+            //0f @CD { 0.4 0.3 } @Scale @IncludeGraphic "./include/img/taggtool.eps"
+            //0f @MyCenter @B { Fuente: TaggTool (2014) }
+          @End @SubSection
 
-                        //2.4f @MyCenter @B { Gráfica 1. Tags }
-                        //0f @CD { 0.4 0.3 } @Scale @IncludeGraphic "./include/img/tags.eps"
-                        //0f @MyCenter @B { Fuente: Tags (2014) }
-                    @End @SubSection
+          @SubSection
+            @Title { Tables }
+            @Tag { ant.tables }
+          @Begin
+            @AddToIndex @Title { Tables } @Tag { ant.tables }
 
-                    @SubSection
-                        @Title { TagTool }
-                        @Tag { ant.tagtool }
-                    @Begin
-                        @AddToIndex @Title { TagTool } @Tag { ant.tagtool }
+            @PP
+            Tabbles ofrece la posibilidad de clasificar, buscar, organizar y compartir (a través de una LAN
+            o la Internet) archivos, carpetas y «bookmarks», mediante el uso de etiquetas. Adicionalmente,
+            la herramienta ofrece un sistema de auto-etiquetado, además de una excelente integración con el
+            sistema operativo.
+            @PP
+            A pesar de ser capaz de gestionar, compartir y sincronizar recursos localizados en dispositivos
+            distintos, Tabbles está disponible únicamente para el sistema operativo Microsoft Windows® bajo
+            una licencia privativa.
 
-                        @PP
-                        TaggTool permite añadir etiquetas a archivos, directorios y «bookmarks». Adicionalmente, el
-                        usuario puede proporcionar una descripción del recurso, además de una calificación cuantitativa
-                        (@I rating). Esta herramienta ofrece la posibilidad de importar metadatos pre-existentes en los
-                        recursos y realizar búsquedas en base a estos.
-                        @PP
-                        TaggTool también posee una alta integración con el sistema operativo y brinda una vista previa
-                        de los recursos gestionados. Además, facilita un sistema de etiquetado automático basado en la
-                        naturaleza de los recursos, y muestra una nube de etiquetas para la visualización de las
-                        mismas.
-                        @PP
-                        Al igual que Tags, TaggTool está sujeto a una licencia privativa y no es capaz de sincronizar
-                        recursos localizados en dispositivos diferentes. Otra desventaja que presenta este sistema
-                        es que está disponible solo para el sistema operativo @I { Microsoft Windows }®.
+            //2.4f @MyCenter @B { Gráfica 3. Tabbles }
+            //0f @CD { 0.6  0.5 } @Scale @IncludeGraphic "./include/img/tabbles.eps"
+            //0f @MyCenter @B { Fuente: Tabbles (2014) }
+          @End @SubSection
+        @EndSubSections
+      @End @Section
 
-                        //2.4f @MyCenter @B { Gráfica 2. TaggTool }
-                        //0f @CD { 0.4 0.3 } @Scale @IncludeGraphic "./include/img/taggtool.eps"
-                        //0f @MyCenter @B { Fuente: TaggTool (2014) }
-                    @End @SubSection
+      @Section
+        @Title { Bases Teóricas }
+        @Tag { bases.teoricas }
+      @Begin
+        @AddToIndex @Title { Bases Teóricas } @Tag { bases.teoricas }
 
-                    @SubSection
-                        @Title { Tables }
-                        @Tag { ant.tables }
-                    @Begin
-                        @AddToIndex @Title { Tables } @Tag { ant.tables }
+        @BeginSubSections
+          @SubSection
+            @Title { Aplicación Web }
+            @Tag { appweb }
+          @Begin
+            @AddToIndex @Title { Aplicación Web } @Tag { appweb }
 
-                        @PP
-                        Tabbles ofrece la posibilidad de clasificar, buscar, organizar y compartir (a través de una LAN
-                        o la Internet) archivos, carpetas y «bookmarks», mediante el uso de etiquetas. Adicionalmente,
-                        la herramienta ofrece un sistema de auto-etiquetado, además de una excelente integración con el
-                        sistema operativo.
-                        @PP
-                        A pesar de ser capaz de gestionar, compartir y sincronizar recursos localizados en dispositivos
-                        distintos, Tabbles está disponible únicamente para el sistema operativo Microsoft Windows® bajo
-                        una licencia privativa.
+            @PP
+            Una aplicación web es un programa desarrollado mediante el uso de herramientas y lenguajes (como
+            por ejemplo: CSS, HTML, JavaScript) suportados por navegadores web y que depende de éstos para
+            su uso por parte de los usuarios (PC Magazine, 2014).
+          @End @SubSection
 
-                        //2.4f @MyCenter @B { Gráfica 3. Tabbles }
-                        //0f @CD { 0.6  0.5 } @Scale @IncludeGraphic "./include/img/tabbles.eps"
-                        //0f @MyCenter @B { Fuente: Tabbles (2014) }
-                    @End @SubSection
-                @EndSubSections
-            @End @Section
+          @SubSection
+            @Title { Sistema de Archivo }
+            @Tag { sis.arc }
+          @Begin
+            @AddToIndex @Title { Sistema de Archivo } @Tag { sis.arc }
 
-            @Section
-                @Title { Bases Teóricas }
-                @Tag { bases.teoricas }
-            @Begin
-                @AddToIndex @Title { Bases Teóricas } @Tag { bases.teoricas }
+            @PP
+            Es el método para almacenar y recuperar archivos hacia y desde un medio de almacenamiento
+            secundario. El sistema de archivo gestiona una estructura de directorios, la cual provee de un
+            índice a los archivos, y define la sintaxis usada para accederlos. Los sistemas de archivos
+            dictan cómo son nombrados los archivos así como también el tamaño máximo de éstos (PC Magazine,
+            2014).
+          @End @SubSection
 
-                @BeginSubSections
-                    @SubSection
-                        @Title { Aplicación Web }
-                        @Tag { appweb }
-                    @Begin
-                        @AddToIndex @Title { Aplicación Web } @Tag { appweb }
+          @SubSection
+            @Title { Transparencia de Localización }
+            @Tag { trans.loca }
+          @Begin
+            @AddToIndex @Title { Transparencia de Localización } @Tag { trans.loca }
 
-                        @PP
-                        Una aplicación web es un programa desarrollado mediante el uso de herramientas y lenguajes (como
-                        por ejemplo: CSS, HTML, JavaScript) suportados por navegadores web y que depende de éstos para
-                        su uso por parte de los usuarios (PC Magazine, 2014).
-                    @End @SubSection
+            @PP
+            En computación, la transparencia de localización tiene que ver con el uso de nombres para
+            identificar recursos sin la necesidad de que los usuarios conozcan la localización exacta de
+            éstos. Gracias al uso de índices, el nombre puede ser usado para acceder a los recursos, los
+            cuales pueden estar ubicados local o remotamente, y permiten el uso de dichos recursos a
+            cualquiera que esté autorizado para su acceso (wise GEEK, 2014).
+          @End @SubSection
 
-                    @SubSection
-                        @Title { Sistema de Archivo }
-                        @Tag { sis.arc }
-                    @Begin
-                        @AddToIndex @Title { Sistema de Archivo } @Tag { sis.arc }
+          @SubSection
+            @Title { Metadatos }
+            @Tag { metadato }
+          @Begin
+            @AddToIndex @Title { Metadatos } @Tag { metadato }
 
-                        @PP
-                        Es el método para almacenar y recuperar archivos hacia y desde un medio de almacenamiento
-                        secundario. El sistema de archivo gestiona una estructura de directorios, la cual provee de un
-                        índice a los archivos, y define la sintaxis usada para accederlos. Los sistemas de archivos
-                        dictan cómo son nombrados los archivos así como también el tamaño máximo de éstos (PC Magazine,
-                        2014).
-                    @End @SubSection
+            @PP
+            Es información estructurada que describe, explica, ubica o, al menos que se indique lo
+            contrario, hace más fácil de recuperar, usar o manejar una fuente de información. Los metadatos
+            son llamados frecuentemente ``datos sobre datos'' o ``información sobre información'' (Guenther
+            y Radebaugh, 2004).
+          @End @SubSection
 
-                    @SubSection
-                        @Title { Transparencia de Localización }
-                        @Tag { trans.loca }
-                    @Begin
-                        @AddToIndex @Title { Transparencia de Localización } @Tag { trans.loca }
+          @SubSection
+            @Title { Etiqueta }
+            @Tag { etiqueta }
+          @Begin
+            @AddToIndex @Title { Etiqueta } @Tag { etiqueta }
 
-                        @PP
-                        En computación, la transparencia de localización tiene que ver con el uso de nombres para
-                        identificar recursos sin la necesidad de que los usuarios conozcan la localización exacta de
-                        éstos. Gracias al uso de índices, el nombre puede ser usado para acceder a los recursos, los
-                        cuales pueden estar ubicados local o remotamente, y permiten el uso de dichos recursos a
-                        cualquiera que esté autorizado para su acceso (wise GEEK, 2014).
-                    @End @SubSection
+            @PP
+            Las etiquetas son un conjunto de palabras clave empleadas en la organización de contenido. El
+            uso de etiquetas le permite a los usuarios clasificar sus recursos de manera flexible y
+            personal, caracterizándolos de acuerdo a sus propias necesidades sin tener que depender de un
+            vocabulario controlado o una estructura previamente definida (Specia y Motta, 2007).
+          @End @SubSection
+        @EndSubSections
+      @End @Section
+    @EndSections
+  @End @Chapter
 
-                    @SubSection
-                        @Title { Metadatos }
-                        @Tag { metadato }
-                    @Begin
-                        @AddToIndex @Title { Metadatos } @Tag { metadato }
+  @NP
+  @Chapter
+    @Num { III }
+    @Title { Marco Metodológico }
+  @Begin
+    @BeginSections
+      @Section
+        @Title { Primer Lanzamiento }
+        @Tag { primer.lanzamiento }
+      @Begin
+        @BeginSubSections
+          @SubSection
+            @Title { Primer Sprint }
+            @Tag { primer.sprint }
+          @Begin
+            @PP
+            Durante este @I sprint se culminó la revisión de literatura relacionada con los sistemas de
+            clasificación y recuperación de información digital basados en etiquetas, con la recopilación
+            de los antecedentes de esta investigación. Además, se comenzó a diseñar e implementar la
+            interfaz web de usuario a través del diseño de bocetos físicos y digitales; y la base de
+            datos, mediante el esquema fundamental de la misma. Adicionalmente, se dio inicio al proceso
+            de codificación e implementación de la aplicación servidor, diseñando la funcionalidad base
+            para recibir y responder peticiones HTTP. Todo esto junto a las respectivas pruebas de caja
+            gris de los componentes desarrollados, acción que se mantuvo durante todo el ciclo de
+            desarrollo de la herramienta.
+          @End @SubSection
 
-                        @PP
-                        Es información estructurada que describe, explica, ubica o, al menos que se indique lo
-                        contrario, hace más fácil de recuperar, usar o manejar una fuente de información. Los metadatos
-                        son llamados frecuentemente ``datos sobre datos'' o ``información sobre información'' (Guenther
-                        y Radebaugh, 2004).
-                    @End @SubSection
+          @SubSection
+            @Title { Segundo Sprint }
+            @Tag { segundo.sprint }
+          @Begin
+            @PP
+            Durante este sprint se continuó con las actividades iniciadas en el anterior refinando el
+            diseño de la base de datos, añadiendo nuevas características a la aplicación servidor y
+            mejorando la interfaz web de usuario con el fin de hacerla más intuitiva y funcional.
+          @End @SubSection
 
-                    @SubSection
-                        @Title { Etiqueta }
-                        @Tag { etiqueta }
-                    @Begin
-                        @AddToIndex @Title { Etiqueta } @Tag { etiqueta }
+          @SubSection
+            @Title { Tercer Sprint }
+            @Tag { tercer.sprint }
+          @Begin
+            @PP
+            Al igual que en el anterior, durante este sprint se dio continuidad a las labores
+            anteriormente descritas, añadiendo un nuevo conjunto de características a la aplicación
+            servidor, reflejando éstas mejoras en la interfaz web del usuario y dándole los toques finales
+            a la base de datos, finalizando el proceso de diseño e implementación de la misma.
+          @End @SubSection
+        @EndSubSections
+      @End @Section
 
-                        @PP
-                        Las etiquetas son un conjunto de palabras clave empleadas en la organización de contenido. El
-                        uso de etiquetas le permite a los usuarios clasificar sus recursos de manera flexible y
-                        personal, caracterizándolos de acuerdo a sus propias necesidades sin tener que depender de un
-                        vocabulario controlado o una estructura previamente definida (Specia y Motta, 2007).
-                    @End @SubSection
-                @EndSubSections
-            @End @Section
-        @EndSections
-    @End @Chapter
+      @Section
+        @Title { Segundo Lanzamiento }
+        @Tag { segundo.lanzamiento }
+      @Begin
+        @BeginSubSections
+          @SubSection
+            @Title { Cuarto Sprint }
+            @Tag { cuarto.sprint }
+          @Begin
+            @PP
+            En este sprint se comenzó el diseño de una API pública, implementada en la aplicación
+            servidor, para permitir una comunicación sencilla con la misma, potenciando así la posibilidad
+            de desarrollar una aplicación cliente que se comunique con la aplicación servidor de manera
+            efectiva. También se hicieron un par de cambios menores a la interfaz web de usuario.
+          @End @SubSection
 
-    @NP
-    @Chapter
-        @Num { III }
-        @Title { Marco Metodológico }
-    @Begin
-        @BeginSections
-            @Section
-                @Title { Primer Lanzamiento }
-                @Tag { primer.lanzamiento }
-            @Begin
-                @BeginSubSections
-                    @SubSection
-                        @Title { Primer Sprint }
-                        @Tag { primer.sprint }
-                    @Begin
-                        @PP
-                        Durante este @I sprint se culminó la revisión de literatura relacionada con los sistemas de
-                        clasificación y recuperación de información digital basados en etiquetas, con la recopilación
-                        de los antecedentes de esta investigación. Además, se comenzó a diseñar e implementar la
-                        interfaz web de usuario a través del diseño de bocetos físicos y digitales; y la base de
-                        datos, mediante el esquema fundamental de la misma. Adicionalmente, se dio inicio al proceso
-                        de codificación e implementación de la aplicación servidor, diseñando la funcionalidad base
-                        para recibir y responder peticiones HTTP. Todo esto junto a las respectivas pruebas de caja
-                        gris de los componentes desarrollados, acción que se mantuvo durante todo el ciclo de
-                        desarrollo de la herramienta.
-                    @End @SubSection
-
-                    @SubSection
-                        @Title { Segundo Sprint }
-                        @Tag { segundo.sprint }
-                    @Begin
-                        @PP
-                        Durante este sprint se continuó con las actividades iniciadas en el anterior refinando el
-                        diseño de la base de datos, añadiendo nuevas características a la aplicación servidor y
-                        mejorando la interfaz web de usuario con el fin de hacerla más intuitiva y funcional.
-                    @End @SubSection
-
-                    @SubSection
-                        @Title { Tercer Sprint }
-                        @Tag { tercer.sprint }
-                    @Begin
-                        @PP
-                        Al igual que en el anterior, durante este sprint se dio continuidad a las labores
-                        anteriormente descritas, añadiendo un nuevo conjunto de características a la aplicación
-                        servidor, reflejando éstas mejoras en la interfaz web del usuario y dándole los toques finales
-                        a la base de datos, finalizando el proceso de diseño e implementación de la misma.
-                    @End @SubSection
-                @EndSubSections
-            @End @Section
-
-            @Section
-                @Title { Segundo Lanzamiento }
-                @Tag { segundo.lanzamiento }
-            @Begin
-                @BeginSubSections
-                    @SubSection
-                        @Title { Cuarto Sprint }
-                        @Tag { cuarto.sprint }
-                    @Begin
-                        @PP
-                        En este sprint se comenzó el diseño de una API pública, implementada en la aplicación
-                        servidor, para permitir una comunicación sencilla con la misma, potenciando así la posibilidad
-                        de desarrollar una aplicación cliente que se comunique con la aplicación servidor de manera
-                        efectiva. También se hicieron un par de cambios menores a la interfaz web de usuario.
-                    @End @SubSection
-
-                    @SubSection
-                        @Title { Quinto Sprint }
-                        @Tag { quinto.sprint }
-                    @Begin
-                        @PP
-                        Es en este sprint que se da inicio a la codificación e implementación de la aplicación
-                        cliente, conformada, al final de este ciclo, solo por el mecanismo de rastreo de recursos del
-                        sistema. Por otro lado, se sigue con la expansión de la API mencionada anteriormente y el
-                        refinamiento de la interfaz web de usuario, acciones que se repiten hasta el final del tercer
-                        lanzamiento.
-                    @End @SubSection
-                @EndSubSections
-            @End @Section
+          @SubSection
+            @Title { Quinto Sprint }
+            @Tag { quinto.sprint }
+          @Begin
+            @PP
+            Es en este sprint que se da inicio a la codificación e implementación de la aplicación
+            cliente, conformada, al final de este ciclo, solo por el mecanismo de rastreo de recursos del
+            sistema. Por otro lado, se sigue con la expansión de la API mencionada anteriormente y el
+            refinamiento de la interfaz web de usuario, acciones que se repiten hasta el final del tercer
+            lanzamiento.
+          @End @SubSection
+        @EndSubSections
+      @End @Section
 
 
-            @Section
-                @Title { Tercer Lanzamiento }
-                @Tag { tercer.lanzamiento }
-            @Begin
-                @BeginSubSections
-                    @SubSection
-                        @Title { Sexto Sprint }
-                        @Tag { sexto.sprint }
-                    @Begin
-                        @PP
-                        Se desarrolló el módulo que permite al usuario seleccionar a potestad cuáles directorios serán
-                        incluidos en el proceso de rastreo, así como el módulo que se encarga de mantener sincronizada
-                        con el servidor la información generada a partir del mencionado rastreo.
-                    @End @SubSection
+      @Section
+        @Title { Tercer Lanzamiento }
+        @Tag { tercer.lanzamiento }
+      @Begin
+        @BeginSubSections
+          @SubSection
+            @Title { Sexto Sprint }
+            @Tag { sexto.sprint }
+          @Begin
+            @PP
+            Se desarrolló el módulo que permite al usuario seleccionar a potestad cuáles directorios serán
+            incluidos en el proceso de rastreo, así como el módulo que se encarga de mantener sincronizada
+            con el servidor la información generada a partir del mencionado rastreo.
+          @End @SubSection
 
-                    @SubSection
-                        @Title { Séptimo Sprint }
-                        @Tag { septimo.sprint }
-                    @Begin
-                        @PP
-                        A lo largo de este sprint, se implementó la gestión de usuarios en la aplicación servidor, se
-                        adaptó la interfaz web de usuario para reflejar dichos cambios y se implementó en ambas
-                        aplicaciones un mecanismo de comunicación sencillo, robusto y seguro, basado en @I tokens.
-                    @End @SubSection
-                @EndSubSections
-            @End @Section
+          @SubSection
+            @Title { Séptimo Sprint }
+            @Tag { septimo.sprint }
+          @Begin
+            @PP
+            A lo largo de este sprint, se implementó la gestión de usuarios en la aplicación servidor, se
+            adaptó la interfaz web de usuario para reflejar dichos cambios y se implementó en ambas
+            aplicaciones un mecanismo de comunicación sencillo, robusto y seguro, basado en @I tokens.
+          @End @SubSection
+        @EndSubSections
+      @End @Section
 
-            @Section
-                @Title { Cuarto Lanzamiento }
-                @Tag { cuarto.lanzamiento }
-            @Begin
-                @BeginSubSections
-                    @SubSection
-                        @Title { Octavo Sprint }
-                        @Tag { octavo.sprint }
-                    @Begin
-                        @PP
-                        Durante este sprint se desarrolló e integró un mecanismo de etiquetado automático de la
-                        información rastreada.
-                    @End @SubSection
+      @Section
+        @Title { Cuarto Lanzamiento }
+        @Tag { cuarto.lanzamiento }
+      @Begin
+        @BeginSubSections
+          @SubSection
+            @Title { Octavo Sprint }
+            @Tag { octavo.sprint }
+          @Begin
+            @PP
+            Durante este sprint se desarrolló e integró un mecanismo de etiquetado automático de la
+            información rastreada.
+          @End @SubSection
 
-                    @SubSection
-                        @Title { Noveno Sprint }
-                        @Tag { noveno.sprint }
-                    @Begin
-                        @PP
-                        Este sprint cerró el ciclo de desarrollo de esta investigación, durante el cual se llevaron a
-                        cabo las pruebas más rigurosas del sistema, con la finalidad de detectar y posteriormente
-                        corregir errores funcionales que residían en la aplicación.
-                    @End @SubSection
-                @EndSubSections
-            @End @Section
-        @EndSections
+          @SubSection
+            @Title { Noveno Sprint }
+            @Tag { noveno.sprint }
+          @Begin
+            @PP
+            Este sprint cerró el ciclo de desarrollo de esta investigación, durante el cual se llevaron a
+            cabo las pruebas más rigurosas del sistema, con la finalidad de detectar y posteriormente
+            corregir errores funcionales que residían en la aplicación.
+          @End @SubSection
+        @EndSubSections
+      @End @Section
+    @EndSections
 
-        @AddToIndex @Title { Distribución de Actividades } @Tag { dist.act }
-        @PageMark { dist.act } @AddToTIndex @Title { Tabla 1. Cronograma } @Tag { dist.act }
+    @AddToIndex @Title { Distribución de Actividades } @Tag { dist.act }
+    @PageMark { dist.act } @AddToTIndex @Title { Tabla 1. Cronograma } @Tag { dist.act }
 
-        //2.4f @MyCenter @B { Tabla 1. Distribución de Actividades }
-        //0f @CD 0.65 @Scale @IncludeGraphic "./include/img/tabla1.eps"
+    //2.4f @MyCenter @B { Tabla 1. Distribución de Actividades }
+    //0f @CD 0.65 @Scale @IncludeGraphic "./include/img/tabla1.eps"
+    //0f @MyCenter @B { Fuente: Padrón (2014) }
+  @End @Chapter
+
+  @NP
+
+  @Chapter
+    @Num { IV }
+    @Title { El título de este capítulo }
+  @Begin
+    @BeginSections
+      @Section
+        @Title { El título de esta sección }
+        @Tag { 92183981293 }
+      @Begin
+        @PP
+        En primer lugar, se describirán las clases que definen los modelos usados por el módulo servidor.
+        @B BaseModel pauta la interfaz mínima que debe poseer todo modelo, obligando la implementación de tres
+        métodos fundamentales, @I exist, que determina si un registro existe o no; @I { get_by_id }, el cual
+        realiza una búsqueda de registros a partir de un conjunto de identificadores; y finalmente, @I json,
+        el cual transforma un registro al formato @I { json }.
+        @PP
+        La clase @B User aglomera la información relacionada con el nombre e información de acceso de un
+        usuario del sistema. Las clases @B Device, @B Search y @B Tag, son usadas para representar los
+        dispositivos, búsquedas y etiquetas de los usuarios, respectivamente; estas clases dependen
+        directamente de la clase @B User.
+        @PP
+        Por su lado, la clase @B Resource sirve para representar los recursos almacenados en los distintos
+        dispositivos de los usuarios. Las clases @B TagResources y @B TagSearch son empleadas para relacionar
+        etiquetas con recursos (en el primer caso) y búsquedas (en el segundo caso).
+        @PP
+        Las anteriores, están plasmadas en el diagrama de clases de la gráfica 4, presentada más abajo; y a
+        excepción de @B BaseModel, corresponden a una y sola una tabla en la base de datos, describiendo en
+        totalidad los modelos implementados en el sistema.
+        @PP
+        En el caso del módulo cliente, se tiene la clase @B Manager, la cual sirve como pilar fundamental al
+        encargarse de la generación,  lectura y respaldo de los archivos de configuración y estado del
+        sistema, así como también de la comunicación con el módulo servidor. El respaldo y comunicación con el
+        servidor se lleva a cabo gracias a las clases @B Cache y @B SyncAgent, respectivamente. Estas tareas
+        corresponden a dos hilos de ejecución independientes, ambos instancias de la clase @B DaemonThread.
+        La clase @B Crawler encapsula las rutinas relacionados con el rastreo de recursos en el dispositivo
+        anfitrión, mientras que la clase @B AutoTagger es la encargada del etiquetado automático de los
+        mencionados recursos.
+        @PP
+        Por último, @B SettingsForm es una clase empleada en la verificación de los datos enviados por el
+        usuario en el formulario dispuesto para la actualización de los parámetros de configuración del
+        sistema.
+
+        //2.4f @MyCenter @B { Gráfica 4. Diagrama de Clases de los Modelos }
+        //0f @CD 0.4 @Scale @IncludeGraphic "./include/img/classes-serv.eps"
         //0f @MyCenter @B { Fuente: Padrón (2014) }
-    @End @Chapter
 
-    @NP
+        @NP
 
-    @Chapter
-        @Num { IV }
-        @Title { El título de este capítulo }
-    @Begin
-        @BeginSections
-            @Section
-                @Title { El título de esta sección }
-                @Tag { 92183981293 }
-            @Begin
-                @PP
-                En primer lugar, se describirán las clases que definen los modelos usados por el módulo servidor.
-                @B BaseModel pauta la interfaz mínima que debe poseer todo modelo, obligando la implementación de tres
-                métodos fundamentales, @I exist, que determina si un registro existe o no; @I { get_by_id }, el cual
-                realiza una búsqueda de registros a partir de un conjunto de identificadores; y finalmente, @I json,
-                el cual transforma un registro al formato @I { json }.
-                @PP
-                La clase @B User aglomera la información relacionada con el nombre e información de acceso de un
-                usuario del sistema. Las clases @B Device, @B Search y @B Tag, son usadas para representar los
-                dispositivos, búsquedas y etiquetas de los usuarios, respectivamente; estas clases dependen
-                directamente de la clase @B User.
-                @PP
-                Por su lado, la clase @B Resource sirve para representar los recursos almacenados en los distintos
-                dispositivos de los usuarios. Las clases @B TagResources y @B TagSearch son empleadas para relacionar
-                etiquetas con recursos (en el primer caso) y búsquedas (en el segundo caso).
-                @PP
-                Las anteriores, están plasmadas en el diagrama de clases de la gráfica 4, presentada más abajo; y a
-                excepción de @B BaseModel, corresponden a una y sola una tabla en la base de datos, describiendo en
-                totalidad los modelos implementados en el sistema.
-                @PP
-                En el caso del módulo cliente, se tiene la clase @B Manager, la cual sirve como pilar fundamental al
-                encargarse de la generación,  lectura y respaldo de los archivos de configuración y estado del
-                sistema, así como también de la comunicación con el módulo servidor. El respaldo y comunicación con el
-                servidor se lleva a cabo gracias a las clases @B Cache y @B SyncAgent, respectivamente. Estas tareas
-                corresponden a dos hilos de ejecución independientes, ambos instancias de la clase @B DaemonThread.
-                La clase @B Crawler encapsula las rutinas relacionados con el rastreo de recursos en el dispositivo
-                anfitrión, mientras que la clase @B AutoTagger es la encargada del etiquetado automático de los
-                mencionados recursos.
-                @PP
-                Por último, @B SettingsForm es una clase empleada en la verificación de los datos enviados por el
-                usuario en el formulario dispuesto para la actualización de los parámetros de configuración del
-                sistema.
+        //2.4f @MyCenter @B { Gráfica 5. Diagrama de Clases del Módulo Cliente }
+        //0f @CD 0.4 @Scale @IncludeGraphic "./include/img/classes-clnt.eps"
+        //0f @MyCenter @B { Fuente: Padrón (2014) }
+      @End @Section
+    @EndSections
+  @End @Chapter
 
-                //2.4f @MyCenter @B { Gráfica 4. Diagrama de Clases de los Modelos }
-                //0f @CD 0.4 @Scale @IncludeGraphic "./include/img/classes-serv.eps"
-                //0f @MyCenter @B { Fuente: Padrón (2014) }
+  @NP
 
-                @NP
-
-                //2.4f @MyCenter @B { Gráfica 5. Diagrama de Clases del Módulo Cliente }
-                //0f @CD 0.4 @Scale @IncludeGraphic "./include/img/classes-clnt.eps"
-                //0f @MyCenter @B { Fuente: Padrón (2014) }
-            @End @Section
-        @EndSections
-    @End @Chapter
-
-    @NP
-
-    @ExtraSection
-        @Title { REFERENCIAS BIBLIOGRÁFICAS }
-        @AlterTitle { Referencias bibliográficas }
-    @Begin
-        //1.2f @BulletList
-            @ListItem {
-                Atkinson, R.C.; Shiffrin, R.M. (1968). Chapter: Human memory: A proposed system and its control
-                processes. The psychology of learning and motivation. pp. 89-195.
-            }
-            @ListItem {
-                Baddeley, A.D. (1966). The influence of acoustic and semantic similarity on long-term memory for word
-                sequences. The Quarterly Journal of Experimental Psychology. pp. 302-309.
-            }
-            @ListItem {
-                Burgin, Mark (2010). Theory of Information: Fundamentality, Diversity and Unification. World Scientific.
-                p. VI.
-            }
-            @ListItem {
-                Furth, J. (1994). The Information Age in Charts, Fortune International.
-            }
-            @ListItem {
-                Giuliano, V.E. (1983). The United States of America in the Information Age, en Information Policy and
-                Scientific Research, Elsevier, Amsterdam, pp. 59-76.
-            }
-            @ListItem {
-                IBM (2012) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
-                "www-01.ibm.com/software/data/bigdata/"
-            }
-            @ListItem {
-                Mathes, Adam (2004) (Página consultada el 25 de junio de 2013) [On-line]. Dirección: @FF
-                "www.adammathes.com/academic/computer-mediated-communication/folksonomies.html"
-            }
-            @ListItem {
-                Multics (1968) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
-                "www.multicians.org/fjcc4.html"
-            }
-            @ListItem {
-                PC Magazine (2014) (Página consultada el 23 de enero  de 2014) [On-line]. Dirección:
-                "http://www.pcmag.com/encyclopedia/"
-            }
-            @ListItem {
-                Schwaber, Ken; Sutherland, Jeff (2011). The Definitive Guide to Scrum: The Rules of the Game.
-            }
-            @ListItem {
-                Specia, Lucia; Motta, Enrico (2007). Integrating Folksonomies with the Semantic Web. Knowledge Media
-                Institute - The Open University.
-            }
-            @ListItem {
-                Guenther, Rebecca; Radebaugh, Jaqueline (2004). Understanding Metadata. NISO Press.
-            }
-            @ListItem {
-                wise GEEK (2014) (Página consultada el 20 de mayo  de 2014) [On-line]. Dirección:
-                "http://www.wisegeek.com/what-is-location-transparency.htm"
-            }
-        @EndList
-    @End @ExtraSection
+  @ExtraSection
+    @Title { REFERENCIAS BIBLIOGRÁFICAS }
+    @AlterTitle { Referencias bibliográficas }
+  @Begin
+    //1.2f @BulletList
+      @ListItem {
+        Atkinson, R.C.; Shiffrin, R.M. (1968). Chapter: Human memory: A proposed system and its control
+        processes. The psychology of learning and motivation. pp. 89-195.
+      }
+      @ListItem {
+        Baddeley, A.D. (1966). The influence of acoustic and semantic similarity on long-term memory for word
+        sequences. The Quarterly Journal of Experimental Psychology. pp. 302-309.
+      }
+      @ListItem {
+        Burgin, Mark (2010). Theory of Information: Fundamentality, Diversity and Unification. World Scientific.
+        p. VI.
+      }
+      @ListItem {
+        Furth, J. (1994). The Information Age in Charts, Fortune International.
+      }
+      @ListItem {
+        Giuliano, V.E. (1983). The United States of America in the Information Age, en Information Policy and
+        Scientific Research, Elsevier, Amsterdam, pp. 59-76.
+      }
+      @ListItem {
+        IBM (2012) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
+        "www-01.ibm.com/software/data/bigdata/"
+      }
+      @ListItem {
+        Mathes, Adam (2004) (Página consultada el 25 de junio de 2013) [On-line]. Dirección: @FF
+        "www.adammathes.com/academic/computer-mediated-communication/folksonomies.html"
+      }
+      @ListItem {
+        Multics (1968) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
+        "www.multicians.org/fjcc4.html"
+      }
+      @ListItem {
+        PC Magazine (2014) (Página consultada el 23 de enero  de 2014) [On-line]. Dirección:
+        "http://www.pcmag.com/encyclopedia/"
+      }
+      @ListItem {
+        Schwaber, Ken; Sutherland, Jeff (2011). The Definitive Guide to Scrum: The Rules of the Game.
+      }
+      @ListItem {
+        Specia, Lucia; Motta, Enrico (2007). Integrating Folksonomies with the Semantic Web. Knowledge Media
+        Institute - The Open University.
+      }
+      @ListItem {
+        Guenther, Rebecca; Radebaugh, Jaqueline (2004). Understanding Metadata. NISO Press.
+      }
+      @ListItem {
+        wise GEEK (2014) (Página consultada el 20 de mayo  de 2014) [On-line]. Dirección:
+        "http://www.wisegeek.com/what-is-location-transparency.htm"
+      }
+    @EndList
+  @End @ExtraSection
 @End @TEG
 @End @Text
