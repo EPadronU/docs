@@ -308,29 +308,18 @@
 
         @BeginSubSections
           @SubSection
-            @Title { Aplicación Web }
-            @Tag { appweb }
-          @Begin
-            @AddToIndex @Title { Aplicación Web } @Tag { appweb }
-
-            @PP
-            Una aplicación web es un programa desarrollado mediante el uso de herramientas y lenguajes (como
-            por ejemplo: CSS, HTML, JavaScript) suportados por navegadores web y que depende de éstos para
-            su uso por parte de los usuarios (PC Magazine, 2014).
-          @End @SubSection
-
-          @SubSection
             @Title { Sistema de Archivo }
-            @Tag { sis.arc }
+            @Tag { sis.arch }
           @Begin
-            @AddToIndex @Title { Sistema de Archivo } @Tag { sis.arc }
+            @AddToIndex @Title { Sistema de Archivo } @Tag { sis.arch }
 
             @PP
-            Es el método para almacenar y recuperar archivos hacia y desde un medio de almacenamiento
-            secundario. El sistema de archivo gestiona una estructura de directorios, la cual provee de un
-            índice a los archivos, y define la sintaxis usada para accederlos. Los sistemas de archivos
-            dictan cómo son nombrados los archivos así como también el tamaño máximo de éstos (PC Magazine,
-            2014).
+            Un sistema de archivo es un módulo central de todo sistema operativo moderno que consiste de
+            estructuras lógicas y rutinas que controlan la creación, modificación, eliminación y acceso a los
+            datos que residen en una unidad de disco, partición o volumen lógico. Dicho sistema organiza los
+            datos en una estructura jerárquica mediante el uso de directorios, los cuales fungen como
+            contenedores de punteros a múltiples archivos (EMC, 2012). Algunos de los sistemas de archivo más
+            ampliamente usados en la actualidad son: FAT, FAT32, NTFS, HFS Plus, ext2, ext3 y ext4.
           @End @SubSection
 
           @SubSection
@@ -340,37 +329,98 @@
             @AddToIndex @Title { Transparencia de Localización } @Tag { trans.loca }
 
             @PP
-            En computación, la transparencia de localización tiene que ver con el uso de nombres para
-            identificar recursos sin la necesidad de que los usuarios conozcan la localización exacta de
-            éstos. Gracias al uso de índices, el nombre puede ser usado para acceder a los recursos, los
-            cuales pueden estar ubicados local o remotamente, y permiten el uso de dichos recursos a
-            cualquiera que esté autorizado para su acceso (wise GEEK, 2014).
+            Se refiere a una consideración de diseño de los sistemas operativos distribuidos. Se habla de
+            transparencia de localización cuando un usuario accede a un recurso en particular sin que sea
+            necesario conocer la ubicación del mismo dentro de la red de trabajo a fin de acceder a él. El no
+            conocer la localización de un recurso implica que todo acceso a éste es realizado por medio de un
+            nombre que no depende de la ubicación dónde reside actualmente, ni la ubicación dónde fue
+            creado (Borghoff y Schlichter, 2000).
           @End @SubSection
 
           @SubSection
-            @Title { Metadatos }
-            @Tag { metadato }
+            @Title { Aplicación Web }
+            @Tag { web.app }
           @Begin
-            @AddToIndex @Title { Metadatos } @Tag { metadato }
+            @AddToIndex @Title { Aplicación Web } @Tag { web.app }
 
             @PP
-            Es información estructurada que describe, explica, ubica o, al menos que se indique lo
-            contrario, hace más fácil de recuperar, usar o manejar una fuente de información. Los metadatos
-            son llamados frecuentemente ``datos sobre datos'' o ``información sobre información'' (Guenther
-            y Radebaugh, 2004).
+            Es una aplicación desarrollada mediante el uso de tecnologías web (html, css, javascript, entre otros)
+            cuyo entorno de ejecución (@I{ runtime enviroment }) está conformado por un motor web (@I{ web engine }).
+            Como ejemplos de este tipo de aplicaciones se pueden mencionar: sistemas de reservación, sitios de
+            compras en línea, juegos, aplicaciones multimedia, mapas, aplicaciones interactivas de diseños,
+            sistemas de correo, entre otros (W3C, 2012).
+
+            @PP
+            Los cuatros componentes típicos de una aplicación web son: un navegador, un servidor web, programas de
+            aplicación y un servidor de base de datos. Las responsabilidades del navegador incluyen: presentar una
+            interfaz de usuario, comunicarse con un servidor web, ejecutar @I{ scripts } embebidos, gestionar la
+            @I{ cache } y las @I{ cookies }. El servidor web se encarga, entre otras cosas, de comunicarse con los
+            clientes, proveer contenido estático, invocar programas de aplicación para la generación de contenido
+            dinámico y gestionar las conexiones (Grove, 2009).
+
+            @PP
+            @I{ CGI }, @I{ servlets }, lenguajes de plantilla (@I{ template languages }) y lenguajes de guión
+            (@I{ script languages }) son algunos de los entornos de desarrollo para la construcción de los
+            programas de aplicación mencionados anteriormente, y están típicamente acompañados por un sistema de
+            gestión de base de datos relacional (@I{ RDBMS }, por sus siglas en inglés) accedido por los programas
+            de aplicación a través de un @I{ ODBC } "/" @I{ ORM } (Grove, 2009).
           @End @SubSection
 
           @SubSection
-            @Title { Etiqueta }
-            @Tag { etiqueta }
+            @Title { ORM }
+            @Tag { orm }
           @Begin
-            @AddToIndex @Title { Etiqueta } @Tag { etiqueta }
+            @AddToIndex @Title { ORM } @Tag { orm }
 
             @PP
-            Las etiquetas son un conjunto de palabras clave empleadas en la organización de contenido. El
-            uso de etiquetas le permite a los usuarios clasificar sus recursos de manera flexible y
-            personal, caracterizándolos de acuerdo a sus propias necesidades sin tener que depender de un
-            vocabulario controlado o una estructura previamente definida (Specia y Motta, 2007).
+            Es una herramienta que permite conectar un objeto, a veces llamado ``modelo de dominio'', con una base de
+            datos relacional de manera automática mediante el uso de metadatos como descriptores del objeto y los
+            datos en sí mismos. Algunas de las ventajas que ofrece el uso de un ORM sobre otras técnicas de acceso
+            de datos se listan a continuación: en primer lugar, se automatiza la conversión bidireccional entre
+            objetos y tablas; además, se provee el almacenamiento en @I{ cache } de los objetos de manera
+            transparente en el lado de la aplicación, mejorando así el rendimiento del sistema; y por último,
+            brinda una API de acceso a la base de datos, abstrayendo por completo el sistema de gestión de bases de
+            datos relacional (Mehta, 2008). @I{ ODB }, @I{ JDBC }, @I{ Peewee }, @I{ SQLAlchemist } y @I{ Yii } son
+            algunos de los ORM usados en la actualidad.
+          @End @SubSection
+
+          @SubSection
+            @Title { AJAX }
+            @Tag { ajax }
+          @Begin
+            @AddToIndex @Title { AJAX } @Tag { ajax }
+
+            @PP
+            Es una tecnología empleada para prevenir la carga de una página en su totalidad al permitir la
+            transferencia de datos entre el cliente y el servidor web de manera asíncrona, logrando que las páginas
+            se carguen más rápidamente al retrasar la descarga de grandes recursos (Zakas, 2010).
+          @End @SubSection
+
+          @SubSection
+            @Title { JSON }
+            @Tag { json }
+          @Begin
+            @AddToIndex @Title { JSON } @Tag { json }
+
+            @PP
+            Es un formato ligero y fácil de analizar sintácticamente para representar datos, basado en el uso de la
+            sintaxis dispuesta para los literales de tipo arreglo y objeto en el lenguaje de programación
+            JavaScript, usado generalmente para transmitir información entre distintos sistemas de software (Zakas,
+            2010). La serialización de información estructurada, tarea que se solía realizar con XML, es
+            actualmente llevada a cabo mediante el uso del formato JSON, tendencia que crece con el pasar del
+            tiempo.
+          @End @SubSection
+
+          @SubSection
+            @Title { WSGI }
+            @Tag { wsgi }
+          @Begin
+            @AddToIndex @Title { WSGI } @Tag { wsgi }
+
+            @PP
+            Es una interfaz simple y universal entre servidores y aplicaciones web para el lenguaje de programación
+            Python (Eby, 2010). En términos simples, esta especificación establece la CGI (@I{ Common Gateway Interface })
+            para el lenguaje de programación Python.
           @End @SubSection
         @EndSubSections
       @End @Section
