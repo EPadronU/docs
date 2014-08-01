@@ -184,7 +184,7 @@
           @Begin
             @AddToIndex @Title { Objetivos Específicos } @Tag { obj.esp }
 
-            //2.4f @BulletList gap { 1.0f }
+            //2.4f @BulletList
             @ListItem {
               Realizar una revisión documental sobre herramientas de clasificación y recuperación de
               información digital
@@ -423,6 +423,53 @@
             para el lenguaje de programación Python.
           @End @SubSection
         @EndSubSections
+      @End @Section
+
+      @Section
+        @Title { Descripción de las Herramientas Usadas }
+        @Tag  { herramientas.usadas }
+        @Begin
+          @AddToIndex @Title { Descripción de las Herramientas Usadas } @Tag  { herramientas.usadas }
+
+        //2.0f @BulletList
+          @ListItem {
+            Python: es un lenguaje de programación de código abierto y de propósito general. Cuenta con una
+            sintaxis simple y legible. Soporta los paradigmas: orientado a objetos, funcional, y procedural. El
+            dominio de aplicación del lenguaje va desde sistemas de administración, desarrollo de paginas web, y
+            educación hasta el análisis computacional de inversión, el desarrollo de video juegos y el control
+            aéreo (Lutz, 2010).
+          }
+
+          @ListItem {
+            Flask: es un @I{ microframework } web para el lenguaje de programación Python. Su principal
+            característica recae en poseer un conjunto de funcionalidades reducido y simple, brindando gran detalle
+            a la extensibilidad de la herramienta, permitiéndole al usuario elegir los componentes a integrar,
+            adaptándose así a las necesidades del proyecto a desarrollar y a las preferencias de los usuarios de
+            manera flexible e indolora (Flask.org, 2014).
+          }
+
+          @ListItem {
+            Pewee: es un ORM simple, escrito en python, que provee una interfaz ligera para realizar consultas SQL
+            (Leifer, 2014).
+          }
+
+          @ListItem {
+            SQLite: es una librería que implementa un motor de base de datos SQL transaccional y auto contenido.
+            Sobresale entre sus características el poseer una arquitectura que no concibe la existencia de un
+            proceso servidor, almacenando los datos gestionados en un archivo ordinario (SQLite.org, 2014).
+          }
+
+          @ListItem {
+            Twitter bootstrap: es un @I{ framework } HTML, CSS y JavaScript para desarrollar proyectos web
+            adaptables (@I{ responsive }) y orientados a dispositivos móviles (@I{ mobile first })
+            (getbootstrap.com, 2014).
+          }
+
+          @ListItem {
+            JQuery: es una librería escrita en JavaScript rápida, simple y con una gran repertorio de utilidades.
+            Hace de la manipulación del DOM, el manejo de eventos, la creación de animaciones y el uso de Ajax,
+            tareas mucho más sencillas de realizar a través de una API multiplataforma (JQuery.com, 2014).
+          }
       @End @Section
     @EndSections
   @End @Chapter

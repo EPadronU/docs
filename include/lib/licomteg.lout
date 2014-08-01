@@ -48,14 +48,14 @@
     #@WideIndent { 4.00f @OrIfPlain 10s } # @WideTaggedList indent
     #@VeryWideIndent { 8.00f @OrIfPlain 20s } # @VeryWideTaggedList indent
     @ListOuterGap { 0v } # gap before, after lists
-    @ListGap { 1.2f } # gap between list items
-    @ListIndent { 4s } # indent of list items
+    @ListGap { 2.4fx } # gap between list items
+    @ListIndent { 0c } # indent of list items
     #@ListRightIndent { 0s } # right indent of list items
     @ListLabelWidth { 4s } # width allowed for list tags
     #@ListLabelRight { No } # right-adjust list labels
     #@ListLabelRightGap { 2s } # gap when right-adjusting
     #@ListFont { } # font of list items
-    @ListBreak { 1.2fx } # break style of list items
+    @ListBreak {  breakablefirst breakablelast adjust 1.8fx nohyphen } # break style of list items
     #@NumberSeparator { . } # separates nums like 2.3.7
     #@CrossLinkFormat { @Body } # format of cross links
     #@ExternalLinkFormat { @Body } # format of external links
