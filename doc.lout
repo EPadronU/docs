@@ -490,10 +490,11 @@
         @PP
         Para el desarrollo de la herramienta, fruto de esta investigación, se empleó la metodología @I{ Scrum }, la
         cual se define como un ``marco de trabajo en el cual las personas abordan problemas adaptativos complejos,
-        entregando productos del más alto valor posible de manera productiva y creativa''. @I{ Scrum } está
-        fundamentada en el empirismo, el cual afirma que el conocimiento viene de la experiencia y que la toma de
-        decisiones debe basarse en lo que se sabe. También, vale mencionar que esta metodología emplea un modelo
-        iterativa e incremental para optimizar la capacidad de predicción y el control de riesgos.
+        entregando productos del más alto valor posible de manera productiva y creativa'' (Schwaber y Sutherland,
+        2011). @I{ Scrum } está fundamentada en el empirismo, el cual afirma que el conocimiento viene de la
+        experiencia y que la toma de decisiones debe basarse en lo que se sabe. También, vale mencionar que esta
+        metodología emplea un modelo iterativa e incremental para optimizar la capacidad de predicción y el control
+        de riesgos.
 
         @PP
         El corazón del @I{ Scrum } es el @I{ Sprint }, el cual es un lapso de tiempo, cuya duración no supera la de
@@ -772,31 +773,66 @@
         sequences. The Quarterly Journal of Experimental Psychology. pp. 302-309.
       }
       @ListItem {
+        Borghoff, Uwe; Schlichter, Johann (2000). Computer-Supported Cooperative Work: Introduction to
+        Distributed Applications. Springer Science y Business Media. p. 6.
+      }
+      @ListItem {
         Burgin, Mark (2010). Theory of Information: Fundamentality, Diversity and Unification. World Scientific.
         p. VI.
       }
       @ListItem {
+        Eby, Phillip (2010) (Página consultada el 16 de julio de 2014) [On-line]. Dirección:
+        "http://legacy.python.org/dev/peps/pep-3333".
+      }
+      @ListItem {
+        EMC Education Services (2012). Information Storage and Management: Storing, Managing, and Protecting
+        Digital Information in Classic, Virtualized, and Cloud Environments. John Wiley "&" sons. p. 6.
+      }
+      @ListItem {
+        Flask.org (2014)(Página consultada el 19 de julio de 2014) [On-line]. Dirección: "http://flask.pocoo.org/".
+      }
+      @ListItem {
         Furth, J. (1994). The Information Age in Charts, Fortune International.
+      }
+      @ListItem {
+        getbootstrap.com (2014) (Página consultada el 19 de julio de 2014) [On-line]. Dirección:
+        "http://getbootstrap.com/".
       }
       @ListItem {
         Giuliano, V.E. (1983). The United States of America in the Information Age, en Information Policy and
         Scientific Research, Elsevier, Amsterdam, pp. 59-76.
       }
       @ListItem {
+        Grove, Ralph (2009). Web Based Application Development. Jones "&" Bartlett Publishers. p. 42.
+      }
+      @ListItem {
         IBM (2012) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
         "www-01.ibm.com/software/data/bigdata/"
       }
       @ListItem {
-        Mathes, Adam (2004) (Página consultada el 25 de junio de 2013) [On-line]. Dirección: @FF
+        JQuery.com (2014) (Página consultada el 19 de julio de 2014) [On-line]. Dirección: "http://jquery.com/".
+      }
+      @ListItem {
+        Leifer, Charles (2014) (Página consultada el 19 de julio de 2014) [On-line]. Dirección:
+        "http://peewee.readthedocs.org/".
+      }
+      @ListItem {
+        Mark Lutz (2010). Programming Python. O"'"Reilly Media, Inc. 
+      }
+      @ListItem {
+        Mathes, Adam (2004) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
         "www.adammathes.com/academic/computer-mediated-communication/folksonomies.html"
+      }
+      @ListItem {
+        Mehta, Vijay (2008). Pro LINQ Object Relational Mapping in C"#" 2008. Apress. pp. 4-5.
       }
       @ListItem {
         Multics (1968) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
         "www.multicians.org/fjcc4.html"
       }
       @ListItem {
-        PC Magazine (2014) (Página consultada el 23 de enero  de 2014) [On-line]. Dirección:
-        "http://www.pcmag.com/encyclopedia/"
+        Nguyen, Hung; Johnson, Bob; Hackett, Michael (2003). Testing Applications on the Web: Test Planning for
+        Mobile and Internet-Based Systems. Second Edition. Wiley Publishing, Inc.
       }
       @ListItem {
         Schwaber, Ken; Sutherland, Jeff (2011). The Definitive Guide to Scrum: The Rules of the Game.
@@ -806,11 +842,15 @@
         Institute - The Open University.
       }
       @ListItem {
-        Guenther, Rebecca; Radebaugh, Jaqueline (2004). Understanding Metadata. NISO Press.
+        SQLite.org (2014) (Página consultada el 19 de julio de 2014) [On-line]. Dirección:
+        "https://sqlite.org/about.html".
       }
       @ListItem {
-        wise GEEK (2014) (Página consultada el 20 de mayo  de 2014) [On-line]. Dirección:
-        "http://www.wisegeek.com/what-is-location-transparency.htm"
+        World Wide Web Consortium (2012) (Página consultada el 16 de julio de 2014) [On-line]. Dirección:
+        "http://www.w3.org/2012/webapps/charter/"
+      }
+      @ListItem {
+        Zakas, Nicholas (2010). High Performance JavaScript. O"'"Reilly Media, Inc.
       }
     @EndList
   @End @ExtraSection
