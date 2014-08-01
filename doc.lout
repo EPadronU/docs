@@ -247,7 +247,7 @@
             sincronizar recursos localizados en dispositivos diferentes.
 
             //2.4f @MyCenter @B { Gráfica 1. Tags }
-            //0f @CD { 0.4 0.3 } @Scale @IncludeGraphic "./include/img/tags.eps"
+            //0f @CD { 0.4 0.28 } @Scale @IncludeGraphic "./include/img/tags.eps"
             //0f @MyCenter @B { Fuente: Tags (2014) }
           @End @SubSection
 
@@ -564,12 +564,137 @@
       @Begin
         @AddToIndex @Title { Desarrollo de la Herramienta Balo la Metodología Scrum } @Tag { desarr.met }
 
+        @PP
+        El desarrollo de la herramienta web, Omnitag, se llevó a cabo a lo largo de nueve @I{ Sprints }, cada uno
+        de un mes de duración. La distribución de las tareas llevadas a cabo a lo largo del ciclo de desarrollo se
+        ha plasmado en la siguiente tabla, la descripción de las mismas se plantea justo después de la mencionada
+        tabla.
+
+        @NP
+
         @AddToIndex @Title { Distribución de Actividades } @Tag { dist.act }
         @PageMark { dist.act } @AddToTIndex @Title { Tabla 1. Cronograma } @Tag { dist.act }
 
         //2.4f @MyCenter @B { Tabla 1. Distribución de Actividades }
         //0f @CD { 0.36 0.36 } @Scale @IncludeGraphic "./include/img/tabla1.eps"
         //0f @MyCenter @B { Fuente: Padrón (2014) }
+
+        @BeginSubSections
+          @SubSection
+            @Title { Primer Sprint }
+            @Tag { sp.1 }
+          @Begin
+            @AddToIndex @Title { Primer Sprint } @Tag { sp.1 }
+
+            @PP
+            Durante este @I{ sprint } se culminó la revisión de literatura relacionada con los sistemas de
+            clasificación y recuperación de información digital basados en etiquetas, con la recopilación de los
+            antecedentes de esta investigación. Además, se comenzó a diseñar e implementar la interfaz web de usuario
+            a través del diseño de bocetos físicos y digitales; y la base de datos, mediante el esquema fundamental
+            de la misma. Adicionalmente, se dio inicio al proceso de codificación e implementación de la aplicación
+            servidor, diseñando la funcionalidad base para recibir y responder peticiones HTTP. Todo esto junto a las
+            respectivas pruebas de caja gris de los componentes desarrollados, acción que se mantuvo durante todo el
+            ciclo de desarrollo de la herramienta.
+          @End @SubSection
+
+          @SubSection
+            @Title { Segundo Sprint }
+            @Tag { sp.2 }
+          @Begin
+            @AddToIndex @Title { Segundo Sprint } @Tag { sp.2 }
+
+            @PP
+            Durante este @I{ sprint } se continuó con las actividades iniciadas en el anterior refinando el diseño
+            de la base de datos, añadiendo nuevas características a la aplicación servidor y mejorando la interfaz
+            web de usuario con el fin de hacerla más intuitiva y funcional.
+          @End @SubSection
+
+          @SubSection
+            @Title { Tercer Sprint }
+            @Tag { sp.3 }
+          @Begin
+            @AddToIndex @Title { Tercer Sprint } @Tag { sp.3 }
+
+            @PP
+            Al igual que en el anterior, durante este @I{ sprint } se dio continuidad a las labores anteriormente
+            descritas, añadiendo un nuevo conjunto de características a la aplicación servidor, reflejando éstas
+            mejoras en la interfaz web del usuario y dándole los toques finales a la base de datos, finalizando el
+            proceso de diseño e implementación de la misma.
+          @End @SubSection
+
+          @SubSection
+            @Title { Cuarto Sprint }
+            @Tag { sp.4 }
+          @Begin
+            @AddToIndex @Title { Cuarto Sprint } @Tag { sp.4 }
+
+            @PP
+            En este @I{ Sprint } se comenzó el diseño de una API pública, implementada en la aplicación servidor,
+            para permitir una comunicación sencilla con la misma, potenciando así la posibilidad de desarrollar una
+            aplicación cliente que se comunique con la aplicación servidor de manera efectiva. También se hicieron
+            un par de cambios menores a la interfaz web de usuario.
+          @End @SubSection
+
+          @SubSection
+            @Title { Quinto Sprint }
+            @Tag { sp.5 }
+          @Begin
+            @AddToIndex @Title { Quinto Sprint } @Tag { sp.5 }
+
+            @PP
+            Es en este @I{ Sprint } que se da inicio a la codificación e implementación de la aplicación cliente,
+            conformada, al final de este ciclo, solo por el mecanismo de rastreo de recursos del sistema. Por otro
+            lado, se sigue con la expansión de la API mencionada anteriormente y el refinamiento de la interfaz web
+            de usuario, acciones que se repiten hasta el final del tercer lanzamiento.
+          @End @SubSection
+
+          @SubSection
+            @Title { Sexto Sprint }
+            @Tag { sp.6 }
+          @Begin
+            @AddToIndex @Title { Sexto Sprint } @Tag { sp.6 }
+
+            @PP
+            Se desarrolló el módulo que permite al usuario seleccionar a potestad cuáles directorios serán
+            incluidos en el proceso de rastreo, así como el módulo que se encarga de mantener sincronizada con el
+            servidor la información generada a partir del mencionado rastreo.
+          @End @SubSection
+
+          @SubSection
+            @Title { Septimo Sprint }
+            @Tag { sp.7 }
+          @Begin
+            @AddToIndex @Title { Septimo Sprint } @Tag { sp.7 }
+
+            @PP
+            A lo largo de este sprint, se implementó la gestión de usuarios en la aplicación servidor, se adaptó la
+            interfaz web de usuario para reflejar dichos cambios y se implementó en ambas aplicaciones un mecanismo
+            de comunicación sencillo, robusto y seguro, basado en @I{ tokens }.
+          @End @SubSection
+
+          @SubSection
+            @Title { Octavo Sprint }
+            @Tag { sp.8 }
+          @Begin
+            @AddToIndex @Title { Octavo Sprint } @Tag { sp.8 }
+
+            @PP
+            Durante este @I{ Sprint } se desarrolló e integró un mecanismo de etiquetado automático de la
+            información rastreada.
+          @End @SubSection
+
+          @SubSection
+            @Title { Noveno Sprint }
+            @Tag { sp.9 }
+          @Begin
+            @AddToIndex @Title { Noveno Sprint } @Tag { sp.9 }
+
+            @PP
+            Este @I{ Sprint } cerró el ciclo de desarrollo de esta investigación, durante el cual se llevaron a
+            cabo las pruebas más rigurosas del sistema, con la finalidad de detectar y posteriormente corregir
+            errores funcionales que residían en la aplicación.
+          @End @SubSection
+        @EndSubSections
       @End @Section
     @EndSections
   @End @Chapter
