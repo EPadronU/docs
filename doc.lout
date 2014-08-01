@@ -470,6 +470,7 @@
             Hace de la manipulación del DOM, el manejo de eventos, la creación de animaciones y el uso de Ajax,
             tareas mucho más sencillas de realizar a través de una API multiplataforma (JQuery.com, 2014).
           }
+        @EndList
       @End @Section
     @EndSections
   @End @Chapter
@@ -481,140 +482,96 @@
   @Begin
     @BeginSections
       @Section
-        @Title { Primer Lanzamiento }
-        @Tag { primer.lanzamiento }
+        @Title { Descripción de la Metodología Empleada }
+        @Tag { desc.met }
       @Begin
-        @BeginSubSections
-          @SubSection
-            @Title { Primer Sprint }
-            @Tag { primer.sprint }
-          @Begin
-            @PP
-            Durante este @I sprint se culminó la revisión de literatura relacionada con los sistemas de
-            clasificación y recuperación de información digital basados en etiquetas, con la recopilación
-            de los antecedentes de esta investigación. Además, se comenzó a diseñar e implementar la
-            interfaz web de usuario a través del diseño de bocetos físicos y digitales; y la base de
-            datos, mediante el esquema fundamental de la misma. Adicionalmente, se dio inicio al proceso
-            de codificación e implementación de la aplicación servidor, diseñando la funcionalidad base
-            para recibir y responder peticiones HTTP. Todo esto junto a las respectivas pruebas de caja
-            gris de los componentes desarrollados, acción que se mantuvo durante todo el ciclo de
-            desarrollo de la herramienta.
-          @End @SubSection
+        @AddToIndex @Title { Descripción de la Metodología Empleada } @Tag { desc.met }
 
-          @SubSection
-            @Title { Segundo Sprint }
-            @Tag { segundo.sprint }
-          @Begin
-            @PP
-            Durante este sprint se continuó con las actividades iniciadas en el anterior refinando el
-            diseño de la base de datos, añadiendo nuevas características a la aplicación servidor y
-            mejorando la interfaz web de usuario con el fin de hacerla más intuitiva y funcional.
-          @End @SubSection
+        @PP
+        Para el desarrollo de la herramienta, fruto de esta investigación, se empleó la metodología @I{ Scrum }, la
+        cual se define como un ``marco de trabajo en el cual las personas abordan problemas adaptativos complejos,
+        entregando productos del más alto valor posible de manera productiva y creativa''. @I{ Scrum } está
+        fundamentada en el empirismo, el cual afirma que el conocimiento viene de la experiencia y que la toma de
+        decisiones debe basarse en lo que se sabe. También, vale mencionar que esta metodología emplea un modelo
+        iterativa e incremental para optimizar la capacidad de predicción y el control de riesgos.
 
-          @SubSection
-            @Title { Tercer Sprint }
-            @Tag { tercer.sprint }
-          @Begin
-            @PP
-            Al igual que en el anterior, durante este sprint se dio continuidad a las labores
-            anteriormente descritas, añadiendo un nuevo conjunto de características a la aplicación
-            servidor, reflejando éstas mejoras en la interfaz web del usuario y dándole los toques finales
-            a la base de datos, finalizando el proceso de diseño e implementación de la misma.
-          @End @SubSection
-        @EndSubSections
+        @PP
+        El corazón del @I{ Scrum } es el @I{ Sprint }, el cual es un lapso de tiempo, cuya duración no supera la de
+        un mes, durante el cual un incremento de un producto terminado, usable y potencialmente entregable es
+        creado. Un @I{ Sprint } abarca lo que se va a construir, la elaboración de un plan flexible para llevar a
+        cabo dicho proceso, la construcción en sí misma y el producto resultante.
+
+        @PP
+        En cuanto a las pruebas del sistema, se optó por la aplicación de dos tipos: pruebas funcionales orientadas
+        a tareas (@I{ Task-Oriented Functional Tests }) y pruebas de errores forzados (@I{ Forced-Error Tests }),
+        ambas ejecutadas bajo el modelo de caja gris.
+
+        @PP
+        De acuerdo a Hung Nguyen, Bob Johnson y Michael Hackett, las pruebas funcionales orientadas a tareas
+        consisten de casos de prueba positivos que son diseñados para verificar las características del programa al
+        asegurarse de que cada una de ellas se comporte como se espera, tomando en cuenta las especificaciones,
+        guías de usuario, requerimientos y documentos de diseño. Cada característica es probada para:
+
+        //2.0f @BulletList indent { 4s }
+          @ListItem {
+            Validar que la tarea se ejecute adecuadamente dadas condiciones de dato adecuadas bajo condiciones
+            operativas favorables.
+          }
+          @ListItem {
+            Verificar la integridad del resultado final de la tarea.
+          }
+          @ListItem {
+            Asegurar la integridad de la característica cuando se usa junto a otras.
+          }
+        @EndList
+
+        @PP
+        Por su parte, las pruebas de errores forzados, según Nguyen, Johnson y Hackett, son casos de prueba
+        negativos diseñados para forzar a un programa a pasar a condiciones de error. Debe generarse una lista de
+        todos los mensajes de error que el programa emite. Esta lista es usada como base en el desarrollo de
+        casos de prueba. Algunas recomendaciones a la hora de llevar a cabo este tipo de pruebas se describen a
+        continuación:
+
+        //2.0f @BulletList indent { 4s }
+          @ListItem {
+            Verificar que todas las condiciones de error comunes sean detectadas y manejadas correcta y
+            consistentemente.
+          }
+          @ListItem {
+            Verificar que el programa se recupere correctamente para toda condición de error.
+          }
+          @ListItem {
+            Verificar que los estados inestables del programa, causados por un error, también sean corregidos.
+          }
+        @EndList
+
+        @PP
+        Por último, el modelo (o pruebas, como también es conocido) de caja gris incorpora elementos de las
+        pruebas de caja negra y blanca. En las pruebas de caja gris se considera el resultado desde el punto de
+        vista del usuario, el conocimiento técnico específico del sistema y el ambiente operativo; además, estas
+        pruebas evalúan el diseño de la aplicación bajo el contexto de la interoperabilidad entre los componentes
+        del sistema.
+
+        @PP
+        El modelo de caja gris es ideal para poner a prueba de manera efectiva aplicaciones web debido a que
+        éstas abarcan numerosos componentes, tanto de software como de hardware. Estos componentes deben ser
+        probados en el contexto del diseño del sistema para evaluar su funcionalidad y compatibilidad.
       @End @Section
 
       @Section
-        @Title { Segundo Lanzamiento }
-        @Tag { segundo.lanzamiento }
+        @Title { Desarrollo de la Herramienta Balo la Metodología Scrum }
+        @Tag { desarr.met }
       @Begin
-        @BeginSubSections
-          @SubSection
-            @Title { Cuarto Sprint }
-            @Tag { cuarto.sprint }
-          @Begin
-            @PP
-            En este sprint se comenzó el diseño de una API pública, implementada en la aplicación
-            servidor, para permitir una comunicación sencilla con la misma, potenciando así la posibilidad
-            de desarrollar una aplicación cliente que se comunique con la aplicación servidor de manera
-            efectiva. También se hicieron un par de cambios menores a la interfaz web de usuario.
-          @End @SubSection
+        @AddToIndex @Title { Desarrollo de la Herramienta Balo la Metodología Scrum } @Tag { desarr.met }
 
-          @SubSection
-            @Title { Quinto Sprint }
-            @Tag { quinto.sprint }
-          @Begin
-            @PP
-            Es en este sprint que se da inicio a la codificación e implementación de la aplicación
-            cliente, conformada, al final de este ciclo, solo por el mecanismo de rastreo de recursos del
-            sistema. Por otro lado, se sigue con la expansión de la API mencionada anteriormente y el
-            refinamiento de la interfaz web de usuario, acciones que se repiten hasta el final del tercer
-            lanzamiento.
-          @End @SubSection
-        @EndSubSections
-      @End @Section
+        @AddToIndex @Title { Distribución de Actividades } @Tag { dist.act }
+        @PageMark { dist.act } @AddToTIndex @Title { Tabla 1. Cronograma } @Tag { dist.act }
 
-
-      @Section
-        @Title { Tercer Lanzamiento }
-        @Tag { tercer.lanzamiento }
-      @Begin
-        @BeginSubSections
-          @SubSection
-            @Title { Sexto Sprint }
-            @Tag { sexto.sprint }
-          @Begin
-            @PP
-            Se desarrolló el módulo que permite al usuario seleccionar a potestad cuáles directorios serán
-            incluidos en el proceso de rastreo, así como el módulo que se encarga de mantener sincronizada
-            con el servidor la información generada a partir del mencionado rastreo.
-          @End @SubSection
-
-          @SubSection
-            @Title { Séptimo Sprint }
-            @Tag { septimo.sprint }
-          @Begin
-            @PP
-            A lo largo de este sprint, se implementó la gestión de usuarios en la aplicación servidor, se
-            adaptó la interfaz web de usuario para reflejar dichos cambios y se implementó en ambas
-            aplicaciones un mecanismo de comunicación sencillo, robusto y seguro, basado en @I tokens.
-          @End @SubSection
-        @EndSubSections
-      @End @Section
-
-      @Section
-        @Title { Cuarto Lanzamiento }
-        @Tag { cuarto.lanzamiento }
-      @Begin
-        @BeginSubSections
-          @SubSection
-            @Title { Octavo Sprint }
-            @Tag { octavo.sprint }
-          @Begin
-            @PP
-            Durante este sprint se desarrolló e integró un mecanismo de etiquetado automático de la
-            información rastreada.
-          @End @SubSection
-
-          @SubSection
-            @Title { Noveno Sprint }
-            @Tag { noveno.sprint }
-          @Begin
-            @PP
-            Este sprint cerró el ciclo de desarrollo de esta investigación, durante el cual se llevaron a
-            cabo las pruebas más rigurosas del sistema, con la finalidad de detectar y posteriormente
-            corregir errores funcionales que residían en la aplicación.
-          @End @SubSection
-        @EndSubSections
+        //2.4f @MyCenter @B { Tabla 1. Distribución de Actividades }
+        //0f @CD { 0.36 0.36 } @Scale @IncludeGraphic "./include/img/tabla1.eps"
+        //0f @MyCenter @B { Fuente: Padrón (2014) }
       @End @Section
     @EndSections
-
-    @AddToIndex @Title { Distribución de Actividades } @Tag { dist.act }
-    @PageMark { dist.act } @AddToTIndex @Title { Tabla 1. Cronograma } @Tag { dist.act }
-
-    //2.4f @MyCenter @B { Tabla 1. Distribución de Actividades }
-    //0f @CD 0.65 @Scale @IncludeGraphic "./include/img/tabla1.eps"
-    //0f @MyCenter @B { Fuente: Padrón (2014) }
   @End @Chapter
 
   @NP
