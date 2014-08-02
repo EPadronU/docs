@@ -223,7 +223,7 @@ def @TEG
     {
         @PageMark @Tag // @AddToIndex @Title { Índice de Figuras } @Tag { @Tag } //
 
-        @MyCenter @B { ÍNDICE DE GRÁFICOS }
+        @MyCenter @B { ÍNDICE DE FIGURAS }
 
         //2.4f { @HExpand {} Pág. }
         //1.2f { @GraphList }
