@@ -476,6 +476,7 @@
   @End @Chapter
 
   @NP
+
   @Chapter
     @Num { III }
     @Title { Marco Metodológico }
@@ -704,51 +705,66 @@
 
   @Chapter
     @Num { IV }
-    @Title { El título de este capítulo }
+    @Title { OmniTag }
   @Begin
     @BeginSections
       @Section
-        @Title { El título de esta sección }
-        @Tag { 92183981293 }
+        @Title { Arquitectura de la Herramienta }
+        @Tag { arc.herr }
       @Begin
         @PP
-        En primer lugar, se describirán las clases que definen los modelos usados por el módulo servidor.
-        @B BaseModel pauta la interfaz mínima que debe poseer todo modelo, obligando la implementación de tres
-        métodos fundamentales, @I exist, que determina si un registro existe o no; @I { get_by_id }, el cual
-        realiza una búsqueda de registros a partir de un conjunto de identificadores; y finalmente, @I json,
-        el cual transforma un registro al formato @I { json }.
-        @PP
-        La clase @B User aglomera la información relacionada con el nombre e información de acceso de un
-        usuario del sistema. Las clases @B Device, @B Search y @B Tag, son usadas para representar los
-        dispositivos, búsquedas y etiquetas de los usuarios, respectivamente; estas clases dependen
-        directamente de la clase @B User.
-        @PP
-        Por su lado, la clase @B Resource sirve para representar los recursos almacenados en los distintos
-        dispositivos de los usuarios. Las clases @B TagResources y @B TagSearch son empleadas para relacionar
-        etiquetas con recursos (en el primer caso) y búsquedas (en el segundo caso).
-        @PP
-        Las anteriores, están plasmadas en el diagrama de clases de la gráfica 4, presentada más abajo; y a
-        excepción de @B BaseModel, corresponden a una y sola una tabla en la base de datos, describiendo en
-        totalidad los modelos implementados en el sistema.
-        @PP
-        En el caso del módulo cliente, se tiene la clase @B Manager, la cual sirve como pilar fundamental al
-        encargarse de la generación,  lectura y respaldo de los archivos de configuración y estado del
-        sistema, así como también de la comunicación con el módulo servidor. El respaldo y comunicación con el
-        servidor se lleva a cabo gracias a las clases @B Cache y @B SyncAgent, respectivamente. Estas tareas
-        corresponden a dos hilos de ejecución independientes, ambos instancias de la clase @B DaemonThread.
-        La clase @B Crawler encapsula las rutinas relacionados con el rastreo de recursos en el dispositivo
-        anfitrión, mientras que la clase @B AutoTagger es la encargada del etiquetado automático de los
-        mencionados recursos.
-        @PP
-        Por último, @B SettingsForm es una clase empleada en la verificación de los datos enviados por el
-        usuario en el formulario dispuesto para la actualización de los parámetros de configuración del
-        sistema.
+        OmniTag es una herramienta que permite a sus usuarios organizar y buscar los archivos, contenidos en sus
+        distintos computadores de escritorio y portátiles, a través del uso de etiquetas bajo una sola plataforma
+        basada en tecnologías web y el lenguaje de programación Python. OmniTag relega a un navegador web el
+        despliegue de su interfaz gráfica de usuario, construida mediante el uso de los lenguajes HTML y CSS junto
+        al @I{ framework } Twitter Bootstrap, para la parte visual; y el lenguaje de programación JavaScript, con
+        la ayuda de la librería JQuery, para la parte interactiva. La lógica de negocios es manejada por el
+        interprete de Python, el cual se vale de una base de datos SQLite para gestionar la información no volátil,
+        base de datos con la que interactúa mediante el ORM Peewee; y el @I{ framework } web Flask, encargado del
+        manejo de las peticiones web, la transmisión de contenido estático, la ejecución de los programas de
+        aplicación para generar contenido dinámico, entre otros.
 
+        @PP
+        Funcionalmente, OmniTag está constituida por dos módulos fundamentales: uno cliente y otro servidor. Ambos
+        módulos dependen de un navegador web para interactuar con el usuario, haciendo uso de las tecnologías
+        disponibles en dicho navegador para desplegar una interfaz interoperable con los distintos ambientes
+        operativos, computadores de escritorio y portátiles de amplio uso en la actualidad.
+
+        @PP
+        El módulo servidor se ocupa de la gestión de todos los procesos relacionados con la creación, control y
+        mantenimiento de los usuarios y sus correspondientes dispositivos. También se encarga de brindar las
+        funcionalidades de visualización, etiquetado y búsqueda de los recursos almacenados en dichos dispositivos.
+        La tarea de visualización se ofrece al usuario empleando una capa de transparencia de localización para un
+        cómodo tratamiento de los recursos; el etiquetado es flexible, pudiendo aplicar o remover etiquetas a
+        múltiples recursos a la vez, y la búsqueda es un proceso intuitivo permitiendo asociar un número arbitrario
+        de palabras clave bajo un mismo término con el fin de potenciar, facilitar y agilizar la recuperación de
+        los recursos.
+
+        @PP
+        Por su parte, el módulo cliente es la pieza destinada a residir en los dispositivos de los usuarios,
+        permitiendo a éstos indicarle cuáles directorios de un repositorio en particular tomará en cuenta a la hora
+        de rastrear los recursos que serán sincronizados con el módulo servidor para su posterior clasificación y
+        recuperación. También es responsable de alojar los parámetros de configuración empleado para la
+        comunicación con el servidor, además de ser el encargado de predefinir etiquetas a un subconjunto de los
+        recursos rastreados, dependiendo su asignación de la naturaleza de los dichos recursos. La @B { Figura 1}
+        plasma la funcionalidad de estos módulos, así como la interacción que se da entre ellos y aquella que
+        involucra al usuario.
+
+        @AddToGIndex @Title { Distribución de Actividades } @Tag { arch.func }
+        @PageMark { arch.func } @AddToTIndex @Title { Figura 1. Arquitectura Funcional de la Herramienta } @Tag { arch.func }
+
+        //2.4f @MyCenter @B {  Figura 1. Arquitectura Funcional de la Herramienta }
+        //0f @CD { 0.6 } @Scale @IncludeGraphic "./include/img/figura1.eps"
+        //0f @MyCenter @B { Fuente: Padrón (2014) }
+      @End @Section
+
+      @Section
+        @Title { Implementación de la Herramienta }
+        @Tag { impl.herr }
+      @Begin
         //2.4f @MyCenter @B { Gráfica 4. Diagrama de Clases de los Modelos }
         //0f @CD 0.4 @Scale @IncludeGraphic "./include/img/classes-serv.eps"
         //0f @MyCenter @B { Fuente: Padrón (2014) }
-
-        @NP
 
         //2.4f @MyCenter @B { Gráfica 5. Diagrama de Clases del Módulo Cliente }
         //0f @CD 0.4 @Scale @IncludeGraphic "./include/img/classes-clnt.eps"
