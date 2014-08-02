@@ -766,16 +766,142 @@
         @Title { Implementación de la Herramienta }
         @Tag { impl.herr }
       @Begin
+        @PP
+        La @B { Figura 5 } ilustra los modelos que forman parte del módulo servidor, cabe mencionar que ésta
+        describe los atributos de los modelos y las relaciones que existen entre ellos tomando en cuenta su
+        representación en forma de tablas bajo un paradigma relacional, estando éstas intrínsecamente vinculadas
+        con sus correspondientes clases (paradigma orientado a objetos) mediante el uso del @I{ Peewee } (ORM).
+        Estos modelos son:
+        
+        //2.0f @BulletList indent { 4s }
+          @ListItem { User: Representa un usuario de la herramienta. }
+          @ListItem { Device: Representa un dispositivo de un usuario. }
+          @ListItem { Tag: Representa una etiqueta, la cual pertenece a un usuario único. }
+          @ListItem { Resource: Representa un recurso alojado en dispositivo en particular. }
+          @ListItem { Search: Representa asociaciones de etiquetas usadas en búsquedas almacenadas. }
+        @EndList
+
         //2.4f @MyCenter @B { Figura 5. Diagrama de Clases de los Modelos }
         //0f @PageMark { figura5 }
         //0f @AddToGIndex @Title { Figura 5. Diagrama de Clases de los Modelos } @Tag { figura5 }
         //0f @CD 0.4 @Scale @IncludeGraphic "./include/img/classes-serv.eps"
         //0f @MyCenter @B { Fuente: Padrón (2014) }
 
+        @PP
+        Como puede observarse, adicional a los atributos de los modelos, éstos comparten una interfaz común,
+        definida por la clase @I{ BaseModel }, además de tener asociados un conjunto de métodos, a saber:
+
+        //2.0f @BulletList indent { 4s }
+          @ListItem {
+            @I{ BaseModel }: Pauta la interfaz mínima que debe poseer todo modelo, definiendo tres métodos:
+            @I{ exists }, para verificar la existencia de un registro en particular en la base de datos
+            correspondiente; @I{ get_by_id }, que retorna un conjunto de registros dada una lista de
+            identificadores; y por último, @I{ json }, el cual se encarga de convertir en formato @I{ JSON } un
+            registro en particular.
+          }
+          @ListItem {
+            @I{ Tag }: Solo define un método: @I{ get_by_name }, que se encarga de devolver todos aquellos
+            registros que correspondan a una lista de nombres en particular.
+          }
+          @ListItem {
+            @I{ Search }: Similar a @I{ Tag }, esta clase define solo un método @I{ get_by_name }, el cual, a
+            partir de una lista de nombres, retorna todos los recursos cuyo nombre se encuentra en la mencionada
+            lista.
+          }
+          @ListItem {
+            @I{ Resource }: Esta clase define un método llamado @I{ get_untagged_resources } que se encarga de
+            devolver todos aquellos recursos que no poseen asociación alguna con una etiqueta.
+          }
+          @ListItem {
+            @I{ TagSearch }: Establece la relación que existe entre las etiquetas y las búsquedas. Esta clase
+            ofrece un método @I{ get_tags_by_search } que retorna todas las etiquetas asociadas a una búsqueda en
+            particular.
+          }
+          @ListItem {
+            @I{ TagResource }: Funge como vínculo entre las etiquetas y los recursos. El método @I{
+            get_resources_by_tag } permite obtener todos los recursos que se encuentran asociados a un conjunto
+            arbitrario de etiquetas.
+          }
+        @EndList
+
+        @PP
+        En el caso del módulo cliente, se presenta a continuación un diagrama de clases que muestra la estructura
+        interna del mismo.
+
         //2.4f @MyCenter @B { Figura 6. Diagrama de Clases del Módulo Cliente }
         //0f @PageMark { figura6 }
         //0f @AddToGIndex @Title { Figura 6. Diagrama de Clases del Módulo Cliente } @Tag { figura6 }
         //0f @CD 0.4 @Scale @IncludeGraphic "./include/img/classes-clnt.eps"
+        //0f @MyCenter @B { Fuente: Padrón (2014) }
+
+        //2.0f @BulletList indent { 4s }
+          @ListItem {
+            @I{ Manager }: se encargar de la generación, lectura y respaldo de los archivos de configuración y
+            estado del sistema, así como también de la comunicación con el módulo servidor. Los métodos asociados a
+            esta clase son: @I{ __backup_thread } y @I{ __sync_thread } contienen los hilos que se encargan del
+            respaldo de las variables de estado y la sincronización de los archivos rastreados con el servidor,
+            respectivamente; @I{ start_backup_daemon } y @I{ start_sync_daemon } se encargan de ejecutar los hilos
+            mencionados anteriormente; @I{ __add_to_black_list } y @I{ __add_to_white_list } controlan la inserción
+            de directorios en la lista negra y blanca, de manera
+            correspondiente.
+          }
+          @ListItem {
+            @I{ DaemonThread }: es la clase usada para generar los hilos de ejecución asíncrona y que extiende a la
+            clase @I{ Thread } del módulo @I{ threading } de la librería estándar del lenguaje de programación
+            Python.
+          }
+          @ListItem {
+            @I{ Cache }: es la clase sobre la cual @I{ Manager } confía las tareas de respaldo de las variables de
+            estado. Los métodos definidos en esta clase son: @I{ __check_all }, @I{ __check_integrity } y
+            @I{ __check_state }, empleados para verificar la correctitud del estado interno de toda instancia de la
+            clase; @I{ __get_default_base_dir } retorna el directorio base a usar por defecto; @I{ __load } carga
+            en memoria las variables de estado serializadas en el medio de almacenamiento secundario del
+            dispositivo en formato JSON; @I{ dump }, lleva a cabo el proceso inverso que realiza @I{ __load }; y,
+            por último, los métodos @I{ get } y @I{ set } controlan el acceso y redefinición de las variables
+            respaldadas.
+          }
+          @ListItem {
+            @I{ SyncAgent }: es usada por la clase @I{ Manager } para mantener los archivos rastreados en
+            sincronización con el servidor. Los métodos de esta clase son: @I{ __build_request } construye una
+            petición HTTP a partir de una lista de archivos, petición usada por la conexión generada por
+            @I{ __build_connection }; el método @I{ sync } lleva a cabo la sincronización mediante el uso de la
+            conexión mencionada anteriormente.
+          }
+          @ListItem {
+            @I{ Crawler }: encapsula las rutinas relacionadas con el rastreo de recursos en el dispositivo del
+            usuario. Los métodos definidos es esta clase son los siguientes: @I{ __check_state } verifica la
+            correctitud del estado interno de toda instancia de la clase; @I{ __crawl_directory } determina, dada
+            la ruta de un directorio, si éste debe o no ser tomado en cuenta en el rastreo de archivos; y, por
+            último, @I{ crawl } ejecuta el rastreo.
+          }
+          @ListItem {
+            @I{ AutoTagger }: esta clase se encarga de relacionar etiquetas a los archivos rastreados de manera
+            automática en función de la extensión de éstos. El único método de esta clase se llama @I{ process },
+            el cuál ejecuta el etiquetado automático de los archivos indicados.
+          }
+          @ListItem {
+            @I{ SettingsForm }: es empleada para la recepción y validación de los parámetros de configuración
+            proporcionados por los usuarios a través de la interfaz gráfica. Los métodos definidos en esta clase se
+            describen a continuación: @I{ validate } verifica la correctitud de la información enviada por el
+            usuario y @I{ update_setings } se encarga de comunicar al resto de la aplicación los nuevos valores de
+            los parámetros de configuración.
+          }
+        @EndList
+
+        @PP
+        A continuación, se presenta el código fuente de los procesos de rastreo y auto-etiquetado de archivos,
+        componentes más sobresalientes del sistema:
+
+        //2.4f @MyCenter @B { Figura 7. Crawler }
+        //0f @PageMark { figura7 }
+        //0f @AddToGIndex @Title { Figura 7. Crawler } @Tag { figura7 }
+        //0f @CD 0.36 @Scale @IncludeGraphic "./include/img/crawler.eps"
+        //0f @MyCenter @B { Fuente: Padrón (2014) }
+
+        //2.4f @MyCenter @B { Figura 8. AutoTagger }
+        //0f @PageMark { figura8 }
+        //0f @AddToGIndex @Title { Figura 8. AutoTagger } @Tag { figura8 }
+        //0f @CD 0.36 @Scale @IncludeGraphic "./include/img/auto-tagger.eps"
         //0f @MyCenter @B { Fuente: Padrón (2014) }
       @End @Section
     @EndSections
