@@ -61,7 +61,43 @@
     @AlterTitle { Introducción }
   @Begin
     @PP
+    La representación lógica de los datos contenidos dentro de un dispositivo de almacenamiento secundario, nacida
+    en 1969 con el lanzamiento del sistema operativo @I Multics, de morfología semejante a la de un árbol
+    invertido, conformada por una seria de directorios y archivos; y amplio uso por los sistemas operativos
+    modernos, presenta limitaciones como consecuencia de su naturaleza jerárquica y rígida taxonomía, propiedades
+    que se confrontan directamente con el mecanismo biológico empleado por los seres humanos a la hora de almacenar
+    y recuperar información de sus cerebros.
 
+    @PP
+    La memoria humana, a alto nivel, dispone de vínculos semánticos altamente subjetivos para almacenar la
+    información de interés; estos vínculos, que pueden tomar la forma de imágenes complejas o simples palabras
+    clave, sirven de referencia a la hora de recuperar algún fragmento de los conglomerados de datos, experiencias
+    y sensaciones que los mencionados vínculos ayudan a conformar.
+
+    @PP
+    Esta investigación se llevó a cabo con el objetivo de representar de manera lógica la información contenida en
+    un medio de almacenamiento secundario mediante una estructura semejante en funcionalidad y apariencia al
+    mecanismo biológico de alto nivel empleado por el ser humano en la gestión de su memoria. La estructura aquí
+    propuesta está inspirada en el concepto de etiqueta (de gran popularidad en el área de los sistemas web de
+    administración manual y discriminada de información) e implementada como una herramienta web para garantizar su
+    interoperabilidad entre los sistemas operativos de más amplio uso en la actualidad.
+
+    @PP
+    En el capítulo I, la motivación de esta investigación se aborda con mayor profundidad y detalle, se describen
+    sus objetivos y se delimita su alcance. En el capítulo II, se mencionan los antecedentes de esta investigación,
+    exponiendo sus principales características, señalando así sus semejanzas y limitaciones con respecto al sistema
+    propuesto. Adicionalmente, en este capítulo se condensa la descripción de los principales conceptos hallados a
+    lo largo del documento, al igual que las herramientas que fueron empleadas en el desarrollo del sistema.
+
+    @PP
+    El capítulo III, plantea la metodología aplicada en la elaboración y prueba de la herramienta, mientras que la
+    estructura funcional de la misma es expuesta de manera cabal en el capítulo VI, en el cual se presenta al
+    lector los módulos y algoritmos que conforman el sistema mediante diagramas y especificaciones detalladas.
+
+    @PP
+    Finalmente, en el capítulo V se disponen las pruebas realizadas al sistema mediante el empleo de una serie de
+    imágenes debidamente comentadas, las cuales reflejan el comportamiento presentado por la herramienta ante
+    dichas pruebas.
   @End @ExtraSection
 
   @NP
