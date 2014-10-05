@@ -48,7 +48,7 @@
     #@WideIndent { 4.00f @OrIfPlain 10s } # @WideTaggedList indent
     #@VeryWideIndent { 8.00f @OrIfPlain 20s } # @VeryWideTaggedList indent
     @ListOuterGap { 0v } # gap before, after lists
-    @ListGap { 2.4fx } # gap between list items
+    @ListGap { 2.0fx } # gap between list items
     @ListIndent { 0c } # indent of list items
     #@ListRightIndent { 0s } # right indent of list items
     @ListLabelWidth { 4s } # width allowed for list tags

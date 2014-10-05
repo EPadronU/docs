@@ -170,7 +170,7 @@
           @Begin
             @AddToIndex @Title { Objetivo General } @Tag { obj.gen }
 
-            //2.4f @BulletList
+            //2.0f @BulletList
               @ListItem {
                 Desarrollar una herramienta web para la clasificación y recuperación de información
                 digital basada en etiquetas
@@ -184,7 +184,7 @@
           @Begin
             @AddToIndex @Title { Objetivos Específicos } @Tag { obj.esp }
 
-            //2.4f @BulletList
+            //2.0f @BulletList
             @ListItem {
               Realizar una revisión documental sobre herramientas de clasificación y recuperación de
               información digital
@@ -246,7 +246,7 @@
             para el sistema operativo @I { OS X }®, está sujeta a una licencia privativa y no es capaz de
             sincronizar recursos localizados en dispositivos diferentes.
 
-            //2.4f @MyCenter @B { Figura 1. Tags }
+            //2.0f @MyCenter @B { Figura 1. Tags }
             //0f @PageMark { figura1 }
             //0f @AddToGIndex @Title { Figura 1. Tags } @Tag { figura1 }
             //0f @CD { 0.4 0.28 } @Scale @IncludeGraphic "./include/img/tags.eps"
@@ -274,7 +274,7 @@
             recursos localizados en dispositivos diferentes. Otra desventaja que presenta este sistema
             es que está disponible solo para el sistema operativo @I { Microsoft Windows }®.
 
-            //2.4f @MyCenter @B { Figura 2. TaggTool }
+            //2.0f @MyCenter @B { Figura 2. TaggTool }
             //0f @PageMark { figura2 }
             //0f @AddToGIndex @Title { Figura 2. TaggTool } @Tag { figura2 }
             //0f @CD { 0.4 0.3 } @Scale @IncludeGraphic "./include/img/taggtool.eps"
@@ -297,7 +297,7 @@
             distintos, Tabbles está disponible únicamente para el sistema operativo Microsoft Windows® bajo
             una licencia privativa.
 
-            //2.4f @MyCenter @B { Figura 3. Tabbles }
+            //2.0f @MyCenter @B { Figura 3. Tabbles }
             //0f @PageMark { figura3 }
             //0f @AddToGIndex @Title { Figura 3. Tabbles } @Tag { figura3 }
             //0f @CD { 0.6  0.5 } @Scale @IncludeGraphic "./include/img/tabbles.eps"
@@ -439,11 +439,12 @@
 
         //2.0f @BulletList
           @ListItem {
-            Python: es un lenguaje de programación de código abierto y de propósito general. Cuenta con una
-            sintaxis simple y legible. Soporta los paradigmas: orientado a objetos, funcional, y procedural. El
-            dominio de aplicación del lenguaje va desde sistemas de administración, desarrollo de paginas web, y
-            educación hasta el análisis computacional de inversión, el desarrollo de video juegos y el control
-            aéreo (Lutz, 2010).
+            Python: es un lenguaje de programación interpretado y de propósito general que combina los paradigmas:
+            orientado a objetos, imperativo y funcional. El dominio de aplicación del lenguaje va desde el
+            desarrollo de herramientas y utilidades para la administración de sistemas y la construcción de páginas
+            web ricas en características hasta la integración de componentes escritos en distintos lenguajes de
+            programación, su uso en computación numérica y científica, el desarrollo de video juegos y la minería
+            de datos (Lutz, 2010).
           }
 
           @ListItem {
@@ -498,7 +499,10 @@
         Para el desarrollo de la herramienta, fruto de esta investigación, se empleó la metodología @I{ Scrum }, la
         cual se define como un ``marco de trabajo en el cual las personas abordan problemas adaptativos complejos,
         entregando productos del más alto valor posible de manera productiva y creativa'' (Schwaber y Sutherland,
-        2011). @I{ Scrum } está fundamentada en el empirismo, el cual afirma que el conocimiento viene de la
+        2011).
+
+        @PP
+        @I{ Scrum } está fundamentada en el empirismo, el cual afirma que el conocimiento viene de la
         experiencia y que la toma de decisiones debe basarse en lo que se sabe. También, vale mencionar que esta
         metodología emplea un modelo iterativa e incremental para optimizar la capacidad de predicción y el control
         de riesgos.
@@ -580,7 +584,7 @@
 
         @NP
 
-        //2.4f @MyCenter @B { Tabla 1. Distribución de Actividades }
+        //2.0f @MyCenter @B { Tabla 1. Distribución de Actividades }
         //0f @PageMark { dist.act }
         //0f @AddToTIndex @Title { Tabla 1. Distribución de Actividades } @Tag { dist.act }
         //0f @CD { 0.36 0.36 } @Scale @IncludeGraphic "./include/img/tabla1.eps"
@@ -755,7 +759,7 @@
         plasma la funcionalidad de estos módulos, así como la interacción que se da entre ellos y aquella que
         involucra al usuario.
 
-        //2.4f @MyCenter @B { Figura 4. Arquitectura Funcional de la Herramienta }
+        //2.0f @MyCenter @B { Figura 4. Arquitectura Funcional de la Herramienta }
         //0f @PageMark { figura4 }
         //0f @AddToGIndex @Title { Figura 4. Arquitectura Funcional de la Herramienta } @Tag { figura4 }
         //0f @CD { 0.6 } @Scale @IncludeGraphic "./include/img/arquitectura-funcional.eps"
@@ -772,7 +776,7 @@
         representación en forma de tablas bajo un paradigma relacional, estando éstas intrínsecamente vinculadas
         con sus correspondientes clases (paradigma orientado a objetos) mediante el uso del @I{ Peewee } (ORM).
         Estos modelos son:
-        
+
         //2.0f @BulletList indent { 4s }
           @ListItem { User: Representa un usuario de la herramienta. }
           @ListItem { Device: Representa un dispositivo de un usuario. }
@@ -781,7 +785,7 @@
           @ListItem { Search: Representa asociaciones de etiquetas usadas en búsquedas almacenadas. }
         @EndList
 
-        //2.4f @MyCenter @B { Figura 5. Diagrama de Clases de los Modelos }
+        //2.0f @MyCenter @B { Figura 5. Diagrama de Clases de los Modelos }
         //0f @PageMark { figura5 }
         //0f @AddToGIndex @Title { Figura 5. Diagrama de Clases de los Modelos } @Tag { figura5 }
         //0f @CD 0.4 @Scale @IncludeGraphic "./include/img/classes-serv.eps"
@@ -828,7 +832,7 @@
         En el caso del módulo cliente, se presenta a continuación un diagrama de clases que muestra la estructura
         interna del mismo.
 
-        //2.4f @MyCenter @B { Figura 6. Diagrama de Clases del Módulo Cliente }
+        //2.0f @MyCenter @B { Figura 6. Diagrama de Clases del Módulo Cliente }
         //0f @PageMark { figura6 }
         //0f @AddToGIndex @Title { Figura 6. Diagrama de Clases del Módulo Cliente } @Tag { figura6 }
         //0f @CD 0.4 @Scale @IncludeGraphic "./include/img/classes-clnt.eps"
@@ -892,13 +896,13 @@
         A continuación, se presenta el código fuente de los procesos de rastreo y auto-etiquetado de archivos,
         componentes más sobresalientes del sistema:
 
-        //2.4f @MyCenter @B { Figura 7. Crawler }
+        //2.0f @MyCenter @B { Figura 7. Crawler }
         //0f @PageMark { figura7 }
         //0f @AddToGIndex @Title { Figura 7. Crawler } @Tag { figura7 }
         //0f @CD 0.36 @Scale @IncludeGraphic "./include/img/crawler.eps"
         //0f @MyCenter @B { Fuente: Padrón (2014) }
 
-        //2.4f @MyCenter @B { Figura 8. AutoTagger }
+        //2.0f @MyCenter @B { Figura 8. AutoTagger }
         //0f @PageMark { figura8 }
         //0f @AddToGIndex @Title { Figura 8. AutoTagger } @Tag { figura8 }
         //0f @CD 0.36 @Scale @IncludeGraphic "./include/img/auto-tagger.eps"
@@ -967,7 +971,7 @@
         "http://peewee.readthedocs.org/".
       }
       @ListItem {
-        Mark Lutz (2010). Programming Python. O"'"Reilly Media, Inc. 
+        Lutz, Mark (2010). Programming Python. O"'"Reilly Media, Inc.
       }
       @ListItem {
         Mathes, Adam (2004) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
