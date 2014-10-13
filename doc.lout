@@ -757,6 +757,8 @@
         @Title { Arquitectura de la Herramienta }
         @Tag { arc.herr }
       @Begin
+        @AddToIndex @Title { Arquitectura de la Herramienta } @Tag { arc.herr }
+
         @PP
         OmniTag es una herramienta que permite a sus usuarios organizar y buscar los archivos, contenidos en sus
         distintos computadores de escritorio y portátiles, a través del uso de etiquetas bajo una sola plataforma
@@ -806,6 +808,8 @@
         @Title { Implementación de la Herramienta }
         @Tag { impl.herr }
       @Begin
+        @AddToIndex @Title { Implementación de la Herramienta } @Tag { impl.herr }
+
         @PP
         La @B { Figura 5 } ilustra los modelos que forman parte del módulo servidor, cabe mencionar que ésta
         describe los atributos de los modelos y las relaciones que existen entre ellos tomando en cuenta su
