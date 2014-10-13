@@ -32,6 +32,23 @@
     @KeyWords { Aplicación web, Etiquetado, Clasificación, Recuperación, Información digital }
   @Begin
     @PP
+      En este trabajo de investigación se propuso el desarrollo de una herramienta web para la clasificación y
+      recuperación de información digital basada en etiquetas, con el objetivo de gestionar los archivos dispuestos
+      en un medio de almacenamiento secundario mediante un mecanismo similar al empleado por la memoria del ser
+      humano en las tareas de almacenamiento y recabado de información, estrategia que dista en gran medida de la
+      jerarquía de directorios y archivos empleada por los principales sistemas operativos de la actualidad. De la
+      revisión documental de las herramientas de clasificación y recuperación de información que han intentado
+      abordar el problema anteriormente descrito a través de una estrategia similar a la propuesta, se encontraron
+      una serie de limitaciones, justificando el desarrollo de @I OmniTag, la herramienta producto de esta
+      investigación, y la cual ofrece a sus usuarios un entorno centralizado y multiplataforma, en el cual pueden
+      clasificar y recuperar los archivos contenidos en sus distintos computadores a través del vínculo de los
+      mencionados archivos con una serie de palabras clave de gran valor semántico y libre construcción.
+      Características logradas gracias a que @I OmniTag fue concebido mediante una arquitectura cliente-servidor y
+      está apoyado sobre tecnologías web. En cuanto a las pruebas realizadas a la herramienta, éstas fueron
+      documentadas en gran detalle, con una serie de capturas de pantallas como principal soporte para mostrar el
+      comportamiento de la aplicación frente a los escenarios diseñados alrededor del modelo de caja gris,
+      verificando la correctitud de las salidas en función de las entradas proporcionadas sin dejar de tomar en
+      cuenta la lógica subyacente del sistema.
   @End @Summary
 
   @NP
