@@ -28,27 +28,31 @@
 
   @NP
 
+  @ExtraSection
+    @Title { }
+    @AlterTitle { Dedicatoria }
+    @BeforeIndex { true }
+  @Begin
+    //20v ||12f { rragged } @Break @I {
+      A mis amorosos y pacientes padres, quienes me han acompañado y apoyado todo este tiempo; y a mi tutor, quien
+      ha sido el mejor guía y amigo que un pupilo podría pedir.
+    }
+  @End @ExtraSection
+
+  @NP
+
   @Summary
     @KeyWords { Aplicación web, Etiquetado, Clasificación, Recuperación, Información digital }
   @Begin
     @PP
-      En este trabajo de investigación se propuso el desarrollo de una herramienta web para la clasificación y
-      recuperación de información digital basada en etiquetas, con el objetivo de gestionar los archivos dispuestos
-      en un medio de almacenamiento secundario mediante un mecanismo similar al empleado por la memoria del ser
-      humano en las tareas de almacenamiento y recabado de información, estrategia que dista en gran medida de la
-      jerarquía de directorios y archivos empleada por los principales sistemas operativos de la actualidad. De la
-      revisión documental de las herramientas de clasificación y recuperación de información que han intentado
-      abordar el problema anteriormente descrito a través de una estrategia similar a la propuesta, se encontraron
-      una serie de limitaciones, justificando el desarrollo de @I OmniTag, la herramienta producto de esta
-      investigación, y la cual ofrece a sus usuarios un entorno centralizado y multiplataforma, en el cual pueden
-      clasificar y recuperar los archivos contenidos en sus distintos computadores a través del vínculo de los
-      mencionados archivos con una serie de palabras clave de gran valor semántico y libre construcción.
-      Características logradas gracias a que @I OmniTag fue concebido mediante una arquitectura cliente-servidor y
-      está apoyado sobre tecnologías web. En cuanto a las pruebas realizadas a la herramienta, éstas fueron
-      documentadas en gran detalle, con una serie de capturas de pantallas como principal soporte para mostrar el
-      comportamiento de la aplicación frente a los escenarios diseñados alrededor del modelo de caja gris,
-      verificando la correctitud de las salidas en función de las entradas proporcionadas sin dejar de tomar en
-      cuenta la lógica subyacente del sistema.
+    Los sistemas operativos modernos representan la información por ellos gestionados mediante el uso de una
+    estructura jerárquica de directorios y archivos. En este trabajo de investigación se propuso el desarrollo de
+    una herramienta web centralizada y multiplataforma con el objetivo de permitir a sus usuarios clasificar y
+    recuperar su información digital mediante el uso de etiquetas. La implementación de este último modelo permite
+    gestionar los archivos mediante su vínculo con palabras clave de alto contenido semántico y fácil construcción,
+    estableciendo una estructura flexible en forma de red. Por último, cabe destacar que la herramienta pasó con
+    éxito las pruebas que fueron diseñadas para verificar su comportamiento y fiabilidad tanto en casos favorables
+    como adversos.
   @End @Summary
 
   @NP
@@ -77,44 +81,6 @@
     @Title { INTRODUCCIÓN }
     @AlterTitle { Introducción }
   @Begin
-    @PP
-    La representación lógica de los datos contenidos dentro de un dispositivo de almacenamiento secundario, nacida
-    en 1969 con el lanzamiento del sistema operativo @I Multics, de morfología semejante a la de un árbol
-    invertido, conformada por una seria de directorios y archivos; y amplio uso por los sistemas operativos
-    modernos, presenta limitaciones como consecuencia de su naturaleza jerárquica y rígida taxonomía, propiedades
-    que se confrontan directamente con el mecanismo biológico empleado por los seres humanos a la hora de almacenar
-    y recuperar información de sus cerebros.
-
-    @PP
-    La memoria humana, a alto nivel, dispone de vínculos semánticos altamente subjetivos para almacenar la
-    información de interés; estos vínculos, que pueden tomar la forma de imágenes complejas o simples palabras
-    clave, sirven de referencia a la hora de recuperar algún fragmento de los conglomerados de datos, experiencias
-    y sensaciones que los mencionados vínculos ayudan a conformar.
-
-    @PP
-    Esta investigación se llevó a cabo con el objetivo de representar de manera lógica la información contenida en
-    un medio de almacenamiento secundario mediante una estructura semejante en funcionalidad y apariencia al
-    mecanismo biológico de alto nivel empleado por el ser humano en la gestión de su memoria. La estructura aquí
-    propuesta está inspirada en el concepto de etiqueta (de gran popularidad en el área de los sistemas web de
-    administración manual y discriminada de información) e implementada como una herramienta web para garantizar su
-    interoperabilidad entre los sistemas operativos de más amplio uso en la actualidad.
-
-    @PP
-    En el capítulo I, la motivación de esta investigación se aborda con mayor profundidad y detalle, se describen
-    sus objetivos y se delimita su alcance. En el capítulo II, se mencionan los antecedentes de esta investigación,
-    exponiendo sus principales características, señalando así sus semejanzas y limitaciones con respecto al sistema
-    propuesto. Adicionalmente, en este capítulo se condensa la descripción de los principales conceptos hallados a
-    lo largo del documento, al igual que las herramientas que fueron empleadas en el desarrollo del sistema.
-
-    @PP
-    El capítulo III, plantea la metodología aplicada en la elaboración y prueba de la herramienta, mientras que la
-    estructura funcional de la misma es expuesta de manera cabal en el capítulo VI, en el cual se presenta al
-    lector los módulos y algoritmos que conforman el sistema mediante diagramas y especificaciones detalladas.
-
-    @PP
-    Finalmente, en el capítulo V se disponen las pruebas realizadas al sistema mediante el empleo de una serie de
-    imágenes debidamente comentadas, las cuales reflejan el comportamiento presentado por la herramienta ante
-    dichas pruebas.
   @End @ExtraSection
 
   @NP
@@ -914,7 +880,7 @@
           @ListItem {
             @I{ Cache }: es la clase sobre la cual @I{ Manager } confía las tareas de respaldo de las variables de
             estado. Los métodos definidos en esta clase son: @I{ __check_all }, @I{ __check_integrity } y
-            @I{ __check_state }, empleados para verificar la correctitud del estado interno de toda instancia de la
+            @I{ __check_state }, empleados para verificar la integridad del estado interno de toda instancia de la
             clase; @I{ __get_default_base_dir } retorna el directorio base a usar por defecto; @I{ __load } carga
             en memoria las variables de estado serializadas en el medio de almacenamiento secundario del
             dispositivo en formato JSON; @I{ dump }, lleva a cabo el proceso inverso que realiza @I{ __load }; y,
@@ -931,7 +897,7 @@
           @ListItem {
             @I{ Crawler }: encapsula las rutinas relacionadas con el rastreo de recursos en el dispositivo del
             usuario. Los métodos definidos es esta clase son los siguientes: @I{ __check_state } verifica la
-            correctitud del estado interno de toda instancia de la clase; @I{ __crawl_directory } determina, dada
+            integridad del estado interno de toda instancia de la clase; @I{ __crawl_directory } determina, dada
             la ruta de un directorio, si éste debe o no ser tomado en cuenta en el rastreo de archivos; y, por
             último, @I{ crawl } ejecuta el rastreo.
           }
@@ -943,7 +909,7 @@
           @ListItem {
             @I{ SettingsForm }: es empleada para la recepción y validación de los parámetros de configuración
             proporcionados por los usuarios a través de la interfaz gráfica. Los métodos definidos en esta clase se
-            describen a continuación: @I{ validate } verifica la correctitud de la información enviada por el
+            describen a continuación: @I{ validate } verifica la integridad de la información enviada por el
             usuario y @I{ update_setings } se encarga de comunicar al resto de la aplicación los nuevos valores de
             los parámetros de configuración.
           }
@@ -967,6 +933,61 @@
       @End @Section
     @EndSections
   @End @Chapter
+
+  @NP
+
+  @ExtraSection
+    @Title { CONCLUSIONES }
+    @AlterTitle { Conclusiones }
+  @Begin
+    @PP
+    @I Omnitag, la herramienta producto de este trabajo de investigación, fue desarrollada con el objetivo de
+    permitir la clasificación y recuperación de información digital mediante el uso de etiquetas. Este modelo de
+    gestión de información se logró gracias a la implementación de una arquitectura cliente-servidor y al
+    desarrollo apoyado en tecnologías web, factores que contribuyeron al aspecto centralizado y multiplataforma de
+    la herramienta.
+
+    @PP
+    El proceso que concluyó con el nacimiento de @I Omnitag partió de la implementación de la aplicación servidor,
+    cuya principal tarea es el almacenamiento y gestión de etiquetas y metadatos de recursos digitales. Los
+    procesos de almacenamiento y gestión fueron garantizados mediante el empleo de una base de datos relacional y
+    un servicio web, respectivamente.
+
+    @PP
+    El primero de los dos módulos que constituyen la aplicación cliente fue dispuesto para efectuar el rastreo
+    personalizable de la información a etiquetar, manteniendo sincronizada dicha información con el servidor. El
+    segundo módulo fue destinado a la interfaz gráfica del usuario, construida con la ayuda de tecnologías web
+    (HTML, CSS, JavaScript) para facilitar su despliegue en distintos sistemas operativos.
+
+    @PP
+    Finalmente, se sometió a @I OminiTag a una serie de pruebas mediante el modelo de caja gris, pruebas pasadas
+    con éxito por la herramienta y documentadas en detalle con el apoyo de una secuencia de capturas de pantalla
+    para una mejor apreciación del comportamiento de la herramienta frente a las situaciones diseñadas en las
+    pruebas.
+  @End @ExtraSection
+
+  @NP
+
+  @ExtraSection
+    @Title { RECOMENDACIONES }
+    @AlterTitle { Recomendaciones }
+  @Begin
+    @PP
+    Se recomienda implementar la herramienta en dispositivos móviles, así como también integrarla a los principales
+    navegadores web para ofrecer a los usuarios la posibilidad de gestionar los archivos almacenados en teléfonos
+    inteligentes y tabletas, y sincronizar sus @I bookmarks respectivamente.
+
+    @PP
+    Se sugiere el desarrollo de un módulo para el recabado y visualización de información estadística,
+    constituyendo información como cantidad y uso de etiquetas y dispositivos de manera gráfica (nube de etiquetas)
+    o numérica; y un grafo que muestre la relación y topología derivada de las palabras clave y su uso en los
+    recursos gestionados.
+
+    @PP
+    Se aconseja integrar la herramienta con un servicio web de alojamiento de archivos (Dropbox, Google Drive,
+    Microsoft OneDrive, entre otros) con el fin de respaldar la información gestionada por @I OmniTag o efectuar la
+    transferencia de dicha información entre los dispositivos conectados a través de este tipo de servicio.
+  @End @ExtraSection
 
   @NP
 
