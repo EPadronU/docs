@@ -81,6 +81,33 @@
     @Title { INTRODUCCIÓN }
     @AlterTitle { Introducción }
   @Begin
+    @PP
+    En la actualidad, los sistemas operativos representan la información digital por ellos gestionada mediante una
+    estructura jerárquica en forma de árbol invertido y conformada por una serie de directorios y archivos que
+    resulta rígida y de engorroso uso, además de ser un método de gestión de información que dista en gran medida
+    de aquel empleado por el hombre a la hora de almacenar y recobrar algún fragmento de los conglomerados de
+    datos, experiencias y sensaciones alojados en su cerebro.
+
+    @PP
+    Esta investigación se llevó a cabo con el objetivo de desarrollar una herramienta web para la clasificación y
+    recuperación de información digital mediante el uso de etiquetas que permitiera representar de manera lógica
+    los archivos contenidos en un medio de almacenamiento secundario mediante una estructura semejante en
+    funcionalidad y apariencia al método natural empleado por el ser humano en la gestión de su memoria. Objetivo
+    alcanzado y descrito en este documento a lo largo de cinco capítulos a saber:
+    
+    @PP
+    En el capítulo I, la motivación de esta investigación se aborda con mayor profundidad y detalle, se describen
+    sus objetivos y se delimita su alcance. En el capítulo II se exponen las principales características de las
+    herramientas de gestión de información digital mediante el uso de etiquetas que fungieron como antecedentes de
+    este documento, se condensa la descripción de los conceptos más fundamentales hallados en éste y se describen
+    las herramientas que fueron empleadas en el desarrollo del sistema propuesto.
+
+    @PP
+    El capítulo III plantea la metodología aplicada en la elaboración y prueba de la herramienta, miestras que la
+    estructura funcional de la misma es expuesta de manera cabal en el capítulo IV, en el cual se describen los
+    módulos y algoritmos que conforman el sistema mediante diagramas y especificaciones detalladas. Finalmente, en
+    el capítulo V se detallan los escenarios de prueba empleados para verificar la fiabilidad de la herramienta
+    junto a los resultados obtenidos.
   @End @ExtraSection
 
   @NP
