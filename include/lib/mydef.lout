@@ -29,8 +29,16 @@ def @EntryPlace { @Galley }
 # Lista de entradas del índice general
 def @EntryList { @EntryPlace //1.2f @EntryList }
 
-# Galera que se encarga de añadir un símbolo en el índice general
-def @AddToIndex into { @EntryPlace&&foll_or_prec }
+# Galera que se encarga de añadir un símbolo en el índice general (precede al índice)
+def @AddToIndexBeforeIt into { @EntryPlace&&foll_or_prec }
+    named compulsory @Tag { }
+    named compulsory @Title { }
+{
+   @Title @Dots @HExpand {} @PageOf @Tag
+}
+
+# Galera que se encarga de añadir un símbolo en el índice general (sucede al índice)
+def @AddToIndex into { @EntryPlace&&preceding }
     named compulsory @Tag { }
     named compulsory @Title { }
 {
@@ -94,12 +102,12 @@ def @TEG
         named @Tag { }
         right @Body
     {
-        @PageMark @Tag // @AddToIndex @Title { Abstract } @Tag { @Tag } //
+        @PageMark @Tag // @AddToIndexBeforeIt @Title { Abstract } @Tag { @Tag } //
 
         1.2fx @Break {
             { @MyLastName }, { @MyFirstName }. @B { ``@PaperTitle'' }. Trabajo Especial de Grado. @JN
             Universidad del Zulia. Facultad Experimental de Ciencias. División de Programas @JN
-            Especiales. Maracaibo, Venezuela. @Date @Format { @Year }. @PageOf { last.page }p.
+            Especiales. Maracaibo, Venezuela. @Date @Format { @Year }. @PageOf { last.page }pp.
         }
 
         //2.4f @MyCenter @B ABSTRACT
@@ -173,11 +181,26 @@ def @TEG
         named compulsory @Title { }
         named @AlterTitle { dfl }
         named @Tag { }
+        named @BeforeIndex { false }
         right @Body
     {
-        @PageMark @Tag // @AddToIndex @Title { @AlterTitle @Case { dfl @Yield @Title else @Yield @AlterTitle } } @Tag { @Tag } //
+        @PageMark @Tag 
 
-        @MyCenter @B @Title
+        @BeforeIndex @Case {
+            false @Yield {
+                @AddToIndex
+                  @Title { @AlterTitle @Case { dfl @Yield @Title else @Yield @AlterTitle } }
+                  @Tag { @Tag }
+            }
+
+            true @Yield {
+                @AddToIndexBeforeIt
+                  @Title { @AlterTitle @Case { dfl @Yield @Title else @Yield @AlterTitle } }
+                  @Tag { @Tag }
+            }
+        }
+
+        // @MyCenter @B @Title
         //1.0f { @Body }
     }
 
@@ -256,12 +279,12 @@ def @TEG
         named @Tag { }
         right @Body
     {
-        @PageMark @Tag // @AddToIndex @Title { Resumen } @Tag { @Tag } //
+        @PageMark @Tag // @AddToIndexBeforeIt @Title { Resumen } @Tag { @Tag } //
 
         1.2fx @Break {
-            { @MyLastName }, { @MyFirstName }. @B { ``@PaperTitle '' }. Trabajo Especial de Grado. @JN
+            { @MyLastName }, { @MyFirstName }. @B { ``@PaperTitle'' }. Trabajo Especial de Grado. @JN
             Universidad del Zulia. Facultad Experimental de Ciencias. División de Programas @JN
-            Especiales. Maracaibo, Venezuela. @Date @Format { @Year }. @PageOf { last.page }p.
+            Especiales. Maracaibo, Venezuela. @Date @Format { @Year }. @PageOf { last.page }pp.
         }
 
         //2.4f @MyCenter @B RESUMEN
