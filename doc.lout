@@ -45,7 +45,7 @@
     @KeyWords { Aplicación web, Etiquetado, Clasificación, Recuperación, Información digital }
   @Begin
     @PP
-    Los sistemas operativos modernos representan la información por ellos gestionados mediante el uso de una
+    Los sistemas operativos modernos representan la información por ellos gestionada mediante el uso de una
     estructura jerárquica de directorios y archivos la cual pudiera resultar rígida por cuanto discrepa de la
     manera natural que el cerebro humano emplea para la clasificación y recuperación de información. En este
     trabajo de investigación se propuso el desarrollo de una herramienta web centralizada y multiplataforma con el
@@ -92,31 +92,30 @@
   @Begin
     @PP
     En la actualidad, los sistemas operativos representan la información digital por ellos gestionada mediante una
-    estructura jerárquica en forma de árbol invertido y conformada por una serie de directorios y archivos que
-    resulta rígida y de engorroso uso, además de ser un método de gestión de información que dista en gran medida
-    de aquel empleado por el hombre a la hora de almacenar y recobrar algún fragmento de los conglomerados de
-    datos, experiencias y sensaciones alojados en su cerebro.
+    estructura jerárquica en forma de árbol invertido, conformada por una serie de directorios y archivos. Este
+    método de gestión de información dista en gran medida de aquel empleado por el hombre a la hora de almacenar y
+    recordar algún fragmento de los conglomerados de datos, experiencias y sensaciones alojados en su cerebro.
 
     @PP
     Esta investigación se llevó a cabo con el objetivo de desarrollar una herramienta web para la clasificación y
-    recuperación de información digital mediante el uso de etiquetas que permitiera representar de manera lógica
-    los archivos contenidos en un medio de almacenamiento secundario mediante una estructura semejante en
-    funcionalidad y apariencia al método natural empleado por el ser humano en la gestión de su memoria. Objetivo
-    alcanzado y descrito en este documento a lo largo de cinco capítulos a saber:
+    recuperación de información digital que permitiera representar de manera lógica los archivos contenidos en un
+    medio de almacenamiento secundario mediante estructuras semejantes en funcionalidad y apariencia al método
+    natural empleado por el ser humano en la gestión de su memoria, mediante el uso de etiquetas.
     
     @PP
-    En el capítulo I, la motivación de esta investigación se aborda con mayor profundidad y detalle, se describen
-    sus objetivos y se delimita su alcance. En el capítulo II se exponen las principales características de las
-    herramientas de gestión de información digital mediante el uso de etiquetas que fungieron como antecedentes de
-    este documento, se condensa la descripción de los conceptos más fundamentales hallados en éste y se describen
-    las herramientas que fueron empleadas en el desarrollo del sistema propuesto.
+    El presente documento está estructurado en cinco capítulos a saber: en el capítulo I se aborda la motivación de
+    esta investigación, se describen sus objetivos y se delimita su alcance. En el capítulo II se exponen las
+    principales características de las herramientas de gestión de información digital mediante el uso de etiquetas
+    que fungieron como antecedentes para esta investigación, se condensa la descripción de los conceptos
+    fundamentales hallados en este documento y se describen las herramientas que fueron empleadas en el desarrollo
+    del sistema propuesto.
 
     @PP
-    El capítulo III plantea la metodología aplicada en la elaboración y prueba de la herramienta, miestras que la
+    El capítulo III plantea la metodología aplicada en la elaboración y pruebas de la herramienta, mientras que la
     estructura funcional de la misma es expuesta de manera cabal en el capítulo IV, en el cual se describen los
-    módulos y algoritmos que conforman el sistema mediante diagramas y especificaciones detalladas. Finalmente, en
-    el capítulo V se detallan los escenarios de prueba empleados para verificar la fiabilidad de la herramienta
-    junto a los resultados obtenidos.
+    módulos y algoritmos que conforman el sistema mediante diagramas y especificaciones. Finalmente, en el capítulo
+    V se detallan los escenarios de prueba empleados para verificar la fiabilidad de la herramienta junto a los
+    resultados obtenidos.
   @End @ExtraSection
 
   @NP
@@ -727,10 +726,10 @@
           @End @SubSection
 
           @SubSection
-            @Title { Septimo Sprint }
+            @Title { Séptimo Sprint }
             @Tag { sp.7 }
           @Begin
-            @AddToIndex @Title { Septimo Sprint } @Tag { sp.7 }
+            @AddToIndex @Title { Séptimo Sprint } @Tag { sp.7 }
 
             @PP
             A lo largo de este sprint, se implementó la gestión de usuarios en la aplicación servidor, se adaptó la
@@ -1020,9 +1019,10 @@
     recursos gestionados.
 
     @PP
-    Se aconseja integrar la herramienta con un servicio web de alojamiento de archivos (Dropbox, Google Drive,
-    Microsoft OneDrive, entre otros) con el fin de respaldar la información gestionada por @I OmniTag o efectuar la
-    transferencia de dicha información entre los dispositivos conectados a través de este tipo de servicio.
+    Finalmente, se propone integrar la herramienta con un servicio web de alojamiento de archivos (Dropbox, Google
+    Drive, Microsoft OneDrive, entre otros) con el fin de respaldar la información gestionada por @I OmniTag o
+    efectuar la transferencia de dicha información entre los dispositivos conectados a través de este tipo de
+    servicio.
   @End @ExtraSection
 
   @NP
