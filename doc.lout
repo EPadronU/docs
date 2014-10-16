@@ -46,21 +46,30 @@
   @Begin
     @PP
     Los sistemas operativos modernos representan la información por ellos gestionados mediante el uso de una
-    estructura jerárquica de directorios y archivos. En este trabajo de investigación se propuso el desarrollo de
-    una herramienta web centralizada y multiplataforma con el objetivo de permitir a sus usuarios clasificar y
-    recuperar su información digital mediante el uso de etiquetas. La implementación de este último modelo permite
-    gestionar los archivos mediante su vínculo con palabras clave de alto contenido semántico y fácil construcción,
-    estableciendo una estructura flexible en forma de red. Por último, cabe destacar que la herramienta pasó con
-    éxito las pruebas que fueron diseñadas para verificar su comportamiento y fiabilidad tanto en casos favorables
-    como adversos.
+    estructura jerárquica de directorios y archivos la cual pudiera resultar rígida por cuanto discrepa de la
+    manera natural que el cerebro humano emplea para la clasificación y recuperación de información. En este
+    trabajo de investigación se propuso el desarrollo de una herramienta web centralizada y multiplataforma con el
+    objetivo de permitir a sus usuarios clasificar y recuperar su información digital mediante el uso de etiquetas.
+    La implementación de este último modelo permite gestionar los archivos mediante su vínculo con palabras clave
+    de alto contenido semántico y fácil construcción, estableciendo una estructura flexible en forma de red.
+    @I OmniTag es la herramienta web que resultó del desarrollo de la presente investigación: una aplicación de
+    fácil uso, flexible y robusta que pasó satisfactoriamente las pruebas de funcionalidad realizadas.
   @End @Summary
 
   @NP
 
   @Abstract
-    @KeyWords { Web application, Tagging, Classification, Retrieval, Digital information }
+    @KeyWords { File System, Tags, Web application }
   @Begin
     @PP
+    Modern operating systems represent the information they manage using a hierarchical structure of subfolders and
+    files which may be considered rigid as it differs from the natural way in which the human brain classifies and
+    recovers information. The author proposed the developmnet of a centralized, multiplatform web tool which would
+    allow its users to classify and recover digital information via the use of tags. The implementation of such a
+    model permits managing files through the use of links to keywords easy to construct and with high semantic
+    value to its user, resulting in a flexible network of concepts associated to files. The application developed
+    was named @I OmniTag and it is an easy-to-use, flexible, and robust web application which satisfactorily passed
+    all functional tests it underwent.
   @End @Abstract
 
   @NP
