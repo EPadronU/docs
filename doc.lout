@@ -301,9 +301,9 @@
             para el sistema operativo @I { OS X }®, está sujeta a una licencia privativa y no es capaz de
             sincronizar recursos localizados en dispositivos diferentes.
 
-            //2.0f @MyCenter @B { Figura 1. Tags }
-            //0f @PageMark { figura1 }
-            //0f @AddToGIndex @Title { Figura 1. Tags } @Tag { figura1 }
+            //2.0f @MyCenter @B { Imagen 1. Tags }
+            //0f @PageMark { imagen1 }
+            //0f @AddToGIndex @Title { Imagen 1. Tags } @Tag { imagen1 }
             //0f @CD { 0.4 0.28 } @Scale @IncludeGraphic "./include/img/tags.eps"
             //0f @MyCenter @B { Fuente: Tags (2014) }
           @End @SubSection
@@ -329,9 +329,9 @@
             recursos localizados en dispositivos diferentes. Otra desventaja que presenta este sistema
             es que está disponible solo para el sistema operativo @I { Microsoft Windows }®.
 
-            //2.0f @MyCenter @B { Figura 2. TaggTool }
-            //0f @PageMark { figura2 }
-            //0f @AddToGIndex @Title { Figura 2. TaggTool } @Tag { figura2 }
+            //2.0f @MyCenter @B { Imagen 2. TaggTool }
+            //0f @PageMark { imagen2 }
+            //0f @AddToGIndex @Title { Imagen 2. TaggTool } @Tag { imagen2 }
             //0f @CD { 0.4 0.3 } @Scale @IncludeGraphic "./include/img/taggtool.eps"
             //0f @MyCenter @B { Fuente: TaggTool (2014) }
           @End @SubSection
@@ -352,9 +352,9 @@
             distintos, Tabbles está disponible únicamente para el sistema operativo Microsoft Windows® bajo
             una licencia privativa.
 
-            //2.0f @MyCenter @B { Figura 3. Tabbles }
-            //0f @PageMark { figura3 }
-            //0f @AddToGIndex @Title { Figura 3. Tabbles } @Tag { figura3 }
+            //2.0f @MyCenter @B { Imagen 3. Tabbles }
+            //0f @PageMark { imagen3 }
+            //0f @AddToGIndex @Title { Imagen 3. Tabbles } @Tag { imagen3 }
             //0f @CD { 0.6  0.5 } @Scale @IncludeGraphic "./include/img/tabbles.eps"
             //0f @MyCenter @B { Fuente: Tabbles (2014) }
           @End @SubSection
@@ -812,13 +812,13 @@
         de rastrear los recursos que serán sincronizados con el módulo servidor para su posterior clasificación y
         recuperación. También es responsable de alojar los parámetros de configuración empleado para la
         comunicación con el servidor, además de ser el encargado de predefinir etiquetas a un subconjunto de los
-        recursos rastreados, dependiendo su asignación de la naturaleza de los dichos recursos. La @B { Figura 4}
+        recursos rastreados, dependiendo su asignación de la naturaleza de los dichos recursos. La @B { Imagen 4}
         plasma la funcionalidad de estos módulos, así como la interacción que se da entre ellos y aquella que
         involucra al usuario.
 
-        //2.0f @MyCenter @B { Figura 4. Arquitectura Funcional de la Herramienta }
-        //0f @PageMark { figura4 }
-        //0f @AddToGIndex @Title { Figura 4. Arquitectura Funcional de la Herramienta } @Tag { figura4 }
+        //2.0f @MyCenter @B { Imagen 4. Arquitectura Funcional de la Herramienta }
+        //0f @PageMark { imagen4 }
+        //0f @AddToGIndex @Title { Imagen 4. Arquitectura Funcional de la Herramienta } @Tag { imagen4 }
         //0f @CD { 0.6 } @Scale @IncludeGraphic "./include/img/arquitectura-funcional.eps"
         //0f @MyCenter @B { Fuente: Padrón (2014) }
       @End @Section
@@ -830,7 +830,7 @@
         @AddToIndex @Title { Implementación de la Herramienta } @Tag { impl.herr }
 
         @PP
-        La @B { Figura 5 } ilustra los modelos que forman parte del módulo servidor, cabe mencionar que ésta
+        La @B { Imagen 5 } ilustra los modelos que forman parte del módulo servidor, cabe mencionar que ésta
         describe los atributos de los modelos y las relaciones que existen entre ellos tomando en cuenta su
         representación en forma de tablas bajo un paradigma relacional, estando éstas intrínsecamente vinculadas
         con sus correspondientes clases (paradigma orientado a objetos) mediante el uso del @I{ Peewee } (ORM).
@@ -844,9 +844,9 @@
           @ListItem { Search: Representa asociaciones de etiquetas usadas en búsquedas almacenadas. }
         @EndList
 
-        //2.0f @MyCenter @B { Figura 5. Diagrama de Clases de los Modelos }
-        //0f @PageMark { figura5 }
-        //0f @AddToGIndex @Title { Figura 5. Diagrama de Clases de los Modelos } @Tag { figura5 }
+        //2.0f @MyCenter @B { Imagen 5. Diagrama de Clases de los Modelos }
+        //0f @PageMark { imagen5 }
+        //0f @AddToGIndex @Title { Imagen 5. Diagrama de Clases de los Modelos } @Tag { imagen5 }
         //0f @CD 0.4 @Scale @IncludeGraphic "./include/img/classes-serv.eps"
         //0f @MyCenter @B { Fuente: Padrón (2014) }
 
@@ -891,9 +891,9 @@
         En el caso del módulo cliente, se presenta a continuación un diagrama de clases que muestra la estructura
         interna del mismo.
 
-        //2.0f @MyCenter @B { Figura 6. Diagrama de Clases del Módulo Cliente }
-        //0f @PageMark { figura6 }
-        //0f @AddToGIndex @Title { Figura 6. Diagrama de Clases del Módulo Cliente } @Tag { figura6 }
+        //2.0f @MyCenter @B { Imagen 6. Diagrama de Clases del Módulo Cliente }
+        //0f @PageMark { imagen6 }
+        //0f @AddToGIndex @Title { Imagen 6. Diagrama de Clases del Módulo Cliente } @Tag { imagen6 }
         //0f @CD 0.4 @Scale @IncludeGraphic "./include/img/classes-clnt.eps"
         //0f @MyCenter @B { Fuente: Padrón (2014) }
 
@@ -955,15 +955,15 @@
         A continuación, se presenta el código fuente de los procesos de rastreo y auto-etiquetado de archivos,
         componentes más sobresalientes del sistema:
 
-        //2.0f @MyCenter @B { Figura 7. Crawler }
-        //0f @PageMark { figura7 }
-        //0f @AddToGIndex @Title { Figura 7. Crawler } @Tag { figura7 }
+        //2.0f @MyCenter @B { Imagen 7. Crawler }
+        //0f @PageMark { imagen7 }
+        //0f @AddToGIndex @Title { Imagen 7. Crawler } @Tag { imagen7 }
         //0f @CD 0.36 @Scale @IncludeGraphic "./include/img/crawler.eps"
         //0f @MyCenter @B { Fuente: Padrón (2014) }
 
-        //2.0f @MyCenter @B { Figura 8. AutoTagger }
-        //0f @PageMark { figura8 }
-        //0f @AddToGIndex @Title { Figura 8. AutoTagger } @Tag { figura8 }
+        //2.0f @MyCenter @B { Imagen 8. AutoTagger }
+        //0f @PageMark { imagen8 }
+        //0f @AddToGIndex @Title { Imagen 8. AutoTagger } @Tag { imagen8 }
         //0f @CD 0.36 @Scale @IncludeGraphic "./include/img/auto-tagger.eps"
         //0f @MyCenter @B { Fuente: Padrón (2014) }
       @End @Section

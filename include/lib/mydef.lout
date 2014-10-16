@@ -244,9 +244,9 @@ def @TEG
     def @IndexOfGraphics
         named @Tag { }
     {
-        @PageMark @Tag // @AddToIndex @Title { Índice de Figuras } @Tag { @Tag } //
+        @PageMark @Tag // @AddToIndex @Title { Índice de Imágenes } @Tag { @Tag } //
 
-        @MyCenter @B { ÍNDICE DE FIGURAS }
+        @MyCenter @B { ÍNDICE DE IMÁGENES }
 
         //2.4f { @HExpand {} Pág. }
         //1.2f { @GraphList }
