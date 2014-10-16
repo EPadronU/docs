@@ -1031,96 +1031,93 @@
     @Title { REFERENCIAS BIBLIOGRÁFICAS }
     @AlterTitle { Referencias bibliográficas }
   @Begin
-    //1.2f @BulletList
-      @ListItem {
-        Atkinson, R.C.; Shiffrin, R.M. (1968). Chapter: Human memory: A proposed system and its control
-        processes. The psychology of learning and motivation. pp. 89-195.
-      }
-      @ListItem {
-        Baddeley, A.D. (1966). The influence of acoustic and semantic similarity on long-term memory for word
-        sequences. The Quarterly Journal of Experimental Psychology. pp. 302-309.
-      }
-      @ListItem {
-        Borghoff, Uwe; Schlichter, Johann (2000). Computer-Supported Cooperative Work: Introduction to
-        Distributed Applications. Springer Science y Business Media. p. 6.
-      }
-      @ListItem {
-        Burgin, Mark (2010). Theory of Information: Fundamentality, Diversity and Unification. World Scientific.
-        p. VI.
-      }
-      @ListItem {
-        Eby, Phillip (2010) (Página consultada el 16 de julio de 2014) [On-line]. Dirección:
-        "http://legacy.python.org/dev/peps/pep-3333".
-      }
-      @ListItem {
-        EMC Education Services (2012). Information Storage and Management: Storing, Managing, and Protecting
-        Digital Information in Classic, Virtualized, and Cloud Environments. John Wiley "&" sons. p. 6.
-      }
-      @ListItem {
-        Flask.org (2014)(Página consultada el 19 de julio de 2014) [On-line]. Dirección: "http://flask.pocoo.org/".
-      }
-      @ListItem {
-        Furth, J. (1994). The Information Age in Charts, Fortune International.
-      }
-      @ListItem {
-        getbootstrap.com (2014) (Página consultada el 19 de julio de 2014) [On-line]. Dirección:
-        "http://getbootstrap.com/".
-      }
-      @ListItem {
-        Giuliano, V.E. (1983). The United States of America in the Information Age, en Information Policy and
-        Scientific Research, Elsevier, Amsterdam, pp. 59-76.
-      }
-      @ListItem {
-        Grove, Ralph (2009). Web Based Application Development. Jones "&" Bartlett Publishers. p. 42.
-      }
-      @ListItem {
-        IBM (2012) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
-        "www-01.ibm.com/software/data/bigdata/"
-      }
-      @ListItem {
-        JQuery.com (2014) (Página consultada el 19 de julio de 2014) [On-line]. Dirección: "http://jquery.com/".
-      }
-      @ListItem {
-        Leifer, Charles (2014) (Página consultada el 19 de julio de 2014) [On-line]. Dirección:
-        "http://peewee.readthedocs.org/".
-      }
-      @ListItem {
-        Lutz, Mark (2010). Programming Python. O"'"Reilly Media, Inc.
-      }
-      @ListItem {
-        Mathes, Adam (2004) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
-        "www.adammathes.com/academic/computer-mediated-communication/folksonomies.html"
-      }
-      @ListItem {
-        Mehta, Vijay (2008). Pro LINQ Object Relational Mapping in C"#" 2008. Apress. pp. 4-5.
-      }
-      @ListItem {
-        Multics (1968) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
-        "www.multicians.org/fjcc4.html"
-      }
-      @ListItem {
-        Nguyen, Hung; Johnson, Bob; Hackett, Michael (2003). Testing Applications on the Web: Test Planning for
-        Mobile and Internet-Based Systems. Second Edition. Wiley Publishing, Inc.
-      }
-      @ListItem {
-        Schwaber, Ken; Sutherland, Jeff (2011). The Definitive Guide to Scrum: The Rules of the Game.
-      }
-      @ListItem {
-        Specia, Lucia; Motta, Enrico (2007). Integrating Folksonomies with the Semantic Web. Knowledge Media
-        Institute - The Open University.
-      }
-      @ListItem {
-        SQLite.org (2014) (Página consultada el 19 de julio de 2014) [On-line]. Dirección:
-        "https://sqlite.org/about.html".
-      }
-      @ListItem {
-        World Wide Web Consortium (2012) (Página consultada el 16 de julio de 2014) [On-line]. Dirección:
-        "http://www.w3.org/2012/webapps/charter/"
-      }
-      @ListItem {
-        Zakas, Nicholas (2010). High Performance JavaScript. O"'"Reilly Media, Inc.
-      }
-    @EndList
+    //0.9v
+    Atkinson, R.C.; Shiffrin, R.M. (1968). Chapter: Human memory: A proposed system and its control
+    processes. The psychology of learning and motivation. pp. 89-195.
+
+    //0.9v
+    Baddeley, A.D. (1966). The influence of acoustic and semantic similarity on long-term memory for word
+    sequences. The Quarterly Journal of Experimental Psychology. pp. 302-309.
+
+    //0.9v
+    Borghoff, Uwe; Schlichter, Johann (2000). Computer-Supported Cooperative Work: Introduction to
+    Distributed Applications. Springer Science y Business Media. p. 6.
+
+    //0.9v
+    Burgin, Mark (2010). Theory of Information: Fundamentality, Diversity and Unification. World Scientific.
+    p. VI.
+
+    //0.9v
+    Eby, Phillip (2010) (Página consultada el 16 de julio de 2014) [On-line]. Dirección:
+    "http://legacy.python.org/dev/peps/pep-3333".
+
+    //0.9v
+    EMC Education Services (2012). Information Storage and Management: Storing, Managing, and Protecting
+    Digital Information in Classic, Virtualized, and Cloud Environments. John Wiley "&" sons. p. 6.
+
+    //0.9v
+    Flask.org (2014)(Página consultada el 19 de julio de 2014) [On-line]. Dirección: "http://flask.pocoo.org/".
+
+    //0.9v
+    Furth, J. (1994). The Information Age in Charts, Fortune International.
+
+    //0.9v
+    getbootstrap.com (2014) (Página consultada el 19 de julio de 2014) [On-line]. Dirección:
+    "http://getbootstrap.com/".
+
+    //0.9v
+    Giuliano, V.E. (1983). The United States of America in the Information Age, en Information Policy and
+    Scientific Research, Elsevier, Amsterdam, pp. 59-76.
+
+    //0.9v
+    Grove, Ralph (2009). Web Based Application Development. Jones "&" Bartlett Publishers. p. 42.
+
+    //0.9v
+    IBM (2012) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
+    "www-01.ibm.com/software/data/bigdata/"
+
+    //0.9v
+    JQuery.com (2014) (Página consultada el 19 de julio de 2014) [On-line]. Dirección: "http://jquery.com/".
+
+    //0.9v
+    Leifer, Charles (2014) (Página consultada el 19 de julio de 2014) [On-line]. Dirección:
+    "http://peewee.readthedocs.org/".
+
+    //0.9v
+    Lutz, Mark (2010). Programming Python. O"'"Reilly Media, Inc.
+
+    //0.9v
+    Mathes, Adam (2004) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
+    "www.adammathes.com/academic/computer-mediated-communication/folksonomies.html"
+
+    //0.9v
+    Mehta, Vijay (2008). Pro LINQ Object Relational Mapping in C"#" 2008. Apress. pp. 4-5.
+
+    //0.9v
+    Multics (1968) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
+    "www.multicians.org/fjcc4.html"
+
+    //0.9v
+    Nguyen, Hung; Johnson, Bob; Hackett, Michael (2003). Testing Applications on the Web: Test Planning for
+    Mobile and Internet-Based Systems. Second Edition. Wiley Publishing, Inc.
+
+    //0.9v
+    Schwaber, Ken; Sutherland, Jeff (2011). The Definitive Guide to Scrum: The Rules of the Game.
+
+    //0.9v
+    Specia, Lucia; Motta, Enrico (2007). Integrating Folksonomies with the Semantic Web. Knowledge Media
+    Institute - The Open University.
+
+    //0.9v
+    SQLite.org (2014) (Página consultada el 19 de julio de 2014) [On-line]. Dirección:
+    "https://sqlite.org/about.html".
+
+    //0.9v
+    World Wide Web Consortium (2012) (Página consultada el 16 de julio de 2014) [On-line]. Dirección:
+    "http://www.w3.org/2012/webapps/charter/"
+
+    //0.9v
+    Zakas, Nicholas (2010). High Performance JavaScript. O"'"Reilly Media, Inc.
   @End @ExtraSection
 @End @TEG
 @End @Text
