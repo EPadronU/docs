@@ -81,6 +81,21 @@ def @AddToTIndex into { @TablePlace&&foll_or_prec }
     @Title @Dots @HExpand {} @PageOf @Tag
 }
 
+# Añade una figura
+def @AddFigure
+  named compulsory @Title {}
+  named compulsory @ImgSrc {}
+  named compulsory @Src {}
+  named @Tag {}
+  named @ScaleXY { 0.5 }
+{
+  @MyCenter @B { @Title }
+  //0f @PageMark { @Tag }
+  //0f @AddToGIndex @Title { @Title } @Tag { @Tag }
+  //0f @CD { @ScaleXY } @Scale @IncludeGraphic @ImgSrc
+  //0f @MyCenter @B { Fuente: @Src }
+}
+
 # Símbolos visibles fuera de @TEG
 export @Abstract @Chapter @Cover @ExtraSection @Facade @IndexOfContents @IndexOfGraphics @IndexOfTables @Introduction @Summary
 
