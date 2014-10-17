@@ -153,7 +153,7 @@ def @TEG
     {
         macro @Grade { @Sex @Case { { M m } @Yield { Licenciado } else @Yield { Licenciada } } }
 
-        macro @DocType { @IsReport @Case { { Y y } @Yield { Informe } else @Yield { Proyecto } } }
+        macro @DocType { @IsReport @Case { { Y y } @Yield { } else @Yield { Proyecto de } } }
 
         24.60c @High {
             @CD {
@@ -173,7 +173,7 @@ def @TEG
             //9.6f @CD 15c @Wide { @MyCenter @Options { 1.2fx } @B { @PaperTitle } }
 
             //1.2f @MyCenter @Options { 1.2fx } @B {
-                @DocType de Trabajo Especial de Grado presentado como @FF
+                @DocType Trabajo Especial de Grado presentado como @FF
                 requisito para optar al título de @Grade en Computación
             }
 

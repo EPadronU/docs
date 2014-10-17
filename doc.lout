@@ -13,7 +13,7 @@
 @Begin
   @Cover
     @Tutor { MSc. Gerardo Pirela Morillo }
-    @Month { marzo }
+    @Month { octubre }
     @Year { 2014 }
 
   @NP
@@ -100,11 +100,11 @@
     Esta investigación se llevó a cabo con el objetivo de desarrollar una herramienta web para la clasificación y
     recuperación de información digital que permitiera representar de manera lógica los archivos contenidos en un
     medio de almacenamiento secundario mediante estructuras semejantes en funcionalidad y apariencia al método
-    natural empleado por el ser humano en la gestión de su memoria, mediante el uso de etiquetas.
+    natural empleado por el ser humano en la gestión de su memoria, a través del uso de etiquetas.
     
     @PP
-    El presente documento está estructurado en cinco capítulos a saber: en el capítulo I se aborda la motivación de
-    esta investigación, se describen sus objetivos y se delimita su alcance. En el capítulo II se exponen las
+    El presente documento está estructurado por cinco capítulos a saber: en el capítulo I se aborda la motivación
+    de esta investigación, se describen sus objetivos y se delimita su alcance. En el capítulo II se exponen las
     principales características de las herramientas de gestión de información digital mediante el uso de etiquetas
     que fungieron como antecedentes para esta investigación, se condensa la descripción de los conceptos
     fundamentales hallados en este documento y se describen las herramientas que fueron empleadas en el desarrollo
@@ -205,10 +205,9 @@
 
         @PP
         La investigación estuvo delimitada al desarrollo de un sistema cliente-servidor donde el cliente,
-        desarrollado para trabajar solo bajo los entornos Windows®, OS X® y Linux®, se comunica con una
-        aplicación web, manteniendo sincronizadas las etiquetas asociadas a los archivos ubicados en los
-        repositorios del usuario, permitiéndole así clasificarlos y recuperarlos mediante el uso de las
-        mencionadas etiquetas.
+        desarrollado para trabajar solo bajo los entornos Windows®, OS X® y Linux®, se comunica con una aplicación
+        web, manteniendo sincronizadas las etiquetas asociadas a los archivos ubicados en los repositorios del
+        usuario, permitiéndole así clasificarlos y recuperarlos mediante el uso de palabras clave.
       @End @Section
 
       @Section
@@ -298,7 +297,7 @@
             Tags también ofrece una vista previa de la información, atajos de teclado y una excelente
             integración con el sistema operativo. Desafortunadamente, esta aplicación solo está disponible
             para el sistema operativo @I { OS X }®, está sujeta a una licencia privativa y no es capaz de
-            sincronizar recursos localizados en dispositivos diferentes.
+            sincronizar recursos localizados en diferentes dispositivos.
 
             //2.0f @AddFigure
               @Title { Imagen 1. Tags }
@@ -316,22 +315,21 @@
             @PP
             TaggTool permite añadir etiquetas a archivos, directorios y «bookmarks». Adicionalmente, el
             usuario puede proporcionar una descripción del recurso, además de una calificación cuantitativa
-            (@I rating). Esta herramienta ofrece la posibilidad de importar metadatos pre-existentes en los
-            recursos y realizar búsquedas en base a estos.
+            (@I rating). Esta herramienta ofrece la posibilidad de importar metadatos pre-existentes en la
+             información gestionada y realizar búsquedas en base a estos.
             @PP
-            TaggTool también posee una alta integración con el sistema operativo y brinda una vista previa
-            de los recursos gestionados. Además, facilita un sistema de etiquetado automático basado en la
-            naturaleza de los recursos, y muestra una nube de etiquetas para la visualización de las
-            mismas.
+            TaggTool también posee una alta integración con el sistema operativo y brinda una vista previa de los
+            recursos gestionados. Además, facilita un sistema de etiquetado automático basado en la naturaleza de
+            la información, y muestra una nube de etiquetas para la visualización de las mismas.
             @PP
             Al igual que Tags, TaggTool está sujeto a una licencia privativa y no es capaz de sincronizar
-            recursos localizados en dispositivos diferentes. Otra desventaja que presenta este sistema
+            recursos localizados en diferentes dispositivos. Otra desventaja que presenta esta herramienta
             es que está disponible solo para el sistema operativo @I { Microsoft Windows }®.
 
             //2.0f @AddFigure
               @Title { Imagen 2. TaggTool }
               @ImgSrc { "./include/img/taggtool.eps" }
-              @ScaleXY { 0.4 0.3 }
+              @ScaleXY { 0.4 0.4 }
               @Src { Fuente: TaggTool (2014) }
           @End @SubSection
 
@@ -348,8 +346,8 @@
             sistema operativo.
             @PP
             A pesar de ser capaz de gestionar, compartir y sincronizar recursos localizados en dispositivos
-            distintos, Tabbles está disponible únicamente para el sistema operativo Microsoft Windows® bajo
-            una licencia privativa.
+            distintos, Tabbles está disponible únicamente para el sistema operativo @I { Microsoft Windows }®
+            bajo una licencia privativa.
 
             //2.0f @AddFigure
               @Title { Imagen 3. Tabbles }
@@ -391,10 +389,10 @@
             @PP
             Se refiere a una consideración de diseño de los sistemas operativos distribuidos. Se habla de
             transparencia de localización cuando un usuario accede a un recurso en particular sin que sea
-            necesario conocer la ubicación del mismo dentro de la red de trabajo a fin de acceder a él. El no
-            conocer la localización de un recurso implica que todo acceso a éste es realizado por medio de un
-            nombre que no depende de la ubicación dónde reside actualmente, ni la ubicación dónde fue
-            creado (Borghoff y Schlichter, 2000).
+            necesario conocer la ubicación del mismo dentro de la red de trabajo. El no conocer la
+            localización de un recurso implica que todo acceso a éste es realizado por medio de un nombre que
+            no depende de la ubicación dónde reside actualmente, ni la ubicación dónde éste fue creado
+            (Borghoff y Schlichter, 2000).
           @End @SubSection
 
           @SubSection
@@ -404,7 +402,7 @@
             @AddToIndex @Title { Aplicación Web } @Tag { web.app }
 
             @PP
-            Es una aplicación desarrollada mediante el uso de tecnologías web (html, css, javascript, entre otros)
+            Es una aplicación desarrollada mediante el uso de tecnologías web (HTML, CSS, JavaScript, entre otros)
             cuyo entorno de ejecución (@I{ runtime enviroment }) está conformado por un motor web (@I{ web engine }).
             Como ejemplos de este tipo de aplicaciones se pueden mencionar: sistemas de reservación, sitios de
             compras en línea, juegos, aplicaciones multimedia, mapas, aplicaciones interactivas de diseños,
@@ -421,9 +419,9 @@
             @PP
             @I{ CGI }, @I{ servlets }, lenguajes de plantilla (@I{ template languages }) y lenguajes de guión
             (@I{ script languages }) son algunos de los entornos de desarrollo para la construcción de los
-            programas de aplicación mencionados anteriormente, y están típicamente acompañados por un sistema de
-            gestión de base de datos relacional (@I{ RDBMS }, por sus siglas en inglés) accedido por los programas
-            de aplicación a través de un @I{ ODBC } "/" @I{ ORM } (Grove, 2009).
+            programas de aplicación mencionados anteriormente, y que están típicamente acompañados por un
+            sistema de gestión de base de datos relacional (@I{ RDBMS }, por sus siglas en inglés) accedido
+            por los programas de aplicación a través de un @I{ ODBC } "/" @I{ ORM } (Grove, 2009).
           @End @SubSection
 
           @SubSection
@@ -433,15 +431,14 @@
             @AddToIndex @Title { ORM } @Tag { orm }
 
             @PP
-            Es una herramienta que permite conectar un objeto, a veces llamado ``modelo de dominio'', con una base de
-            datos relacional de manera automática mediante el uso de metadatos como descriptores del objeto y los
-            datos en sí mismos. Algunas de las ventajas que ofrece el uso de un ORM sobre otras técnicas de acceso
-            de datos se listan a continuación: en primer lugar, se automatiza la conversión bidireccional entre
-            objetos y tablas; además, se provee el almacenamiento en @I{ cache } de los objetos de manera
-            transparente en el lado de la aplicación, mejorando así el rendimiento del sistema; y por último,
-            brinda una API de acceso a la base de datos, abstrayendo por completo el sistema de gestión de bases de
-            datos relacional (Mehta, 2008). @I{ ODB }, @I{ JDBC }, @I{ Peewee }, @I{ SQLAlchemist } y @I{ Yii } son
-            algunos de los ORM usados en la actualidad.
+            Es una herramienta que permite conectar un objeto con una base de datos relacional de manera
+            automática mediante el uso de metadatos como descriptores de dicho objeto. Algunas de las ventajas
+            que ofrece el uso de un ORM sobre otras técnicas de acceso de datos se listan a continuación: en
+            primer lugar, se automatiza la conversión bidireccional entre objetos y tablas; se provee el
+            almacenamiento en @I{ cache } de los datos de manera transparente en el lado de la aplicación,
+            mejorando así el rendimiento del sistema; y se brinda una @I API de acceso, abstrayendo por
+            completo el sistema de gestión de bases de datos relacional (Mehta, 2008). @I{ ODB }, @I{ JDBC },
+            @I{ Peewee }, @I{ SQLAlchemist } y @I{ Yii } son algunos de los ORM usados en la actualidad.
           @End @SubSection
 
           @SubSection
@@ -463,12 +460,11 @@
             @AddToIndex @Title { JSON } @Tag { json }
 
             @PP
-            Es un formato ligero y fácil de analizar sintácticamente para representar datos, basado en el uso de la
-            sintaxis dispuesta para los literales de tipo arreglo y objeto en el lenguaje de programación
-            JavaScript, usado generalmente para transmitir información entre distintos sistemas de software (Zakas,
-            2010). La serialización de información estructurada, tarea que se solía realizar con XML, es
-            actualmente llevada a cabo mediante el uso del formato JSON, tendencia que crece con el pasar del
-            tiempo.
+            Es un formato ligero y de fácil análisis sintáctico basado en la sintaxis dispuesta para los
+            literales de tipo arreglo y objeto en el lenguaje de programación JavaScript. JSON es empleado
+            generalmente para transmitir información entre distintos sistemas de software (Zakas, 2010). La
+            serialización de información estructurada, tarea que se solía realizar comúnmente con XML, es
+            actualmente llevada a cabo de manera frecuente mediante el uso del formato JSON.
           @End @SubSection
 
           @SubSection
@@ -529,7 +525,7 @@
           @ListItem {
             JQuery: es una librería escrita en JavaScript rápida, simple y con una gran repertorio de utilidades.
             Hace de la manipulación del DOM, el manejo de eventos, la creación de animaciones y el uso de Ajax,
-            tareas mucho más sencillas de realizar a través de una API multiplataforma (JQuery.com, 2014).
+            tareas mucho más sencillas de realizar a través de una @I API multiplataforma (JQuery.com, 2014).
           }
         @EndList
       @End @Section
@@ -551,14 +547,14 @@
 
         @PP
         Para el desarrollo de la herramienta, fruto de esta investigación, se empleó la metodología @I{ Scrum }, la
-        cual se define como un ``marco de trabajo en el cual las personas abordan problemas adaptativos complejos,
-        entregando productos del más alto valor posible de manera productiva y creativa'' (Schwaber y Sutherland,
-        2011).
+        cual es definida por sus autores como un ``marco de trabajo en el cual las personas abordan problemas
+        adaptativos complejos, entregando productos del más alto valor posible de manera productiva y creativa''
+        (Schwaber y Sutherland, 2011).
 
         @PP
         @I{ Scrum } está fundamentada en el empirismo, el cual afirma que el conocimiento viene de la
         experiencia y que la toma de decisiones debe basarse en lo que se sabe. También, vale mencionar que esta
-        metodología emplea un modelo iterativa e incremental para optimizar la capacidad de predicción y el control
+        metodología emplea un modelo iterativo e incremental para optimizar la capacidad de predicción y el control
         de riesgos.
 
         @PP
@@ -576,26 +572,26 @@
         De acuerdo a Hung Nguyen, Bob Johnson y Michael Hackett, las pruebas funcionales orientadas a tareas
         consisten de casos de prueba positivos que son diseñados para verificar las características del programa al
         asegurarse de que cada una de ellas se comporte como se espera, tomando en cuenta las especificaciones,
-        guías de usuario, requerimientos y documentos de diseño. Cada característica es probada para:
+        guías de usuario, requerimientos y documentos de diseño. Cada funcionalidad es puesta a prueba para:
 
         //2.0f @BulletList indent { 4s }
           @ListItem {
-            Validar que la tarea se ejecute adecuadamente dadas condiciones de dato adecuadas bajo condiciones
+            Validar que la tarea se lleva a cabo con condiciones de datos soportados bajo condiciones
             operativas favorables.
           }
           @ListItem {
             Verificar la integridad del resultado final de la tarea.
           }
           @ListItem {
-            Asegurar la integridad de la característica cuando se usa junto a otras.
+            Asegurar la integridad de la funcionalidad cuando se usa junto a otras.
           }
         @EndList
 
         @PP
         Por su parte, las pruebas de errores forzados, según Nguyen, Johnson y Hackett, son casos de prueba
-        negativos diseñados para forzar a un programa a pasar a condiciones de error. Debe generarse una lista de
-        todos los mensajes de error que el programa emite. Esta lista es usada como base en el desarrollo de
-        casos de prueba. Algunas recomendaciones a la hora de llevar a cabo este tipo de pruebas se describen a
+        negativos diseñados para forzar a un programa a pasar a una condición de error. Debe generarse una lista de
+        todos los mensajes de error que el programa emite, la cual es usada como base en el desarrollo de casos
+        de prueba. Algunas recomendaciones a la hora de llevar a cabo este tipo de pruebas se describen a
         continuación:
 
         //2.0f @BulletList indent { 4s }
@@ -612,7 +608,7 @@
         @EndList
 
         @PP
-        Por último, el modelo (o pruebas, como también es conocido) de caja gris incorpora elementos de las
+        Por su parte, el modelo (o pruebas, como también es conocido) de caja gris incorpora elementos de las
         pruebas de caja negra y blanca. En las pruebas de caja gris se considera el resultado desde el punto de
         vista del usuario, el conocimiento técnico específico del sistema y el ambiente operativo; además, estas
         pruebas evalúan el diseño de la aplicación bajo el contexto de la interoperabilidad entre los componentes
@@ -625,23 +621,23 @@
       @End @Section
 
       @Section
-        @Title { Desarrollo de la Herramienta Balo la Metodología Scrum }
+        @Title { Desarrollo de la Herramienta Bajo la Metodología Scrum }
         @Tag { desarr.met }
       @Begin
-        @AddToIndex @Title { Desarrollo de la Herramienta Balo la Metodología Scrum } @Tag { desarr.met }
+        @AddToIndex @Title { Desarrollo de la Herramienta Bajo la Metodología Scrum } @Tag { desarr.met }
 
         @PP
-        El desarrollo de la herramienta web, Omnitag, se llevó a cabo a lo largo de nueve @I{ Sprints }, cada uno
+        El desarrollo de la herramienta web, @I Omnitag, se llevó a cabo a lo largo de nueve @I{ Sprints }, cada uno
         de un mes de duración. La distribución de las tareas llevadas a cabo a lo largo del ciclo de desarrollo se
         ha plasmado en la siguiente tabla, la descripción de las mismas se plantea justo después de la mencionada
-        tabla.
+        ésta.
 
         @NP
 
         //2.0f @MyCenter @B { Tabla 1. Distribución de Actividades }
         //0f @PageMark { dist.act }
         //0f @AddToTIndex @Title { Tabla 1. Distribución de Actividades } @Tag { dist.act }
-        //0f @CD { 0.36 0.36 } @Scale @IncludeGraphic "./include/img/tabla1.eps"
+        //0f @CD { 0.36 0.32 } @Scale @IncludeGraphic "./include/img/tabla1.eps"
         //0f @MyCenter @B { Fuente: Padrón (2014) }
 
         @BeginSubSections
@@ -652,7 +648,7 @@
             @AddToIndex @Title { Primer Sprint } @Tag { sp.1 }
 
             @PP
-            Durante este @I{ sprint } se culminó la revisión de literatura relacionada con los sistemas de
+            Durante este @I{ sprint } se culminó la revisión de la literatura relacionada con los sistemas de
             clasificación y recuperación de información digital basados en etiquetas, con la recopilación de los
             antecedentes de esta investigación. Además, se comenzó a diseñar e implementar la interfaz web de usuario
             a través del diseño de bocetos físicos y digitales; y la base de datos, mediante el esquema fundamental
@@ -694,10 +690,10 @@
             @AddToIndex @Title { Cuarto Sprint } @Tag { sp.4 }
 
             @PP
-            En este @I{ Sprint } se comenzó el diseño de una API pública, implementada en la aplicación servidor,
-            para permitir una comunicación sencilla con la misma, potenciando así la posibilidad de desarrollar una
-            aplicación cliente que se comunique con la aplicación servidor de manera efectiva. También se hicieron
-            un par de cambios menores a la interfaz web de usuario.
+            En este @I{ Sprint } se comenzó el diseño de una @I API pública, implementada en la aplicación
+            servidor, para permitir una comunicación sencilla con la misma, potenciando así la posibilidad de
+            desarrollar una aplicación cliente que se comunique con el servidor de manera efectiva. También se
+            hicieron un par de cambios menores a la interfaz web de usuario.
           @End @SubSection
 
           @SubSection
@@ -709,7 +705,7 @@
             @PP
             Es en este @I{ Sprint } que se da inicio a la codificación e implementación de la aplicación cliente,
             conformada, al final de este ciclo, solo por el mecanismo de rastreo de recursos del sistema. Por otro
-            lado, se sigue con la expansión de la API mencionada anteriormente y el refinamiento de la interfaz web
+            lado, se sigue con la expansión de la @I API mencionada anteriormente y el refinamiento de la interfaz web
             de usuario, acciones que se repiten hasta el final del tercer lanzamiento.
           @End @SubSection
 
@@ -722,7 +718,7 @@
             @PP
             Se desarrolló el módulo que permite al usuario seleccionar a potestad cuáles directorios serán
             incluidos en el proceso de rastreo, así como el módulo que se encarga de mantener sincronizada con el
-            servidor la información generada a partir del mencionado rastreo.
+            servidor la información generada a partir de dicho rastreo.
           @End @SubSection
 
           @SubSection
@@ -733,8 +729,8 @@
 
             @PP
             A lo largo de este sprint, se implementó la gestión de usuarios en la aplicación servidor, se adaptó la
-            interfaz web de usuario para reflejar dichos cambios y se implementó en ambas aplicaciones un mecanismo
-            de comunicación sencillo, robusto y seguro, basado en @I{ tokens }.
+            interfaz para reflejar dichos cambios y se implementó en ambas aplicaciones un mecanismo de
+            comunicación sencillo, robusto y seguro, basado en @I{ tokens }.
           @End @SubSection
 
           @SubSection
@@ -755,9 +751,9 @@
             @AddToIndex @Title { Noveno Sprint } @Tag { sp.9 }
 
             @PP
-            Este @I{ Sprint } cerró el ciclo de desarrollo de esta investigación, durante el cual se llevaron a
-            cabo las pruebas más rigurosas del sistema, con la finalidad de detectar y posteriormente corregir
-            errores funcionales que residían en la aplicación.
+            Durante este @I Sprint se llevaron a cabo las pruebas más rigurosas del sistema, con la finalidad
+            de detectar y posteriormente corregir errores funcionales que se encontrasen en la aplicación,
+            cerrando así el ciclo de desarrollo de esta investigación.
           @End @SubSection
         @EndSubSections
       @End @Section
@@ -778,9 +774,9 @@
         @AddToIndex @Title { Arquitectura de la Herramienta } @Tag { arc.herr }
 
         @PP
-        OmniTag es una herramienta que permite a sus usuarios organizar y buscar los archivos, contenidos en sus
+        @I OmniTag es una herramienta que permite a sus usuarios organizar y buscar los archivos, contenidos en sus
         distintos computadores de escritorio y portátiles, a través del uso de etiquetas bajo una sola plataforma
-        basada en tecnologías web y el lenguaje de programación Python. OmniTag relega a un navegador web el
+        basada en tecnologías web y el lenguaje de programación Python. @I OmniTag relega a un navegador web el
         despliegue de su interfaz gráfica de usuario, construida mediante el uso de los lenguajes HTML y CSS junto
         al @I{ framework } Twitter Bootstrap, para la parte visual; y el lenguaje de programación JavaScript, con
         la ayuda de la librería JQuery, para la parte interactiva. La lógica de negocios es manejada por el
@@ -790,10 +786,9 @@
         aplicación para generar contenido dinámico, entre otros.
 
         @PP
-        Funcionalmente, OmniTag está constituida por dos módulos fundamentales: uno cliente y otro servidor. Ambos
+        Funcionalmente, @I OmniTag está constituida por dos módulos fundamentales: uno cliente y otro servidor. Ambos
         módulos dependen de un navegador web para interactuar con el usuario, haciendo uso de las tecnologías
-        disponibles en dicho navegador para desplegar una interfaz interoperable con los distintos ambientes
-        operativos, computadores de escritorio y portátiles de amplio uso en la actualidad.
+        disponibles en dicho navegador para desplegar una interfaz interoperable.
 
         @PP
         El módulo servidor se ocupa de la gestión de todos los procesos relacionados con la creación, control y
@@ -803,22 +798,21 @@
         cómodo tratamiento de los recursos; el etiquetado es flexible, pudiendo aplicar o remover etiquetas a
         múltiples recursos a la vez, y la búsqueda es un proceso intuitivo permitiendo asociar un número arbitrario
         de palabras clave bajo un mismo término con el fin de potenciar, facilitar y agilizar la recuperación de
-        los recursos.
+        la información gestionada.
 
         @PP
         Por su parte, el módulo cliente es la pieza destinada a residir en los dispositivos de los usuarios,
         permitiendo a éstos indicarle cuáles directorios de un repositorio en particular tomará en cuenta a la hora
         de rastrear los recursos que serán sincronizados con el módulo servidor para su posterior clasificación y
-        recuperación. También es responsable de alojar los parámetros de configuración empleado para la
-        comunicación con el servidor, además de ser el encargado de predefinir etiquetas a un subconjunto de los
-        recursos rastreados, dependiendo su asignación de la naturaleza de los dichos recursos. La @B { Imagen 4}
-        plasma la funcionalidad de estos módulos, así como la interacción que se da entre ellos y aquella que
-        involucra al usuario.
+        recuperación. También es responsable de alojar los parámetros de configuración empleados en la comunicación
+        con el servidor, además de ser el encargado de predefinir etiquetas a un subconjunto de los archivos
+        rastreados dependiendo de la naturaleza de los mismos. La @B { Imagen 4} plasma la funcionalidad de estos
+        módulos, así como la interacción que se da entre ellos y aquella que involucra al usuario.
 
         //2.0f @AddFigure
           @Title { Imagen 4. Arquitectura Funcional de la Herramienta }
           @ImgSrc { "./include/img/arquitectura-funcional.eps" }
-          @ScaleXY { 0.6 }
+          @ScaleXY { 0.6 0.52 }
           @Src { Fuente: Padrón (2014) }
       @End @Section
 
@@ -832,26 +826,26 @@
         La @B { Imagen 5 } ilustra los modelos que forman parte del módulo servidor, cabe mencionar que ésta
         describe los atributos de los modelos y las relaciones que existen entre ellos tomando en cuenta su
         representación en forma de tablas bajo un paradigma relacional, estando éstas intrínsecamente vinculadas
-        con sus correspondientes clases (paradigma orientado a objetos) mediante el uso del @I{ Peewee } (ORM).
+        con sus correspondientes clases (paradigma orientado a objetos) mediante el uso de @I{ Peewee } (ORM).
         Estos modelos son:
 
         //2.0f @BulletList indent { 4s }
           @ListItem { User: Representa un usuario de la herramienta. }
           @ListItem { Device: Representa un dispositivo de un usuario. }
-          @ListItem { Tag: Representa una etiqueta, la cual pertenece a un usuario único. }
-          @ListItem { Resource: Representa un recurso alojado en dispositivo en particular. }
+          @ListItem { Tag: Representa una etiqueta, la cual pertenece a un único usuario. }
+          @ListItem { Resource: Representa un recurso alojado en un dispositivo en particular. }
           @ListItem { Search: Representa asociaciones de etiquetas usadas en búsquedas almacenadas. }
         @EndList
 
         //2.0f @AddFigure
           @Title { Imagen 5. Diagrama de Clases de los Modelos }
           @ImgSrc { "./include/img/classes-serv.eps" }
-          @ScaleXY { 0.4 }
+          @ScaleXY { 0.4 0.5 }
           @Src { Fuente: Padrón (2014) }
 
         @PP
-        Como puede observarse, adicional a los atributos de los modelos, éstos comparten una interfaz común,
-        definida por la clase @I{ BaseModel }, además de tener asociados un conjunto de métodos, a saber:
+        Como puede observarse, los modelos comparten una interfaz común, definida por la clase @I BaseModel,
+        además de tener asociados un conjunto de métodos, a saber:
 
         //2.0f @BulletList indent { 4s }
           @ListItem {
@@ -893,7 +887,7 @@
         //2.0f @AddFigure
           @Title { Imagen 6. Diagrama de Clases del Módulo Cliente }
           @ImgSrc { "./include/img/classes-clnt.eps" }
-          @ScaleXY { 0.4 }
+          @ScaleXY { 0.4 0.42 }
           @Src { Fuente: Padrón (2014) }
 
         //2.0f @BulletList indent { 4s }
@@ -951,19 +945,19 @@
         @EndList
 
         @PP
-        A continuación, se presenta el código fuente de los procesos de rastreo y auto-etiquetado de archivos,
+        A continuación, se presenta el pseudo-código de los procesos de rastreo y auto-etiquetado de archivos,
         componentes más sobresalientes del sistema:
 
         //2.0f @AddFigure
           @Title { Imagen 7. Crawler }
           @ImgSrc { "./include/img/crawler.eps" }
-          @ScaleXY { 0.36 }
+          @ScaleXY { 0.5 0.4 }
           @Src { Fuente: Padrón (2014) }
 
         //2.0f @AddFigure
           @Title { Imagen 8. AutoTagger }
           @ImgSrc { "./include/img/auto-tagger.eps" }
-          @ScaleXY { 0.36 }
+          @ScaleXY { 0.5 0.4 }
           @Src { Fuente: Padrón (2014) }
       @End @Section
     @EndSections
@@ -986,13 +980,13 @@
     El proceso que concluyó con el nacimiento de @I Omnitag partió de la implementación de la aplicación servidor,
     cuya principal tarea es el almacenamiento y gestión de etiquetas y metadatos de recursos digitales. Los
     procesos de almacenamiento y gestión fueron garantizados mediante el empleo de una base de datos relacional y
-    un servicio web, respectivamente.
+    un servidor web, respectivamente.
 
     @PP
     El primero de los dos módulos que constituyen la aplicación cliente fue dispuesto para efectuar el rastreo
     personalizable de la información a etiquetar, manteniendo sincronizada dicha información con el servidor. El
-    segundo módulo fue destinado a la interfaz gráfica del usuario, construida con la ayuda de tecnologías web
-    (HTML, CSS, JavaScript) para facilitar su despliegue en distintos sistemas operativos.
+    segundo módulo fue destinado a la interfaz gráfica del usuario, construida con la ayuda de los lenguajes HTML,
+    CSS y JavaScript, con el fin de facilitar su despliegue en distintos sistemas operativos.
 
     @PP
     Finalmente, se sometió a @I OminiTag a una serie de pruebas mediante el modelo de caja gris, pruebas pasadas
@@ -1014,15 +1008,13 @@
 
     @PP
     Se sugiere el desarrollo de un módulo para el recabado y visualización de información estadística,
-    constituyendo información como cantidad y uso de etiquetas y dispositivos de manera gráfica (nube de etiquetas)
-    o numérica; y un grafo que muestre la relación y topología derivada de las palabras clave y su uso en los
-    recursos gestionados.
+    abarcando información como cantidad y uso de etiquetas, además de la relación y topología derivada de su
+    vínculo con los archivos gestionados.
 
     @PP
     Finalmente, se propone integrar la herramienta con un servicio web de alojamiento de archivos (Dropbox, Google
     Drive, Microsoft OneDrive, entre otros) con el fin de respaldar la información gestionada por @I OmniTag o
-    efectuar la transferencia de dicha información entre los dispositivos conectados a través de este tipo de
-    servicio.
+    efectuar la transferencia de la misma entre los dispositivos sincronizados a través de este tipo de servicio.
   @End @ExtraSection
 
   @NP
