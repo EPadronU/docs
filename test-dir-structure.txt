@@ -1,0 +1,32 @@
+/
+  Documents/
+    School/
+     Document 06.odt  Document 07.odt  Document 08.odt  Document 09.xml  Document 10.xml
+    SourceCode/
+     Database 01.db  Database 02.db  Source 01.py  Source 02.py  Source 03.py    Source 04.py
+     Source 05.py    Source 06.js    Source 07.js  Source 08.js  Source 09.html  Source 10.html
+    Work/
+     Document 01.doc  Document 02.doc  Document 03.docx  Document 04.ppt  Document 05.ppt
+
+  Music/
+    90s/
+      01. 90s.mp3  02. 90s.mp3  03. 90s.mp3  04. 90s.mp3  05. 90s.mp3  06. 90s.mp3
+      07. 90s.mp3  08. 90s.mp3  09. 90s.mp3
+    Chillout/
+      01. Chillout.ogg  02. Chillout.ogg  03. Chillout.ogg  04. Chillout.ogg  05. Chillout.ogg
+      06. Chillout.ogg  07. Chillout.ogg  08. Chillout.ogg  09. Chillout.ogg  10. Chillout.ogg
+    Trance/
+      01. Trance.ogg  02. Trance.ogg  03. Trance.ogg  04. Trance.ogg  05. Trance.ogg
+      06. Trance.ogg  07. Trance.ogg  08. Trance.ogg  09. Trance.ogg  10. Trance.ogg
+
+  Pictures/
+      Image 01.png   Image 02.png  Image 03.png  Image 04.jpg  Image 05.jpg  Image 06.jpeg
+      Image 07.jpeg  Image 08.gif  Image 09.gif  Image 10.gif
+
+  Videos/
+    Anime/
+      Elfen Lied/
+        Episode 01.mkv  Episode 02.mkv  Episode 03.mkv  Episode 04.mkv  Episode 05.mkv  Episode 06.mkv
+        Episode 07.mkv  Episode 08.mkv  Episode 09.mkv  Episode 10.mkv  Episode 11.mkv  Episode 12.mkv
+    Movies/
+      Divergent (2014).avi  Her (2013).avi  Transcendence (2014).mpg

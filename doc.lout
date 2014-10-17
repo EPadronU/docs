@@ -964,6 +964,145 @@
   @End @Chapter
 
   @NP
+  
+  @Chapter
+    @Num { V } 
+    @Title { Pruebas del Sistema }
+  @Begin
+    @BeginSections
+      @Section
+        @Title { Descripción de las pruebas realizadas }
+        @Tag { desc.pruebas }
+      @Begin
+        @AddToIndex @Title { Descripción de las pruebas realizadas } @Tag { desc.pruebas }
+
+        @PP
+        La fiabilidad del sistema fue verificada a través de la implementación de pruebas funcionales orientadas a
+        tareas y pruebas de errores forzados bajo el modelo de caja gris, técnicas descritas en detalle en el
+        capítulo III. El principal insumo de las pruebas realizadas lo conforma una estructura de directorios
+        diseñada con el fin de representar un ambiente habitual de ejecución. A pesar de que las pruebas se
+        llevaron a cabo en un ambiente Linux®, éstas se desarrollaron con total independencia del sistema operativo
+        subyacente. A continuación, se ilustra la estructura de directorios en cuestión:
+
+        //1v {
+          { 1fx } @Break {
+            0.8f @Font @F "cat test-dir-structure.txt" @PipeVerbatim {}
+          }
+        }
+
+        @PP
+        El sistema fue puesto a prueba desde la perspectiva del usuario, proporcionando a la herramienta tanto
+        información correctamente formada (pruebas funcionales orientadas a tareas) como información inesperada
+        (pruebas de errores forzados), verificando así el adecuado comportamiento de las distintas funcionalidades
+        que éste ofrece, además de constatar su capacidad de recuperarse ante un estado de error y advertir al
+        usuario de dicho suceso.
+
+        @PP
+        En primer lugar, se puso a prueba el mecanismo de la aplicación servidor para el registro de un nuevo
+        usuario. En la @B { Imagen 9} se muestra comportamiento presentado por la herramienta ante el inicio
+        de sesión de un usuario inexistente (A), el registro de un nuevo usuario mediante el ingreso
+        heterogéneo de la contraseña y su verificación (B), el registro de un usuario efectivo del sistema (C)
+        y el registro exitoso de un nuevo usuario (D).
+
+        //2.0f @AddFigure
+          @Title { Imagen 9. Pruebas del registro de un nuevo usuario }
+          @ImgSrc { "./include/img/resultados/registro.eps" }
+          @ScaleXY { 0.42 0.46 }
+          @Src { Fuente: Padrón (2014) }
+
+        @PP
+        De manera similar, se verificó la funcionalidad que permite adicionar un nuevo dispositivo de usuario
+        (A), obtener el @I token del nuevo dispositivo (B), proporcionar y modificar el nombre y apellido del
+        usuario (D), y visualizar el @I token del usuario (C). El resultado de las pruebas anteriormente
+        descritas se muestra en la @B { Imagen 10 }.
+
+        //2.0f @AddFigure
+          @Title { Imagen 10. Pruebas del registro de un nuevo dispositivo }
+          @ImgSrc { "./include/img/resultados/tokens.eps" }
+          @ScaleXY { 0.42 }
+          @Src { Fuente: Padrón (2014) }
+
+        @PP
+        En la @B { Imagen 11 }, se exhibe la ventana principal de la aplicación cliente, plasmando el
+        comportamiento presentado por ésta ante la introducción de datos erróneos para los parámetros de
+        configuración.
+
+        //2.0f @AddFigure
+          @Title { Imagen 12. Pruebas de los parámetros de configuración de la aplicación cliente }
+          @ImgSrc { "./include/img/resultados/client-settings.eps" }
+          @ScaleXY { 0.42 0.38 }
+          @Src { Fuente: Padrón (2014) }
+
+        @PP
+        Se presenta en la @B { Imagen 13 } el resultado de las pruebas ejecutadas al mecanismo de lista negra
+        (A) y blanca (B y C) integrado en la aplicación cliente, mecanismo que permite delimitar los
+        directorios a gestionar.
+
+        //2.0f @AddFigure
+          @Title { Imagen 13. Pruebas de la lista blanca y negra de directorios a rastrear }
+          @ImgSrc { "./include/img/resultados/wb-lists.eps" }
+          @ScaleXY { 0.48 0.42 }
+          @Src { Fuente: Padrón (2014) }
+
+        @PP
+        En las dos siguiente imágenes se puede apreciar el resultado de la sincronización realizada entre la
+        aplicación cliente y servidor, además de visualizar los vínculos establecidos de manera automática
+        entre los archivos recién gestionados y un conjunto de etiquetas predefinidas (@I video, @I data, @I
+        document, @I image, @I music y @I presentation).
+
+        //2.0f @AddFigure
+          @Title { Imagen 14. Pruebas de sincronización de archivos y etiquetado automático (I) }
+          @ImgSrc { "./include/img/resultados/tagged-files-I.eps" }
+          @ScaleXY { 0.42 }
+          @Src { Fuente: Padrón (2014) }
+
+        //2.0f @AddFigure
+          @Title { Imagen 15. Pruebas de sincronización de archivos y etiquetado automático (II) }
+          @ImgSrc { "./include/img/resultados/tagged-files-II.eps" }
+          @ScaleXY { 0.42 0.44 }
+          @Src { Fuente: Padrón (2014) }
+
+        @PP
+        Continuando con las pruebas anteriores, se comprobó el funcionamiento de la opción @I {Unttaged
+        files}, la cual muestra aquellos archivos que no están vinculados a ninguna etiqueta. El
+        comportamiento de esta funcionalidad se muestra a continuación:
+
+        //2.0f @AddFigure
+          @Title { Imagen 15. Prueba complementaria de la sincronización de archivos }
+          @ImgSrc { "./include/img/resultados/untagged-files.eps" }
+          @ScaleXY { 0.42 0.54 }
+          @Src { Fuente: Padrón (2014) }
+
+        @PP
+        La verificación realizada al mecanismo que permite crear una nueva etiqueta es detallada paso a paso
+        en la @B { Imagen 16}, presentada a continuación:
+
+        //2.0f @AddFigure
+          @Title { Imagen 16. Pruebas de funcionalidad ``agregar nueva etiqueta'' }
+          @ImgSrc { "./include/img/resultados/new-tag.eps" }
+          @ScaleXY { 0.42 0.36 }
+          @Src { Fuente: Padrón (2014) }
+
+        @PP
+        Por último, la @B { Imagen 17} muestra las pruebas realizadas a la funcionalidad que permite el
+        guardado (A y B) de una búsqueda, además de la modificación del identificador de la misma (C).
+
+        //2.0f @AddFigure
+          @Title { Imagen 17. Pruebas de funcionalidad ``guardar nueva búsqueda'' }
+          @ImgSrc { "./include/img/resultados/save.eps" }
+          @ScaleXY { 0.42 0.36 }
+          @Src { Fuente: Padrón (2014) }
+
+        @PP
+        Como se pudo observar, todas las funcionalidades incorporadas en ambos módulos (cliente y servidor) del
+        sistema presentan el comportamiento esperado tanto frente a datos correctos como incorrectos, mostrando en
+        este último caso mensajes adecuados para la situación correspondiente y recuperándose de manera efectiva
+        ante los fallos que se produjeron.
+      @End @Section
+    @EndSections
+  @End @Chapter
+
+  @NP
 
   @ExtraSection
     @Title { CONCLUSIONES }
