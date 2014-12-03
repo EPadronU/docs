@@ -138,7 +138,7 @@
         en la sociedad. Furth (1994) escribió: ``La información es actualmente tan vital, y tan intangible, como
         el aire que respiramos, el cual está lleno de ondas de radio''. Hoy en día es el bien más importante y
         valioso para toda compañía, país y grupo social, por lo que su refinamiento a partir de la abundante
-        cantidad de datos que son creados cada segundo es un proceso primordial y que ofrece una ventaja
+        cantidad de datos que son creados cada segundo es un proceso primordial, el cual ofrece una ventaja
         significativa.
         @PP
         En el año 2010 se produjo y almacenó un estimado de dos exabytes de información (esto incluye todos los
@@ -158,12 +158,12 @@
         representación, nacida en 1969 con el lanzamiento del sistema operativo Multics en respuesta a la
         necesidad de un sistema de almacenamiento secundario en un ambiente de multiprogramación (Multics,
         1968), rígida por causa de su inherente propiedad taxonómica, limita la manera en la que puede ser
-        organizada la información, mediante una relación padre-hijo, y hace de la búsqueda de la misma un
+        organizada la información, mediante una relación padre-hijo, y hace que la búsqueda de la misma sea un
         proceso arduo debido al uso de engorrosas rutas de directorios. Además, esta aproximación dista en gran
         medida del método natural usado por el hombre para almacenar y recuperar información de su memoria a
         largo plazo, el cual consiste en codificarla semánticamente para su almacenamiento (Baddeley, 1966),
         asociando los datos que percibe (Atkinson y Shiffrin, 1968). Por lo tanto, el ser humano no es una
-        máquina que trabaje en base a datos aislados, éste busca interrelacionarlos, describiéndolos de manera
+        máquina que trabaje en base a datos aislados; éste busca interrelacionarlos, describiéndolos de manera
         inherentemente subjetiva, breve y dinámica; haciendo necesario un método semejante para clasificar y
         recuperar la información digital, siendo éste más flexible, intuitivo y natural.
         @PP
@@ -303,7 +303,7 @@
               @Title { Imagen 1. Tags }
               @ImgSrc { "./include/img/tags.eps" }
               @ScaleXY { 0.4 0.28 }
-              @Src { Fuente: Tags (2014) }
+              @Src { Tags (2014) }
           @End @SubSection
 
           @SubSection
@@ -330,7 +330,7 @@
               @Title { Imagen 2. TaggTool }
               @ImgSrc { "./include/img/taggtool.eps" }
               @ScaleXY { 0.4 0.4 }
-              @Src { Fuente: TaggTool (2014) }
+              @Src { TaggTool (2014) }
           @End @SubSection
 
           @SubSection
@@ -353,7 +353,7 @@
               @Title { Imagen 3. Tabbles }
               @ImgSrc { "./include/img/tabbles.eps" }
               @ScaleXY { 0.6  0.5 }
-              @Src { Fuente: Tabbles (2014) }
+              @Src { Tabbles (2014) }
           @End @SubSection
         @EndSubSections
       @End @Section
@@ -629,7 +629,7 @@
         @PP
         El desarrollo de la herramienta web, @I Omnitag, se llevó a cabo a lo largo de nueve @I{ Sprints }, cada uno
         de un mes de duración. La distribución de las tareas llevadas a cabo a lo largo del ciclo de desarrollo se
-        ha plasmado en la siguiente tabla, la descripción de las mismas se plantea justo después de la mencionada
+        ha plasmado en la siguiente tabla; la descripción de las mismas se plantea justo después de la mencionada
         ésta.
 
         @NP
@@ -638,7 +638,7 @@
         //0f @PageMark { dist.act }
         //0f @AddToTIndex @Title { Tabla 1. Distribución de Actividades } @Tag { dist.act }
         //0f @CD { 0.36 0.32 } @Scale @IncludeGraphic "./include/img/tabla1.eps"
-        //0f @MyCenter @B { Fuente: Padrón (2014) }
+        //0f @MyCenter @B { Padrón (2014) }
 
         @BeginSubSections
           @SubSection
@@ -665,7 +665,7 @@
             @AddToIndex @Title { Segundo Sprint } @Tag { sp.2 }
 
             @PP
-            Durante este @I{ sprint } se continuó con las actividades iniciadas en el anterior refinando el diseño
+            Durante este @I{ sprint } se continuó con las actividades iniciadas en el anterior, refinando el diseño
             de la base de datos, añadiendo nuevas características a la aplicación servidor y mejorando la interfaz
             web de usuario con el fin de hacerla más intuitiva y funcional.
           @End @SubSection
@@ -813,7 +813,7 @@
           @Title { Imagen 4. Arquitectura Funcional de la Herramienta }
           @ImgSrc { "./include/img/arquitectura-funcional.eps" }
           @ScaleXY { 0.6 0.52 }
-          @Src { Fuente: Padrón (2014) }
+          @Src { Padrón (2014) }
       @End @Section
 
       @Section
@@ -841,7 +841,7 @@
           @Title { Imagen 5. Diagrama de Clases de los Modelos }
           @ImgSrc { "./include/img/classes-serv.eps" }
           @ScaleXY { 0.4 0.5 }
-          @Src { Fuente: Padrón (2014) }
+          @Src { Padrón (2014) }
 
         @PP
         Como puede observarse, los modelos comparten una interfaz común, definida por la clase @I BaseModel,
@@ -888,7 +888,7 @@
           @Title { Imagen 6. Diagrama de Clases del Módulo Cliente }
           @ImgSrc { "./include/img/classes-clnt.eps" }
           @ScaleXY { 0.4 0.42 }
-          @Src { Fuente: Padrón (2014) }
+          @Src { Padrón (2014) }
 
         //2.0f @BulletList indent { 4s }
           @ListItem {
@@ -952,13 +952,13 @@
           @Title { Imagen 7. Crawler }
           @ImgSrc { "./include/img/crawler.eps" }
           @ScaleXY { 0.5 0.4 }
-          @Src { Fuente: Padrón (2014) }
+          @Src { Padrón (2014) }
 
         //2.0f @AddFigure
           @Title { Imagen 8. AutoTagger }
           @ImgSrc { "./include/img/auto-tagger.eps" }
           @ScaleXY { 0.5 0.4 }
-          @Src { Fuente: Padrón (2014) }
+          @Src { Padrón (2014) }
       @End @Section
     @EndSections
   @End @Chapter
@@ -1008,7 +1008,7 @@
           @Title { Imagen 9. Pruebas del registro de un nuevo usuario }
           @ImgSrc { "./include/img/resultados/registro.eps" }
           @ScaleXY { 0.42 0.46 }
-          @Src { Fuente: Padrón (2014) }
+          @Src { Padrón (2014) }
 
         @PP
         De manera similar, se verificó la funcionalidad que permite adicionar un nuevo dispositivo de usuario
@@ -1020,7 +1020,7 @@
           @Title { Imagen 10. Pruebas del registro de un nuevo dispositivo }
           @ImgSrc { "./include/img/resultados/tokens.eps" }
           @ScaleXY { 0.42 }
-          @Src { Fuente: Padrón (2014) }
+          @Src { Padrón (2014) }
 
         @PP
         En la @B { Imagen 11 }, se exhibe la ventana principal de la aplicación cliente, plasmando el
@@ -1031,7 +1031,7 @@
           @Title { Imagen 11. Pruebas de los parámetros de configuración de la aplicación cliente }
           @ImgSrc { "./include/img/resultados/client-settings.eps" }
           @ScaleXY { 0.42 0.38 }
-          @Src { Fuente: Padrón (2014) }
+          @Src { Padrón (2014) }
 
         @PP
         Se presenta en la @B { Imagen 12 } el resultado de las pruebas ejecutadas al mecanismo de lista negra
@@ -1042,7 +1042,7 @@
           @Title { Imagen 12. Pruebas de la lista blanca y negra de directorios a rastrear }
           @ImgSrc { "./include/img/resultados/wb-lists.eps" }
           @ScaleXY { 0.48 0.42 }
-          @Src { Fuente: Padrón (2014) }
+          @Src { Padrón (2014) }
 
         @PP
         En las dos siguiente imágenes se puede apreciar el resultado de la sincronización realizada entre la
@@ -1054,13 +1054,13 @@
           @Title { Imagen 13. Pruebas de sincronización de archivos y etiquetado automático (I) }
           @ImgSrc { "./include/img/resultados/tagged-files-I.eps" }
           @ScaleXY { 0.42 }
-          @Src { Fuente: Padrón (2014) }
+          @Src { Padrón (2014) }
 
         //2.0f @AddFigure
           @Title { Imagen 14. Pruebas de sincronización de archivos y etiquetado automático (II) }
           @ImgSrc { "./include/img/resultados/tagged-files-II.eps" }
           @ScaleXY { 0.42 0.44 }
-          @Src { Fuente: Padrón (2014) }
+          @Src { Padrón (2014) }
 
         @PP
         Continuando con las pruebas anteriores, se comprobó el funcionamiento de la opción @I {Unttaged
@@ -1071,7 +1071,7 @@
           @Title { Imagen 15. Prueba complementaria de la sincronización de archivos }
           @ImgSrc { "./include/img/resultados/untagged-files.eps" }
           @ScaleXY { 0.42 0.54 }
-          @Src { Fuente: Padrón (2014) }
+          @Src { Padrón (2014) }
 
         @PP
         La verificación realizada al mecanismo que permite crear una nueva etiqueta es detallada paso a paso
@@ -1081,7 +1081,7 @@
           @Title { Imagen 16. Pruebas de funcionalidad ``agregar nueva etiqueta'' }
           @ImgSrc { "./include/img/resultados/new-tag.eps" }
           @ScaleXY { 0.42 0.36 }
-          @Src { Fuente: Padrón (2014) }
+          @Src { Padrón (2014) }
 
         @PP
         Por último, la @B { Imagen 17} muestra las pruebas realizadas a la funcionalidad que permite el
@@ -1091,7 +1091,7 @@
           @Title { Imagen 17. Pruebas de funcionalidad ``guardar nueva búsqueda'' }
           @ImgSrc { "./include/img/resultados/save.eps" }
           @ScaleXY { 0.42 0.36 }
-          @Src { Fuente: Padrón (2014) }
+          @Src { Padrón (2014) }
 
         @PP
         Como se pudo observar, todas las funcionalidades incorporadas en ambos módulos (cliente y servidor) del
