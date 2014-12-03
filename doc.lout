@@ -137,14 +137,14 @@
         La época actual es llamada la ``era de la información'' (Giuliano, 1983) debido a la relevancia de ésta
         en la sociedad. Furth (1994) escribió: ``La información es actualmente tan vital, y tan intangible, como
         el aire que respiramos, el cual está lleno de ondas de radio''. Hoy en día es el bien más importante y
-        valioso para toda compañía, país y grupo social, por lo que su refinamiento a partir de la abundante
+        valioso para todo grupo social, organización y país, por lo que su refinamiento a partir de la abundante
         cantidad de datos que son creados cada segundo es un proceso primordial, el cual ofrece una ventaja
         significativa.
         @PP
         En el año 2010 se produjo y almacenó un estimado de dos exabytes de información (esto incluye todos los
         medios: libros, revistas, documentos, Internet, fotografías, televisión, radio, música, entre otros) de
         los cuales, el 93% era digital (Burgin, 2010). Dos años después, la cantidad de información digital
-        generada, se elevó a 2.5 exabytes al día (IBM, 2012), evidenciando un crecimiento exponencial, con la
+        generada se elevó a 2.5 exabytes al día (IBM, 2012), evidenciando un crecimiento exponencial, con la
         Internet como principal catalizador de este fenómeno.
         @PP
         A la Internet se le suma el creciente uso de dispositivos móviles (teléfonos inteligentes, tabletas,
@@ -303,41 +303,41 @@
               @Title { Imagen 1. Tags }
               @ImgSrc { "./include/img/tags.eps" }
               @ScaleXY { 0.4 0.28 }
-              @Src { Tags (2014) }
+              @Src { CASEapps (2014) }
           @End @SubSection
 
           @SubSection
-            @Title { TagTool }
-            @Tag { ant.tagtool }
+            @Title { Taggtool }
+            @Tag { ant.taggtool }
           @Begin
-            @AddToIndex @Title { TagTool } @Tag { ant.tagtool }
+            @AddToIndex @Title { Taggtool } @Tag { ant.taggtool }
 
             @PP
-            TaggTool permite añadir etiquetas a archivos, directorios y «bookmarks». Adicionalmente, el
+            Taggtool permite añadir etiquetas a archivos, directorios y «bookmarks». Adicionalmente, el
             usuario puede proporcionar una descripción del recurso, además de una calificación cuantitativa
             (@I rating). Esta herramienta ofrece la posibilidad de importar metadatos pre-existentes en la
              información gestionada y realizar búsquedas en base a estos.
             @PP
-            TaggTool también posee una alta integración con el sistema operativo y brinda una vista previa de los
+            Taggtool también posee una alta integración con el sistema operativo y brinda una vista previa de los
             recursos gestionados. Además, facilita un sistema de etiquetado automático basado en la naturaleza de
             la información, y muestra una nube de etiquetas para la visualización de las mismas.
             @PP
-            Al igual que Tags, TaggTool está sujeto a una licencia privativa y no es capaz de sincronizar
+            Al igual que Tags, Taggtool está sujeto a una licencia privativa y no es capaz de sincronizar
             recursos localizados en diferentes dispositivos. Otra desventaja que presenta esta herramienta
             es que está disponible solo para el sistema operativo @I { Microsoft Windows }®.
 
             //2.0f @AddFigure
-              @Title { Imagen 2. TaggTool }
+              @Title { Imagen 2. Taggtool }
               @ImgSrc { "./include/img/taggtool.eps" }
               @ScaleXY { 0.4 0.4 }
-              @Src { TaggTool (2014) }
+              @Src { Taggtool (2014) }
           @End @SubSection
 
           @SubSection
-            @Title { Tables }
-            @Tag { ant.tables }
+            @Title { Tabbles }
+            @Tag { ant.tabbles }
           @Begin
-            @AddToIndex @Title { Tables } @Tag { ant.tables }
+            @AddToIndex @Title { Tabbles } @Tag { ant.tabbles }
 
             @PP
             Tabbles ofrece la posibilidad de clasificar, buscar, organizar y compartir (a través de una LAN
@@ -372,7 +372,7 @@
             @AddToIndex @Title { Sistema de Archivo } @Tag { sis.arch }
 
             @PP
-            Un sistema de archivo es un módulo central de todo sistema operativo moderno que consiste de
+            Un sistema de archivo es un módulo central de todo sistema operativo moderno que consiste en
             estructuras lógicas y rutinas que controlan la creación, modificación, eliminación y acceso a los
             datos que residen en una unidad de disco, partición o volumen lógico. Dicho sistema organiza los
             datos en una estructura jerárquica mediante el uso de directorios, los cuales fungen como
@@ -638,7 +638,7 @@
         //0f @PageMark { dist.act }
         //0f @AddToTIndex @Title { Tabla 1. Distribución de Actividades } @Tag { dist.act }
         //0f @CD { 0.36 0.32 } @Scale @IncludeGraphic "./include/img/tabla1.eps"
-        //0f @MyCenter @B { Padrón (2014) }
+        //0f @MyCenter @B { Fuente: Fuente propia }
 
         @BeginSubSections
           @SubSection
@@ -678,7 +678,7 @@
 
             @PP
             Al igual que en el anterior, durante este @I{ sprint } se dio continuidad a las labores anteriormente
-            descritas, añadiendo un nuevo conjunto de características a la aplicación servidor, reflejando éstas
+            descritas, añadiendo un nuevo conjunto de características a la aplicación servidor, reflejando estas
             mejoras en la interfaz web del usuario y dándole los toques finales a la base de datos, finalizando el
             proceso de diseño e implementación de la misma.
           @End @SubSection
@@ -703,10 +703,10 @@
             @AddToIndex @Title { Quinto Sprint } @Tag { sp.5 }
 
             @PP
-            Es en este @I{ Sprint } que se da inicio a la codificación e implementación de la aplicación cliente,
+            Es en este @I{ Sprint } que se dio inicio a la codificación e implementación de la aplicación cliente,
             conformada, al final de este ciclo, solo por el mecanismo de rastreo de recursos del sistema. Por otro
-            lado, se sigue con la expansión de la @I API mencionada anteriormente y el refinamiento de la interfaz web
-            de usuario, acciones que se repiten hasta el final del tercer lanzamiento.
+            lado, se expandió la @I API mencionada anteriormente y se continuó el proceso de refinamiento de la
+            interfaz web de usuario, acciones que se repiten hasta el final del séptimo @I { Sprint }.
           @End @SubSection
 
           @SubSection
@@ -813,7 +813,7 @@
           @Title { Imagen 4. Arquitectura Funcional de la Herramienta }
           @ImgSrc { "./include/img/arquitectura-funcional.eps" }
           @ScaleXY { 0.6 0.52 }
-          @Src { Padrón (2014) }
+          @Src { Fuente propia }
       @End @Section
 
       @Section
@@ -841,7 +841,7 @@
           @Title { Imagen 5. Diagrama de Clases de los Modelos }
           @ImgSrc { "./include/img/classes-serv.eps" }
           @ScaleXY { 0.4 0.5 }
-          @Src { Padrón (2014) }
+          @Src { Fuente propia }
 
         @PP
         Como puede observarse, los modelos comparten una interfaz común, definida por la clase @I BaseModel,
@@ -888,7 +888,7 @@
           @Title { Imagen 6. Diagrama de Clases del Módulo Cliente }
           @ImgSrc { "./include/img/classes-clnt.eps" }
           @ScaleXY { 0.4 0.42 }
-          @Src { Padrón (2014) }
+          @Src { Fuente propia }
 
         //2.0f @BulletList indent { 4s }
           @ListItem {
@@ -952,13 +952,13 @@
           @Title { Imagen 7. Crawler }
           @ImgSrc { "./include/img/crawler.eps" }
           @ScaleXY { 0.5 0.4 }
-          @Src { Padrón (2014) }
+          @Src { Fuente propia }
 
         //2.0f @AddFigure
           @Title { Imagen 8. AutoTagger }
           @ImgSrc { "./include/img/auto-tagger.eps" }
           @ScaleXY { 0.5 0.4 }
-          @Src { Padrón (2014) }
+          @Src { Fuente propia }
       @End @Section
     @EndSections
   @End @Chapter
@@ -1008,7 +1008,7 @@
           @Title { Imagen 9. Pruebas del registro de un nuevo usuario }
           @ImgSrc { "./include/img/resultados/registro.eps" }
           @ScaleXY { 0.42 0.46 }
-          @Src { Padrón (2014) }
+          @Src { Fuente propia }
 
         @PP
         De manera similar, se verificó la funcionalidad que permite adicionar un nuevo dispositivo de usuario
@@ -1020,7 +1020,7 @@
           @Title { Imagen 10. Pruebas del registro de un nuevo dispositivo }
           @ImgSrc { "./include/img/resultados/tokens.eps" }
           @ScaleXY { 0.42 }
-          @Src { Padrón (2014) }
+          @Src { Fuente propia }
 
         @PP
         En la @B { Imagen 11 }, se exhibe la ventana principal de la aplicación cliente, plasmando el
@@ -1031,7 +1031,7 @@
           @Title { Imagen 11. Pruebas de los parámetros de configuración de la aplicación cliente }
           @ImgSrc { "./include/img/resultados/client-settings.eps" }
           @ScaleXY { 0.42 0.38 }
-          @Src { Padrón (2014) }
+          @Src { Fuente propia }
 
         @PP
         Se presenta en la @B { Imagen 12 } el resultado de las pruebas ejecutadas al mecanismo de lista negra
@@ -1042,7 +1042,7 @@
           @Title { Imagen 12. Pruebas de la lista blanca y negra de directorios a rastrear }
           @ImgSrc { "./include/img/resultados/wb-lists.eps" }
           @ScaleXY { 0.48 0.42 }
-          @Src { Padrón (2014) }
+          @Src { Fuente propia }
 
         @PP
         En las dos siguiente imágenes se puede apreciar el resultado de la sincronización realizada entre la
@@ -1054,13 +1054,13 @@
           @Title { Imagen 13. Pruebas de sincronización de archivos y etiquetado automático (I) }
           @ImgSrc { "./include/img/resultados/tagged-files-I.eps" }
           @ScaleXY { 0.42 }
-          @Src { Padrón (2014) }
+          @Src { Fuente propia }
 
         //2.0f @AddFigure
           @Title { Imagen 14. Pruebas de sincronización de archivos y etiquetado automático (II) }
           @ImgSrc { "./include/img/resultados/tagged-files-II.eps" }
           @ScaleXY { 0.42 0.44 }
-          @Src { Padrón (2014) }
+          @Src { Fuente propia }
 
         @PP
         Continuando con las pruebas anteriores, se comprobó el funcionamiento de la opción @I {Unttaged
@@ -1071,7 +1071,7 @@
           @Title { Imagen 15. Prueba complementaria de la sincronización de archivos }
           @ImgSrc { "./include/img/resultados/untagged-files.eps" }
           @ScaleXY { 0.42 0.54 }
-          @Src { Padrón (2014) }
+          @Src { Fuente propia }
 
         @PP
         La verificación realizada al mecanismo que permite crear una nueva etiqueta es detallada paso a paso
@@ -1081,7 +1081,7 @@
           @Title { Imagen 16. Pruebas de funcionalidad ``agregar nueva etiqueta'' }
           @ImgSrc { "./include/img/resultados/new-tag.eps" }
           @ScaleXY { 0.42 0.36 }
-          @Src { Padrón (2014) }
+          @Src { Fuente propia }
 
         @PP
         Por último, la @B { Imagen 17} muestra las pruebas realizadas a la funcionalidad que permite el
@@ -1091,7 +1091,7 @@
           @Title { Imagen 17. Pruebas de funcionalidad ``guardar nueva búsqueda'' }
           @ImgSrc { "./include/img/resultados/save.eps" }
           @ScaleXY { 0.42 0.36 }
-          @Src { Padrón (2014) }
+          @Src { Fuente propia }
 
         @PP
         Como se pudo observar, todas las funcionalidades incorporadas en ambos módulos (cliente y servidor) del
@@ -1128,8 +1128,8 @@
     CSS y JavaScript, con el fin de facilitar su despliegue en distintos sistemas operativos.
 
     @PP
-    Finalmente, se sometió a @I OminiTag a una serie de pruebas mediante el modelo de caja gris, pruebas pasadas
-    con éxito por la herramienta y documentadas en detalle con el apoyo de una secuencia de capturas de pantalla
+    Finalmente, se sometió a @I OminiTag a una serie de pruebas mediante el modelo de caja gris, pruebas ejecutadas
+    de manera exitosa y documentadas en detalle con el apoyo de una secuencia de capturas de pantalla
     para una mejor apreciación del comportamiento de la herramienta frente a las situaciones diseñadas en las
     pruebas.
   @End @ExtraSection
@@ -1179,6 +1179,9 @@
     p. VI.
 
     //0.85v
+    CASEapps (2014) (Página consultada el 16 de julio de 2014) [On-line]. Dirección: "http://www.caseapps.com/tags/"
+
+    //0.85v
     Eby, Phillip (2010) (Página consultada el 16 de julio de 2014) [On-line]. Dirección:
     "http://legacy.python.org/dev/peps/pep-3333".
 
@@ -1201,7 +1204,7 @@
     Scientific Research, Elsevier, Amsterdam, pp. 59-76.
 
     //0.85v
-    Grove, Ralph (20.85). Web Based Application Development. Jones "&" Bartlett Publishers. p. 42.
+    Grove, Ralph (2009). Web Based Application Development. Jones "&" Bartlett Publishers. p. 42.
 
     //0.85v
     IBM (2012) (Página consultada el 25 de junio de 2013) [On-line]. Dirección:
@@ -1244,7 +1247,13 @@
     "https://sqlite.org/about.html".
 
     //0.85v
-    World Wide Web Consortium (2012) (Página consultada el 16 de julio de 2014) [On-line]. Dirección:
+    Tabbles (2014) (Página consultada el 16 de julio de 2014) [On-line]. Dirección: "http://tabbles.net/"
+
+    //0.85v
+    Taggtool (2014) (Página consultada el 16 de julio de 2014) [On-line]. Dirección: "http://www.taggtool.com/"
+
+    //0.85v
+    W3C (2012) (Página consultada el 16 de julio de 2014) [On-line]. Dirección:
     "http://www.w3.org/2012/webapps/charter/"
 
     //0.85v
