@@ -776,14 +776,16 @@
         @PP
         @I OmniTag es una herramienta que permite a sus usuarios organizar y buscar los archivos, contenidos en sus
         distintos computadores de escritorio y portátiles, a través del uso de etiquetas bajo una sola plataforma
-        basada en tecnologías web y el lenguaje de programación Python. @I OmniTag relega a un navegador web el
-        despliegue de su interfaz gráfica de usuario, construida mediante el uso de los lenguajes HTML y CSS junto
-        al @I{ framework } Twitter Bootstrap, para la parte visual; y el lenguaje de programación JavaScript, con
-        la ayuda de la librería JQuery, para la parte interactiva. La lógica de negocios es manejada por el
-        interprete de Python, el cual se vale de una base de datos SQLite para gestionar la información no volátil,
-        base de datos con la que interactúa mediante el ORM Peewee; y el @I{ framework } web Flask, encargado del
-        manejo de las peticiones web, la transmisión de contenido estático, la ejecución de los programas de
-        aplicación para generar contenido dinámico, entre otros.
+        basada en tecnologías web y el lenguaje de programación Python.
+
+        @PP
+        @I OmniTag relega a un navegador web el despliegue de su interfaz gráfica de usuario, construida mediante el
+        uso de los lenguajes HTML y CSS junto al @I{ framework } Twitter Bootstrap, para la parte visual; y el
+        lenguaje de programación JavaScript, con la ayuda de la librería JQuery, para la parte interactiva. La lógica
+        de negocios es manejada por el interprete de Python, el cual se vale de una base de datos SQLite para
+        gestionar la información no volátil, base de datos con la que interactúa mediante el ORM Peewee; y el
+        @I{ framework } web Flask, encargado del manejo de las peticiones web, la transmisión de contenido estático,
+        la ejecución de los programas de aplicación para generar contenido dinámico, entre otros.
 
         @PP
         Funcionalmente, @I OmniTag está constituida por dos módulos fundamentales: uno cliente y otro servidor. Ambos
