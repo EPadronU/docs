@@ -808,7 +808,7 @@
         de rastrear los recursos que serán sincronizados con el módulo servidor para su posterior clasificación y
         recuperación. También es responsable de alojar los parámetros de configuración empleados en la comunicación
         con el servidor, además de ser el encargado de predefinir etiquetas a un subconjunto de los archivos
-        rastreados dependiendo de la naturaleza de los mismos. La @B { Imagen 4} plasma la funcionalidad de estos
+        rastreados dependiendo de la naturaleza de los mismos. La Imagen 4 plasma la funcionalidad de estos
         módulos, así como la interacción que se da entre ellos y aquella que involucra al usuario.
 
         //2.0f @AddFigure
@@ -825,7 +825,7 @@
         @AddToIndex @Title { Implementación de la Herramienta } @Tag { impl.herr }
 
         @PP
-        La @B { Imagen 5 } ilustra los modelos que forman parte del módulo servidor, cabe mencionar que ésta
+        La Imagen 5 ilustra los modelos que forman parte del módulo servidor, cabe mencionar que ésta
         describe los atributos de los modelos y las relaciones que existen entre ellos tomando en cuenta su
         representación en forma de tablas bajo un paradigma relacional, estando éstas intrínsecamente vinculadas
         con sus correspondientes clases (paradigma orientado a objetos) mediante el uso de @I{ Peewee } (ORM).
@@ -1001,7 +1001,7 @@
 
         @PP
         En primer lugar, se puso a prueba el mecanismo de la aplicación servidor para el registro de un nuevo
-        usuario. En la @B { Imagen 9} se muestra comportamiento presentado por la herramienta ante el inicio
+        usuario. En la Imagen 9 se muestra comportamiento presentado por la herramienta ante el inicio
         de sesión de un usuario inexistente (A), el registro de un nuevo usuario mediante el ingreso
         heterogéneo de la contraseña y su verificación (B), el registro de un usuario efectivo del sistema (C)
         y el registro exitoso de un nuevo usuario (D).
@@ -1016,7 +1016,7 @@
         De manera similar, se verificó la funcionalidad que permite adicionar un nuevo dispositivo de usuario
         (A), obtener el @I token del nuevo dispositivo (B), proporcionar y modificar el nombre y apellido del
         usuario (D), y visualizar el @I token del usuario (C). El resultado de las pruebas anteriormente
-        descritas se muestra en la @B { Imagen 10 }.
+        descritas se muestra en la Imagen 10.
 
         //2.0f @AddFigure
           @Title { Imagen 10. Pruebas del registro de un nuevo dispositivo }
@@ -1025,7 +1025,7 @@
           @Src { Fuente propia }
 
         @PP
-        En la @B { Imagen 11 }, se exhibe la ventana principal de la aplicación cliente, plasmando el
+        En la Imagen 11, se exhibe la ventana principal de la aplicación cliente, plasmando el
         comportamiento presentado por ésta ante la introducción de datos erróneos para los parámetros de
         configuración.
 
@@ -1036,7 +1036,7 @@
           @Src { Fuente propia }
 
         @PP
-        Se presenta en la @B { Imagen 12 } el resultado de las pruebas ejecutadas al mecanismo de lista negra
+        Se presenta en la Imagen 12 el resultado de las pruebas ejecutadas al mecanismo de lista negra
         (A) y blanca (B y C) integrado en la aplicación cliente, mecanismo que permite delimitar los
         directorios a gestionar.
 
@@ -1077,7 +1077,7 @@
 
         @PP
         La verificación realizada al mecanismo que permite crear una nueva etiqueta es detallada paso a paso
-        en la @B { Imagen 16}, presentada a continuación:
+        en la Imagen 16, presentada a continuación:
 
         //2.0f @AddFigure
           @Title { Imagen 16. Pruebas de funcionalidad ``agregar nueva etiqueta'' }
@@ -1086,7 +1086,7 @@
           @Src { Fuente propia }
 
         @PP
-        Por último, la @B { Imagen 17} muestra las pruebas realizadas a la funcionalidad que permite el
+        Por último, la Imagen 17 muestra las pruebas realizadas a la funcionalidad que permite el
         guardado (A y B) de una búsqueda, además de la modificación del identificador de la misma (C).
 
         //2.0f @AddFigure
