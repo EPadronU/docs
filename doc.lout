@@ -637,7 +637,7 @@
         //2.0f @MyCenter @B { Tabla 1. Distribución de Actividades }
         //0f @PageMark { dist.act }
         //0f @AddToTIndex @Title { Tabla 1. Distribución de Actividades } @Tag { dist.act }
-        //0f @CD { 0.36 0.32 } @Scale @IncludeGraphic "./include/img/tabla1.eps"
+        //0f @CD { 0.7 } @Scale @IncludeGraphic "./include/img/tabla1.eps"
         //0f @MyCenter @B { Fuente: Fuente propia }
 
         @BeginSubSections
