@@ -993,23 +993,25 @@
         }
 
         @PP
-        El sistema fue puesto a prueba desde la perspectiva del usuario, proporcionando a la herramienta tanto
-        información correctamente formada (pruebas funcionales orientadas a tareas) como información inesperada
-        (pruebas de errores forzados), verificando así el adecuado comportamiento de las distintas funcionalidades
-        que éste ofrece, además de constatar su capacidad de recuperarse ante un estado de error y advertir al
-        usuario de dicho suceso.
+        Las pruebas funcionales orientadas a tareas se ejecutaron al proporcionar a la herramienta información
+        correctamente formada, obteniendo como resultado el comportamiento esperado; por su parte, las pruebas de
+        errores forzados se implementaron a través de la introducción de información incorrecta o inesperada, en cuyo
+        caso se visualizaron los respectivos mensajes de error. Ambos tipos de prueba fueron ejecutados en todos los
+        módulos de la herramienta, a saber: registro e ingreso de usuario, gestión de dispositivos, actualización de
+        información personal, configuración del rastreador, configuración de la lista negra y blanca de directorios,
+        gestión de etiquetas y búsquedas. A continuación, se describen los resultados de las pruebas realizadas:
 
         @PP
         En primer lugar, se puso a prueba el mecanismo de la aplicación servidor para el registro de un nuevo
         usuario. En la Imagen 9 se muestra comportamiento presentado por la herramienta ante el inicio
         de sesión de un usuario inexistente (A), el registro de un nuevo usuario mediante el ingreso
         heterogéneo de la contraseña y su verificación (B), el registro de un usuario efectivo del sistema (C)
-        y el registro exitoso de un nuevo usuario (D).
+        y el registro exitoso de un nuevo usuario (D). Nótese los mensajes de error arrojados.
 
         //2.0f @AddFigure
           @Title { Imagen 9. Pruebas del registro de un nuevo usuario }
           @ImgSrc { "./include/img/resultados/registro.eps" }
-          @ScaleXY { 0.42 0.46 }
+          @ScaleXY { 0.38  0.34 }
           @Src { Fuente propia }
 
         @PP
